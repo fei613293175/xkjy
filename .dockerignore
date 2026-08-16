@@ -1,0 +1,14 @@
+.git
+.gradle
+**/build
+node_modules
+admin-web/dist
+artifacts
+screenshots
+test-results
+*.apk
+*.jks
+*.keystore
+.env
+.env.*
+!deploy/.env.example

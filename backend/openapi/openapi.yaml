@@ -1,0 +1,52 @@
+openapi: 3.1.0
+info:
+  title: 星矿纪元 P00 基线 API
+  version: 0.0.1-p00
+  description: 仅包含工程健康、就绪与基线信息；不暴露账号、支付、钱包或实名业务接口。
+servers:
+  - url: /api
+paths:
+  /healthz:
+    get:
+      summary: 进程存活探针
+      responses:
+        '200':
+          description: 服务进程存活
+          content: {application/json: {schema: {$ref: '#/components/schemas/Health'}}}
+  /readyz:
+    get:
+      summary: PostgreSQL 与 Redis 就绪探针
+      responses:
+        '200':
+          description: 所有依赖可用
+          content: {application/json: {schema: {$ref: '#/components/schemas/Readiness'}}}
+        '503':
+          description: 至少一项依赖不可用
+          content: {application/json: {schema: {$ref: '#/components/schemas/Readiness'}}}
+  /v1/baseline:
+    get:
+      summary: P00 可公开基线元数据
+      responses:
+        '200':
+          description: 不含任何秘密值的基线状态
+          content: {application/json: {schema: {$ref: '#/components/schemas/Baseline'}}}
+components:
+  schemas:
+    Health:
+      type: object
+      required: [status, release]
+      properties: {status: {type: string, example: ok}, release: {type: string, example: P00}}
+    Readiness:
+      type: object
+      required: [status, release, dependencies]
+      properties:
+        status: {type: string, enum: [ready, not_ready]}
+        release: {type: string, example: P00}
+        dependencies: {type: object, additionalProperties: {type: string}}
+    Baseline:
+      type: object
+      required: [release, scope, configuration]
+      properties:
+        release: {type: string, example: P00}
+        scope: {type: array, items: {type: string}}
+        configuration: {type: object, additionalProperties: true}
