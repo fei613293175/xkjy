@@ -58,5 +58,6 @@ development_release: P00
 development_implemented: false
 validation:
   source_visual_baseline: PASS
-  repository_hardening: PENDING_REPOSITORY_VALIDATION
+  repository_hardening: PASS
+  p00_server_preflight: PARTIAL_PASS
   renderer: Chromium_Playwright

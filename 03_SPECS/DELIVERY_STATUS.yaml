@@ -23,7 +23,7 @@ artifacts:
   audio: {status: INHERITED, bgm: 5, sfx: 17}
   mother_template: {status: RULES_RETAINED_SECRETS_EXCLUDED, original_zip: false, unpacked_copy: sanitized}
 validation:
-  status: PASS
+  status: PARTIAL_PASS
   errors: 0
   warnings: 0
   app_pages_checked: 132
@@ -36,7 +36,20 @@ validation:
     - modal_safe_viewport
     - root_tab_back_button
     - duplicate_required_state_image
+server_preflight:
+  checked_at: '2026-08-17T03:18:00+08:00'
+  host_alias: obx-test
+  repository_checkout: PASS
+  git_lfs_assets: PASS
+  hardened_baseline_validator: PASS
+  docker_and_compose: PASS
+  java_17: PASS
+  android_build_image: CONDITIONAL
+  host_android_sdk_gradle_adb: NOT_READY
+  postgresql_redis_images: NOT_READY
+  server_secret_store: BLOCKED_EMPTY
 notes:
   - 本状态表示净化后的功能文档、Android视觉基线和素材已进入专属仓库，不表示P00-P11真实业务代码已经开发。
   - Codex必须先在已连接服务器完成P00预检，再从P00开始完成真实代码、数据库迁移、真机测试和正式签名APK。
   - V1.2.0视觉资料、真实私有配置和证书均不在仓库中，禁止重新导入或作为开发事实源。
+  - P00服务器预检已完成基础仓库与容器能力检查；完整结果见14_MANIFEST/P00_SERVER_PREFLIGHT.md。

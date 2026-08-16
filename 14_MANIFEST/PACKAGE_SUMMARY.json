@@ -32,5 +32,6 @@
     "warnings": [],
     "status": "PASS"
   },
+  "p00_server_preflight": "PARTIAL_PASS",
   "entrypoint": "00_README/README_交给Codex.md"
 }
