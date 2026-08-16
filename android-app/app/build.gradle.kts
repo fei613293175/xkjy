@@ -1,4 +1,5 @@
 import org.gradle.api.tasks.Sync
+import org.gradle.api.JavaVersion
 import org.gradle.kotlin.dsl.register
 
 plugins {
@@ -46,10 +47,16 @@ android {
             isMinifyEnabled = false
         }
     }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
     buildFeatures { compose = true; buildConfig = true }
     sourceSets.getByName("main").assets.srcDir(generatedAssetsDirectory)
     sourceSets.getByName("main").res.srcDir(generatedResDirectory)
 }
+
+kotlin { jvmToolchain(17) }
 
 val signingStore = providers.environmentVariable("ANDROID_KEYSTORE_FILE").orNull
 val signingStorePassword = providers.environmentVariable("ANDROID_KEYSTORE_PASSWORD").orNull
