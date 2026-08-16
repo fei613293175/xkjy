@@ -1,0 +1,91 @@
+template_version: 1.4.0
+project:
+  name_cn: 待填写
+  name_en: ''
+  code: 待填写-仅小写字母数字
+  positioning: 待填写
+  target_users: []
+  commercial_product: true
+  owner_confirmed_date: YYYY-MM-DD
+delivery_profile:
+  name: RAPID_DELIVERY
+  baseline: LIGHTWEIGHT_COMPLETE
+  untriggered_modules_forbidden: true
+  max_new_platform_modules_per_release: 1
+products:
+  android_app:
+    enabled: true
+    native: true
+    language: Kotlin
+    ui: Jetpack Compose + Material 3
+    min_sdk: 项目确定
+    target_sdk: 项目确定
+    stable_application_id: 项目确定
+    fixed_signing_required: true
+    minimal_online_update_required: true
+  admin_console:
+    enabled: true
+    enterprise_standard: true
+    self_hosted_captcha_on_login: true
+  h5:
+    enabled: false
+    pages: []
+  backend:
+    enabled: true
+    language_framework: 项目确定
+  database:
+    engine_version: 项目确定
+accounts:
+  required: 项目确定
+  registration_enabled: 项目确定
+  password_login: 项目确定
+  verification_code_login: 项目确定
+  password_recovery: 项目确定
+  identifiers: []
+  default_when_unspecified: email_password_and_email_code
+financial_capabilities:
+  platform_balance_wallet_required: false
+  withdrawal_required: false
+  withdrawal_provider: alipay_certificate_mode
+  require_verified_identity_for_withdrawal: true
+  withdrawal_tiers: []
+  daily_max_withdrawal_count: 3
+  automatic_payout_enabled: false
+  automatic_payout_limit_yuan: '0.00'
+  manual_review_and_one_click_payout_required: true
+  real_transfer_test_authorized: false
+  real_transfer_test_payee: null
+  real_transfer_single_amount_limit_yuan: null
+  real_transfer_total_amount_limit_yuan: null
+  note: 提现启用时自动解析账号、实名认证和事务型可用/冻结钱包账本；证书材料无需再次索取
+security:
+  self_hosted_image_captcha: true
+  third_party_captcha: false
+  protected_actions:
+  - admin_login
+  additional_actions_from_account_module: true
+visual_direction:
+  keywords: []
+  reference_projects: []
+  dark_mode: 项目确定
+  baseline_device: 项目确定
+  icon_system:
+    default_functional_library: remix_icon_svg
+    official_brand_assets_first: true
+    custom_svg_for_project_specific_features: true
+    text_as_icon_forbidden: true
+    icon_font_forbidden: true
+release:
+  planned_versions_max: 15
+  apk_required_each_android_release: true
+  chinese_delivery_files: true
+  incremental_testing_per_release: true
+  full_regression_at_stage_and_final: true
+rules:
+  global_rules_always_active: G-001~G-047
+  resolved_ruleset_required: true
+navigation_experience:
+  preserve_page_state_on_return: true
+  automatic_reload_on_back: false
+  restore_scroll_filters_tabs_drafts: true
+

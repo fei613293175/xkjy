@@ -1,0 +1,36 @@
+{
+  "project": "星矿纪元",
+  "package_version": "1.3.0-predev.1",
+  "status": "READY_FOR_P00_SERVER_PREFLIGHT",
+  "development_implemented": false,
+  "business_baseline": "V1.1.0",
+  "android_visual_baseline": "V1.3.0",
+  "rejected_android_visual_baseline": "V1.2.0 (excluded from repository)",
+  "repository_security": {
+    "real_credentials": "excluded",
+    "private_keys_and_certificates": "excluded",
+    "private_mother_template_zip": "excluded"
+  },
+  "inventory": {
+    "app_effect_png": 132,
+    "app_html": 132,
+    "admin_effect_png": 107,
+    "admin_html": 107,
+    "h5_effect_png": 5,
+    "h5_html": 5,
+    "miner_svg_v130": 36,
+    "miner_png_v130": 36,
+    "v130_icon_svg": 35,
+    "v130_background_files": 12,
+    "v130_contact_sheets": 14
+  },
+  "validation": {
+    "version": "1.3.0",
+    "pages": 132,
+    "png_count": 132,
+    "errors": [],
+    "warnings": [],
+    "status": "PASS"
+  },
+  "entrypoint": "00_README/README_交给Codex.md"
+}

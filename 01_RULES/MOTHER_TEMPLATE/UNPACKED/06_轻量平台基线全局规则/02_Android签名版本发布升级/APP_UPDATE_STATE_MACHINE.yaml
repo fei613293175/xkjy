@@ -1,0 +1,15 @@
+states:
+- UNKNOWN
+- UP_TO_DATE
+- OPTIONAL_UPDATE_AVAILABLE
+- FORCED_UPDATE_REQUIRED
+- DOWNLOADING
+- VERIFYING
+- READY_TO_INSTALL
+- INSTALL_PERMISSION_REQUIRED
+- FAILED
+rules:
+  forced_update_blocks_business: true
+  optional_update_can_skip: true
+  download_resume: project_decides
+  sha256_must_match: true

@@ -1,0 +1,25 @@
+states:
+  - CREATED
+  - CASHIER_OPEN
+  - PAYMENT_REQUESTING
+  - WAITING_PROVIDER
+  - PENDING_CONFIRMATION
+  - PAID
+  - ENTITLEMENT_GRANTED
+  - CANCELLED
+  - EXPIRED
+  - FAILED
+  - REFUND_PENDING
+  - REFUNDED
+  - MANUAL_QR_PENDING_SUBMISSION
+  - MANUAL_QR_PENDING_REVIEW
+  - MANUAL_QR_REJECTED
+
+rules:
+  final_paid_condition: "异步通知验签成功或主动查询 status=1"
+  return_url_only_changes_ui: true
+  entitlement_once_per_order: true
+  expired_order_cannot_restart_without_new_order: true
+  manual_qr_paid_condition: "后台审核通过且截图记录未被重复使用"
+  manual_qr_reject_condition: "审核拒绝后不发放权益、不发放返佣，订单允许重新提交"
+  method_visibility_checked: [cashier_methods, payment_submit]

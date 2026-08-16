@@ -1,0 +1,182 @@
+{
+  "meta": {
+    "project": "星矿纪元",
+    "version": "1.1.0",
+    "design_system": "XKJY-SPACE-MINE",
+    "baseline": "母版V1.4.2 + 项目专属视觉扩展"
+  },
+  "viewport": {
+    "android_design_width_dp": 360,
+    "android_reference_height_dp": 800,
+    "android_effect_viewport_css_px": [
+      390,
+      844
+    ],
+    "android_effect_scale": 2,
+    "admin_viewport_px": [
+      1440,
+      900
+    ],
+    "h5_viewport_css_px": [
+      390,
+      844
+    ],
+    "h5_effect_scale": 2
+  },
+  "spacing_dp": {
+    "xxs": 2,
+    "xs": 4,
+    "sm": 8,
+    "md": 12,
+    "lg": 16,
+    "xl": 20,
+    "xxl": 24,
+    "xxxl": 32
+  },
+  "radius_dp": {
+    "xs": 6,
+    "sm": 10,
+    "md": 14,
+    "lg": 18,
+    "xl": 24,
+    "dialog": 28,
+    "pill": 999
+  },
+  "typography_sp": {
+    "display": 30,
+    "hero": 26,
+    "title_large": 22,
+    "title_medium": 19,
+    "title_small": 17,
+    "body_large": 16,
+    "body_medium": 14,
+    "body_small": 12,
+    "label": 11,
+    "micro": 10
+  },
+  "line_height_sp": {
+    "display": 38,
+    "hero": 34,
+    "title_large": 30,
+    "title_medium": 27,
+    "body_large": 24,
+    "body_medium": 21,
+    "body_small": 18
+  },
+  "component_height_dp": {
+    "input": 52,
+    "primary_button": 50,
+    "secondary_button": 44,
+    "top_bar": 56,
+    "game_hud": 72,
+    "game_toolbar": 68,
+    "bottom_nav": 64
+  },
+  "icon_size_dp": {
+    "xs": 14,
+    "sm": 16,
+    "md": 20,
+    "lg": 24,
+    "xl": 32,
+    "game": 40
+  },
+  "colors": {
+    "space_950": "#07111F",
+    "space_900": "#0B1830",
+    "space_800": "#102A4C",
+    "space_700": "#173B66",
+    "primary_600": "#F0642F",
+    "primary_500": "#FF7A3D",
+    "primary_400": "#FF965F",
+    "gold_500": "#FFC84A",
+    "gold_300": "#FFE29A",
+    "energy_500": "#27D5C4",
+    "energy_300": "#8AF0E5",
+    "blue_500": "#3A8CFF",
+    "violet_500": "#8B5CFF",
+    "magenta_500": "#ED5CBE",
+    "surface": "#FFF9F1",
+    "surface_2": "#FFFFFF",
+    "surface_dark": "#11243D",
+    "text_primary": "#172034",
+    "text_secondary": "#68728A",
+    "border": "#E8DFD3",
+    "success": "#24B878",
+    "warning": "#F4A62A",
+    "error": "#E55454",
+    "info": "#3A8CFF"
+  },
+  "gradients": {
+    "space": [
+      "#07111F",
+      "#102A4C"
+    ],
+    "brand": [
+      "#FF965F",
+      "#F0642F"
+    ],
+    "reward": [
+      "#FFE29A",
+      "#FFC84A"
+    ],
+    "energy": [
+      "#8AF0E5",
+      "#27D5C4"
+    ],
+    "member": [
+      "#8B5CFF",
+      "#ED5CBE"
+    ],
+    "panel_dark": [
+      "#173B66",
+      "#0B1830"
+    ]
+  },
+  "shadow": {
+    "card": {
+      "color": "#14233A24",
+      "blur_dp": 18,
+      "offset_y_dp": 8
+    },
+    "floating": {
+      "color": "#07111F40",
+      "blur_dp": 28,
+      "offset_y_dp": 12
+    },
+    "glow_gold": {
+      "color": "#FFC84A66",
+      "blur_dp": 24
+    },
+    "glow_energy": {
+      "color": "#27D5C466",
+      "blur_dp": 24
+    }
+  },
+  "motion": {
+    "fast_ms": 120,
+    "standard_ms": 220,
+    "emphasis_ms": 420,
+    "dialog_ms": 280,
+    "merge_ms": 680,
+    "unlock_ms": 1200,
+    "bubble_float_ms": 1800,
+    "stagger_ms": 48
+  },
+  "icon_system": {
+    "policy_id": "LB-ICON",
+    "source_format": "svg",
+    "default_canvas": "24x24",
+    "minimum_touch_target_dp": 48,
+    "default_style": "rounded_line",
+    "selected_style": "filled_tinted_container",
+    "text_as_icon_forbidden": true,
+    "icon_font_forbidden": true,
+    "registry_required": true
+  },
+  "accessibility": {
+    "minimum_text_contrast": 4.5,
+    "minimum_large_text_contrast": 3.0,
+    "minimum_touch_target_dp": 48,
+    "supports_font_scale_up_to": 1.3
+  }
+}

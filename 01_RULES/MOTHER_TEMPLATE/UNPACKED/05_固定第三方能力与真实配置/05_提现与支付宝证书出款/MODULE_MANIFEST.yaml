@@ -1,0 +1,37 @@
+template_version: 1.4.0
+module_id: withdrawal
+display_name: 提现与支付宝证书出款
+scope: conditional_fixed_module
+default_enabled: false
+ruleset: M-WD-001~M-WD-012
+fixed_information_available: true
+dependencies:
+  account:
+    required: true
+    default_resolution: auto_enable
+  identity_verification:
+    required: true
+    default_resolution: auto_enable
+  wallet_ledger:
+    required: true
+    default_resolution: implement_project_wallet_ledger
+  alipay_payout_credentials:
+    required_when: payout_channel == alipay
+    source: PRIVATE_CREDENTIALS/alipay-payout
+credentials_source: ../PRIVATE_INTEGRATIONS.yaml#withdrawal_payout
+outputs_when_enabled:
+  - app_pages
+  - admin_pages
+  - apis
+  - database_tables
+  - migrations
+  - configs
+  - provider_adapter
+  - reconciliation_job
+  - logs_metrics
+  - audit_logs
+  - tests
+  - private_runtime_config
+outputs_when_disabled: []
+security_level: financial_sensitive
+real_transfer_test_requires_explicit_owner_authorization: true

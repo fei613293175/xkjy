@@ -1,0 +1,19 @@
+project: 待填写
+features:
+- feature_id: F-001
+  source_scope: project_specific|fixed_external_module|platform_module|global_baseline
+  module_id: project|identity_verification|payment|storage|email|withdrawal|account|baseline
+  name: 待填写
+  priority: P0
+  release: R01
+  applicable_rule_ids: []
+  app_pages: []
+  admin_pages: []
+  h5_pages: []
+  apis: []
+  tables: []
+  configs: []
+  logs_metrics: []
+  tests: []
+  status: PLANNED
+  evidence: []

@@ -1,0 +1,212 @@
+page:
+  id: APP-GAME-002
+  name_cn: 矿场首页
+  platform: android
+  source_scope: project_specific
+  feature_id: F-GAME
+  module_id: game
+  applicable_rule_ids:
+  - G-001~G-047
+  - LB-PAGE-STATE
+  - LB-ICON
+  route: /app/game/002
+  release: P02
+  default_state_id: DEFAULT
+  state_ids:
+  - DEFAULT
+  - NEW_USER
+  - CLAIMABLE
+  - BOARD_FULL
+  - OFFLINE
+  shared_components: []
+  security:
+    captcha_gate: false
+    captcha_purpose: null
+  visual_baseline: V1.3.0
+access:
+  roles:
+  - authenticated_user
+  permissions: []
+  prerequisites: []
+  entry_points: []
+  exit_points: []
+  back_behavior: 一级Tab根页面不显示顶部返回按钮；系统返回按Android根导航策略处理
+navigation_state:
+  policy_id: LB-PAGE-STATE
+  preserve_on_return: true
+  state_owner: destination_view_model
+  preserve_fields:
+  - scroll_anchor_item_id
+  - scroll_offset
+  - selected_tab
+  - search_query
+  - filters
+  - sort
+  - pagination_or_cursor
+  - expanded_items
+  - selected_items
+  - form_draft
+  - loaded_content
+  refresh_on_back: false
+  refresh_on_resume: false
+  refresh_policy: stale_while_revalidate_keep_content
+  scroll_restore_key: stable_item_id_and_offset
+  mutation_merge_strategy: local_patch
+  process_recreation_restore_safe_state: true
+  allowed_reset_exceptions: []
+business:
+  objective: 完成矿场首页的可操作业务闭环。
+  rules:
+  - 页面只实现“矿场首页”对应职责，不混入未触发模块。
+  - 返回来源页面时必须恢复页面上下文，不无条件刷新。
+  - 所有图标必须从ICON_REGISTRY引用SVG。
+  - 矿机和资产状态以后端为最终事实源。
+  - 合成、购买、领取、回收必须携带幂等键。
+  - 首页必须以2D矿区为视觉主体，普通App卡片仅作HUD辅助。
+  - 4×4棋盘初始开放12格。
+  visible_copy:
+  - 矿场首页
+  forbidden_copy:
+  - 稳赚
+  - 保底现金收益
+  - 未经确认的成功状态
+layout:
+  baseline_viewport_px: 1080x2280
+  baseline_dp: 360x760
+  system_bar_mode: android_managed_preview_only
+  component_tree:
+  - status_or_admin_bar
+  - top_navigation
+  - primary_content
+  - context_actions
+  - bottom_navigation_or_footer
+  effect_scale: 3
+resolved_ui_values:
+  page_background: '#040817'
+  content_padding_horizontal_dp: 14
+  content_padding_vertical_dp: 12
+  top_bar_height_dp: 48
+  title_font_sp: 18
+  title_weight: 700
+  title_line_height_sp: 24
+  body_font_sp: 13
+  body_line_height_sp: 19
+  card_radius_dp: 12
+  card_padding_dp: 12
+  item_gap_dp: 8
+  input_height_dp: 44
+  button_height_dp: 42
+  button_radius_dp: 12
+  icon_size_dp: 22
+  icon_touch_target_dp: 44
+  border_width_dp: 1
+  elevation_dp: 0
+used_design_tokens:
+- colors.space_900
+- colors.primary_500
+- colors.gold_500
+- colors.energy_500
+- radius.lg
+- spacing.lg
+- motion.standard_ms
+icon_usage:
+  policy_id: LB-ICON
+  default_functional_library: project_custom_svg
+  text_as_icon_forbidden: true
+  icon_font_forbidden: true
+  icon_ids:
+  - ICON-ATLAS
+  - ICON-BOX
+  - ICON-ENERGY-CHIP
+  - ICON-LEVEL
+  - ICON-MINER-STORE
+  - ICON-NAV-DISCOVER
+  - ICON-NAV-HOME
+  - ICON-NAV-MALL
+  - ICON-NAV-ME
+  - ICON-NAV-PROJECT
+  - ICON-STAR-POINT
+  - ICON-TASK
+  - ICON-WAREHOUSE
+  brand_assets: []
+components:
+- component_id: TOP-BAR
+  type: top_bar
+  text: 矿场首页
+  values: {}
+  interactions: []
+  validation: []
+  root_tab_no_back: true
+states:
+- state_id: DEFAULT
+  required: true
+  description: 默认业务状态
+  artifact_suffix: DEFAULT
+- state_id: NEW_USER
+  required: true
+  description: 首次进入的新手引导状态
+  artifact_suffix: NEW_USER
+- state_id: CLAIMABLE
+  required: true
+  description: 存在可领取产出
+  artifact_suffix: CLAIMABLE
+- state_id: BOARD_FULL
+  required: true
+  description: 棋盘无空位
+  artifact_suffix: BOARD_FULL
+- state_id: OFFLINE
+  required: true
+  description: 网络不可用但保留现有内容
+  artifact_suffix: OFFLINE
+bindings:
+  apis:
+  - GET /api/v1/game/bootstrap
+  - GET /api/v1/game/board
+  - POST /api/v1/game/board/move
+  - POST /api/v1/game/board/merge
+  - POST /api/v1/game/production/claim
+  database_tables:
+  - user_game_profiles
+  - miner_level_configs
+  - user_miners
+  - user_board_slots
+  - production_settlements
+  - production_claims
+  admin_configs:
+  - game.*
+  audit_logs:
+  - game.operation
+  analytics_events:
+  - app-game-002.view
+artifacts:
+  png_pattern: 04_UI/APP/APP-GAME-002__<StateID>.png
+  html_pattern: 10_HTML/APP/APP-GAME-002__<StateID>.html
+  svg: []
+  icon_registry_file: 03_SPECS/ICON_REGISTRY.yaml
+  index_entry: true
+  visual_version: V1.3.0
+testing:
+  functional_steps:
+  - 进入页面
+  - 完成主操作
+  - 验证服务端结果
+  - 返回来源页并验证状态保持
+  state_restore_steps:
+  - 深度滚动或填写草稿
+  - 进入子页面
+  - 返回并检查位置、筛选、草稿和已加载内容
+  visual_points:
+  - 结构、字号、间距、圆角、色值、图标与效果图一致
+  icon_points:
+  - 无文字或Emoji代图标
+  accessibility_points:
+  - 触控区域不小于48dp
+  - 关键图标具备语义标签
+visual_fact_source_priority:
+- 04_UI/APP/APP-GAME-002__<StateID>.png
+- 10_HTML/APP/APP-GAME-002__<StateID>.html
+- 10_HTML/shared/styles_v130.css
+- 03_SPECS/DESIGN_TOKENS_GAME_V130.json
+- 03_SPECS/NINE_SLICE_AND_STRETCH_RULES_V130.yaml
+- 07_GAME_ASSETS/v130
+- 06_MINERS/PNG_V130

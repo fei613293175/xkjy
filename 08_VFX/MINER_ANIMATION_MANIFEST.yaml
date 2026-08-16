@@ -1,0 +1,363 @@
+project: 星矿纪元
+version: 1.1.0
+items:
+- miner_id: MINER_L01
+  idle: 08_VFX/miner_idle/MINER_L01_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L01_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L02
+  idle: 08_VFX/miner_idle/MINER_L02_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L02_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L03
+  idle: 08_VFX/miner_idle/MINER_L03_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L03_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L04
+  idle: 08_VFX/miner_idle/MINER_L04_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L04_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L05
+  idle: 08_VFX/miner_idle/MINER_L05_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L05_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L06
+  idle: 08_VFX/miner_idle/MINER_L06_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L06_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L07
+  idle: 08_VFX/miner_idle/MINER_L07_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L07_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L08
+  idle: 08_VFX/miner_idle/MINER_L08_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L08_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L09
+  idle: 08_VFX/miner_idle/MINER_L09_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L09_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L10
+  idle: 08_VFX/miner_idle/MINER_L10_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L10_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L11
+  idle: 08_VFX/miner_idle/MINER_L11_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L11_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L12
+  idle: 08_VFX/miner_idle/MINER_L12_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L12_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L13
+  idle: 08_VFX/miner_idle/MINER_L13_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L13_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L14
+  idle: 08_VFX/miner_idle/MINER_L14_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L14_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L15
+  idle: 08_VFX/miner_idle/MINER_L15_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L15_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L16
+  idle: 08_VFX/miner_idle/MINER_L16_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L16_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L17
+  idle: 08_VFX/miner_idle/MINER_L17_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L17_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L18
+  idle: 08_VFX/miner_idle/MINER_L18_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L18_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L19
+  idle: 08_VFX/miner_idle/MINER_L19_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L19_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L20
+  idle: 08_VFX/miner_idle/MINER_L20_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L20_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L21
+  idle: 08_VFX/miner_idle/MINER_L21_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L21_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L22
+  idle: 08_VFX/miner_idle/MINER_L22_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L22_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L23
+  idle: 08_VFX/miner_idle/MINER_L23_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L23_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L24
+  idle: 08_VFX/miner_idle/MINER_L24_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L24_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L25
+  idle: 08_VFX/miner_idle/MINER_L25_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L25_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L26
+  idle: 08_VFX/miner_idle/MINER_L26_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L26_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L27
+  idle: 08_VFX/miner_idle/MINER_L27_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L27_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L28
+  idle: 08_VFX/miner_idle/MINER_L28_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L28_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L29
+  idle: 08_VFX/miner_idle/MINER_L29_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L29_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L30
+  idle: 08_VFX/miner_idle/MINER_L30_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L30_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L31
+  idle: 08_VFX/miner_idle/MINER_L31_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L31_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L32
+  idle: 08_VFX/miner_idle/MINER_L32_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L32_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L33
+  idle: 08_VFX/miner_idle/MINER_L33_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L33_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L34
+  idle: 08_VFX/miner_idle/MINER_L34_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L34_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L35
+  idle: 08_VFX/miner_idle/MINER_L35_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L35_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512
+- miner_id: MINER_L36
+  idle: 08_VFX/miner_idle/MINER_L36_IDLE.png
+  idle_frames: 4
+  idle_fps: 6
+  work: 08_VFX/miner_work/MINER_L36_WORK.png
+  work_frames: 6
+  work_fps: 10
+  frame_size:
+  - 512
+  - 512

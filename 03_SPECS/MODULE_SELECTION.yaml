@@ -1,0 +1,64 @@
+project: 星矿纪元
+version: 1.1.0
+mother_template: V1.4.2
+modules:
+- module_id: account
+  enabled: true
+  reason: 邮箱注册/登录/找回/会话
+- module_id: email
+  enabled: true
+  reason: 母版SMTP能力
+- module_id: captcha
+  enabled: true
+  reason: 自研图形验证码
+- module_id: identity
+  enabled: true
+  reason: 母版阿里云人证比对
+- module_id: storage
+  enabled: true
+  reason: 母版Cloudflare R2
+- module_id: payment
+  enabled: true
+  reason: 母版XApay与人工扫码
+- module_id: withdrawal
+  enabled: true
+  reason: 母版支付宝证书出款
+- module_id: wallet_ledger
+  enabled: true
+  reason: 三资产事务账本
+- module_id: game_merge
+  enabled: true
+  reason: 36级矿机合成
+- module_id: project_promotion
+  enabled: true
+  reason: 用户项目与推广道具
+- module_id: market
+  enabled: true
+  reason: 积分求购集市
+- module_id: referral_commission
+  enabled: true
+  reason: 二级提成
+- module_id: physical_goods
+  enabled: false
+  reason: 明确禁止实物
+- module_id: sms
+  enabled: false
+  reason: 只使用邮箱
+- module_id: ios
+  enabled: false
+  reason: 当前不开发
+- module_id: instant_chat
+  enabled: false
+  reason: 当前不开发
+- module_id: third_party_ad_network
+  enabled: false
+  reason: 当前广告指平台项目任务
+- module_id: extra_games
+  enabled: false
+  reason: 仅预留发现入口
+rule_priority:
+- 项目所有者最新明确指令
+- 项目专属规则
+- 母版全局规则
+- 启用模块默认规则
+- 参考截图

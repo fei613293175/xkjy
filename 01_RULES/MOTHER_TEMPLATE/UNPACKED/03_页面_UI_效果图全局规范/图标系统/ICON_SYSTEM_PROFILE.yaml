@@ -1,0 +1,43 @@
+version: 1.4.0
+policy_id: LB-ICON
+scope: GLOBAL_PROJECT_RULE
+always_active: true
+default_functional_library:
+  id: remix_icon_svg
+  one_primary_family_per_project: true
+  preferred_variants:
+  - line
+  - fill
+brand_assets:
+  official_asset_first: true
+  source_record_required: true
+  fabricated_brand_logo_forbidden: true
+  fallback: neutral_category_svg_plus_text_label
+project_specific_icons:
+  custom_svg_required_for_unique_core_features: true
+asset_pipeline:
+  source_format: svg
+  bundle_used_source_files_in_project_package: true
+  android_runtime: vector_drawable_or_compose_local_painter
+  admin_h5_runtime: local_svg_component_or_sprite
+  remote_runtime_icon_dependency: false
+forbidden_as_icon:
+- chinese_character
+- latin_letter_or_abbreviation
+- number
+- punctuation
+- currency_symbol
+- emoji
+- unicode_symbol
+- icon_font_glyph
+sizes_dp:
+- 16
+- 20
+- 24
+- 32
+default_canvas: 24x24
+minimum_touch_target_dp: 48
+registry_required: true
+accessibility_label_required_for_action_icons: true
+decorative_icon_must_be_marked: true
+

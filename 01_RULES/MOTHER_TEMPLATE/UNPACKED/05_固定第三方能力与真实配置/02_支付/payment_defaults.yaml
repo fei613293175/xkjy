@@ -1,0 +1,79 @@
+module_semantics:
+  module_id: payment
+  activation_controlled_by: "RESOLVED_RULESET.yaml"
+  apply_defaults_when_module_enabled: true
+
+payment:
+  cashier:
+    ui_type: "android_native"
+    third_party_cashier_as_project_cashier: false
+    show_order_number: true
+    show_order_summary: true
+    show_expiry_countdown: true
+  order:
+    valid_minutes: 15
+    amount_source: "server_product_config"
+    duplicate_click_protection: true
+  methods:
+    ALIPAY:
+      enabled: true
+      sort: 10
+      profile: fuylink_online
+    WECHAT:
+      enabled: false
+      sort: 20
+      profile: fuylink_online
+    ALIPAY_XAPAY:
+      enabled: false
+      sort: 30
+      profile: xapay_online
+    WECHAT_XAPAY:
+      enabled: false
+      sort: 40
+      profile: xapay_online
+    ALIPAY_QR:
+      enabled: false
+      sort: 50
+      profile: manual_qr
+    WECHAT_QR:
+      enabled: false
+      sort: 60
+      profile: manual_qr
+    QQ_QR:
+      enabled: false
+      sort: 70
+      profile: manual_qr
+    USDT:
+      enabled: false
+      sort: 80
+      profile: fuylink_online
+  method_visibility:
+    hidden_order_kinds: []
+    enforcement: server_list_and_submit
+  manual_qr:
+    enabled: false
+    provider: MANUAL_QR
+    screenshot_required: true
+    random_enabled_qr: true
+    allow_user_swipe_between_codes: true
+    message: 支付完成后，请截图付款记录并返回提交审核。
+  provider:
+    primary_profile: fuylink_online
+    xapay_endpoint: "https://xa.2xrr.com/xpay/epay/submit.php"
+    xapay_query_endpoint: "https://xa.2xrr.com/xpay/epay/api.php"
+    return_support: ["payurl", "qrcode", "urlscheme"]
+    sign_type: "MD5"
+  callback:
+    async_notify_is_primary: true
+    return_url_grants_entitlement: false
+    verify_sign: true
+    verify_pid: true
+    verify_amount: true
+    verify_out_trade_no: true
+    verify_trade_status: true
+    idempotent_entitlement: true
+  reconciliation:
+    active_query_enabled: true
+    retry_schedule_minutes: [1, 3, 10, 30]
+  refund_api:
+    enabled: false

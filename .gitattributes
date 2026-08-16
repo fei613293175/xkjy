@@ -1,0 +1,15 @@
+# Keep binary visual and audio baselines out of normal Git object history.
+*.png filter=lfs diff=lfs merge=lfs -text
+*.ogg filter=lfs diff=lfs merge=lfs -text
+*.docx filter=lfs diff=lfs merge=lfs -text
+
+# Preserve line endings for source and specifications.
+*.md text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.py text eol=lf
+*.kt text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.sql text eol=lf

@@ -1,0 +1,56 @@
+module_semantics:
+  template_version: 1.4.0
+  module_id: identity_verification
+  activation_controlled_by: RESOLVED_RULESET.yaml
+  apply_defaults_when_module_enabled: true
+
+identity:
+  level: 基础认证
+  mode: 动作采集 + 人证比对
+  provider_contract:
+    provider: aliyun_market_sdfaceid
+    host: https://sdfaceid.market.alicloudapi.com
+    path: /face_id_card/check
+    method: POST
+    auth_mode: APPCODE
+    content_type: application/x-www-form-urlencoded; charset=UTF-8
+    client_side_call_forbidden: true
+  fee:
+    mode: paid
+    amount_yuan: 0.50
+    order_valid_minutes: 15
+    paid_eligibility_valid_hours: 24
+  capture:
+    countdown_seconds: 3
+    auto_start_after_countdown: true
+    allowed_attempts_per_eligibility: 3
+    random_action_count: 2
+    action_pool: [left, right, up, down]
+    video_duration_seconds_min: 5
+    video_duration_seconds_max: 8
+    face_image_recommended_max_kb: 30
+    camera_visible_only_during_capture: true
+    release_camera_on_leave_or_finish: true
+  local_device:
+    persistent_storage: false
+    shared_storage: false
+    system_gallery: false
+    user_visible_upload_status: false
+    visible_processing_copy: 正在核验身份
+    temporary_private_cache_fallback: true
+    delete_temporary_immediately: true
+  server_retention:
+    retain_face_photo: true
+    retain_action_video: true
+    configurable_in_admin: true
+  provider:
+    connect_timeout_seconds: 5
+    total_timeout_seconds: 15
+    retry_on_network_error: 1
+    retry_on_business_result: false
+  result_mapping:
+    '1001': VERIFIED
+    '1002': RECAPTURE_OR_MANUAL
+    '1003': FACE_MISMATCH
+    '1004': UNRECOGNIZABLE
+  verified_entry_behavior: SHOW_SUCCESS_DIRECTLY

@@ -1,0 +1,18 @@
+android:
+  jdk: 待填写
+  gradle: 待填写
+  agp: 待填写
+  kotlin: 待填写
+  compose_bom: 待填写
+  build_command: 待填写
+backend:
+  runtime: 待填写
+  framework: 待填写
+  container_base_image: 待填写
+  build_command: 待填写
+database:
+  engine_version: 待填写
+artifact:
+  git_commit: 待填写
+  built_at: 待填写
+  sha256: 待填写

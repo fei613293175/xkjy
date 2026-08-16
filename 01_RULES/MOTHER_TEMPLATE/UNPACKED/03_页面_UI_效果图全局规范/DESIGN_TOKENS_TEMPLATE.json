@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "template_version": "1.4.0",
+    "note": "推荐基线；每个项目应根据品牌修改，并在每个页面写入解析后的实际数值"
+  },
+  "viewport": {
+    "android_design_width_dp": 360,
+    "android_reference_height_dp": 800,
+    "admin_min_width_px": 1280,
+    "admin_content_max_width_px": 1600
+  },
+  "spacing_dp": {
+    "xs": 4,
+    "sm": 8,
+    "md": 12,
+    "lg": 16,
+    "xl": 24,
+    "xxl": 32
+  },
+  "radius_dp": {
+    "sm": 8,
+    "md": 12,
+    "lg": 16,
+    "xl": 20,
+    "pill": 999
+  },
+  "typography_sp": {
+    "display": 28,
+    "title_large": 24,
+    "title_medium": 20,
+    "title_small": 18,
+    "body_large": 16,
+    "body_medium": 14,
+    "body_small": 12,
+    "label": 11
+  },
+  "line_height_sp": {
+    "display": 36,
+    "title_large": 32,
+    "title_medium": 28,
+    "body_large": 24,
+    "body_medium": 22,
+    "body_small": 18
+  },
+  "component_height_dp": {
+    "input": 52,
+    "primary_button": 52,
+    "secondary_button": 44,
+    "top_bar": 56,
+    "bottom_nav": 64
+  },
+  "icon_size_dp": {
+    "sm": 16,
+    "md": 20,
+    "lg": 24,
+    "xl": 32
+  },
+  "colors": {
+    "primary": "#2563EB",
+    "on_primary": "#FFFFFF",
+    "background": "#F7F8FA",
+    "surface": "#FFFFFF",
+    "text_primary": "#111827",
+    "text_secondary": "#6B7280",
+    "border": "#E5E7EB",
+    "success": "#16A34A",
+    "warning": "#D97706",
+    "error": "#DC2626"
+  },
+  "icon_system": {
+    "policy_id": "LB-ICON",
+    "default_functional_library": "remix_icon_svg",
+    "source_format": "svg",
+    "default_canvas": "24x24",
+    "minimum_touch_target_dp": 48,
+    "default_style": "line",
+    "selected_style": "fill_or_tinted_container",
+    "text_as_icon_forbidden": true,
+    "icon_font_forbidden": true,
+    "registry_required": true
+  }
+}

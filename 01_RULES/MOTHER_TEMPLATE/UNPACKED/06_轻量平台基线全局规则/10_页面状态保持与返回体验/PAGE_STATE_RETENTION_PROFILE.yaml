@@ -1,0 +1,56 @@
+version: 1.4.0
+policy_id: LB-PAGE-STATE
+scope: GLOBAL_PROJECT_RULE
+always_active: true
+platforms:
+- android
+- admin
+- h5
+strict_return_restore: true
+preserve_when_present:
+- scroll_anchor_stable_item_id
+- scroll_offset
+- selected_tab
+- search_query
+- filters
+- sort
+- pagination_or_cursor
+- expanded_collapsed_state
+- selected_items
+- form_draft
+- validation_state
+- loaded_content
+- local_error_state
+navigation:
+  return_uses_existing_back_stack_entry: true
+  recreate_source_page_on_back: false
+  external_activity_return_preserves_context: true
+  bottom_navigation_independent_back_stacks: true
+refresh:
+  automatic_full_reload_on_back: false
+  automatic_full_reload_on_resume: false
+  first_entry_without_cache: true
+  user_initiated_refresh: true
+  stale_while_revalidate: true
+  keep_existing_content_during_refresh: true
+  mutation_strategy: local_patch_or_scoped_refresh
+restoration:
+  same_task_exact_restore: true
+  configuration_change_restore: true
+  background_foreground_restore: true
+  process_recreation_restore_safe_state: true
+exceptions:
+  must_be_declared_in_page_spec: true
+  allowed_reasons:
+  - user_explicit_refresh
+  - authentication_or_permission_invalid
+  - data_deleted_or_no_longer_viewable
+  - security_timeout
+  - explicit_business_state_transition
+forbidden:
+- return_to_top_without_user_action
+- blank_full_page_reload_when_cached_content_exists
+- unconditional_fetch_on_resume
+- duplicate_source_route_instance
+- clearing_filters_or_draft_on_back
+

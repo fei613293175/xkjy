@@ -1,0 +1,26 @@
+template_version: 1.4.0
+module_id: identity_verification
+display_name: 基础实名认证
+scope: conditional_fixed_module
+default_enabled: false
+ruleset: M-ID-001~M-ID-008
+dependencies:
+  storage:
+    required: true
+    default_resolution: auto_enable
+  payment:
+    required_when: charging_mode is admin_configurable_free_or_paid or paid
+    default_resolution: auto_enable
+credentials_source: ../PRIVATE_INTEGRATIONS.yaml#identity
+provider_contract: 阿里云人证比对接口合同.md
+legacy_provider_fallback_forbidden: true
+outputs_when_enabled:
+- app_pages
+- admin_pages
+- apis
+- database_tables
+- configs
+- logs_metrics
+- tests
+- private_runtime_config
+outputs_when_disabled: []

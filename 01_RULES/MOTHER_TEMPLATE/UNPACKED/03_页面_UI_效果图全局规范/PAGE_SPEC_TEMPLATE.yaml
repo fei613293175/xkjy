@@ -1,0 +1,139 @@
+page:
+  id: APP-MODULE-001
+  name_cn: 待填写
+  platform: android|admin|h5
+  source_scope: project_specific|fixed_external_module|platform_module|global_baseline
+  feature_id: F-001
+  module_id: project|identity_verification|payment|storage|email|account|baseline
+  applicable_rule_ids: []
+  route: 待填写
+  release: R01
+  default_state_id: DEFAULT
+  state_ids:
+  - DEFAULT
+  shared_components: []
+  security:
+    captcha_gate: false
+    captcha_purpose: null
+    rate_limit_feedback: null
+access:
+  roles: []
+  permissions: []
+  prerequisites: []
+  entry_points: []
+  exit_points: []
+  back_behavior: 返回已有来源页面实例，不新建同路由
+navigation_state:
+  policy_id: LB-PAGE-STATE
+  preserve_on_return: true
+  state_owner: destination_view_model|navigation_graph_view_model|route_store
+  preserve_fields:
+  - scroll_anchor_item_id
+  - scroll_offset
+  - selected_tab
+  - search_query
+  - filters
+  - sort
+  - pagination_or_cursor
+  - expanded_items
+  - selected_items
+  - form_draft
+  - loaded_content
+  refresh_on_back: false
+  refresh_on_resume: false
+  refresh_policy: stale_while_revalidate_keep_content
+  scroll_restore_key: stable_item_id_and_offset|scroll_offset|none
+  mutation_merge_strategy: local_patch|affected_range_refresh|declared_exception
+  process_recreation_restore_safe_state: true
+  allowed_reset_exceptions: []
+business:
+  objective: 待填写
+  rules: []
+  visible_copy: []
+  forbidden_copy: []
+layout:
+  baseline_viewport_px: 待填写
+  baseline_dp: 待填写
+  system_bar_mode: 待填写
+  component_tree: []
+resolved_ui_values:
+  page_background: '#FFFFFF'
+  content_padding_horizontal_dp: 16
+  content_padding_vertical_dp: 16
+  top_bar_height_dp: 56
+  title_font_sp: 20
+  title_weight: 600
+  title_line_height_sp: 28
+  body_font_sp: 14
+  body_line_height_sp: 22
+  card_radius_dp: 16
+  card_padding_dp: 16
+  item_gap_dp: 12
+  input_height_dp: 52
+  button_height_dp: 52
+  button_radius_dp: 14
+  icon_size_dp: 24
+  icon_touch_target_dp: 48
+  border_width_dp: 1
+  elevation_dp: 0
+used_design_tokens: []
+icon_usage:
+  policy_id: LB-ICON
+  default_functional_library: remix_icon_svg
+  text_as_icon_forbidden: true
+  icon_font_forbidden: true
+  icon_ids: []
+  brand_assets: []
+components:
+- component_id: C-001
+  type: 待填写
+  text: ''
+  icon_id: null
+  icon_role: functional|brand|project_specific|decorative|none
+  accessibility_label: null
+  values: {}
+  interactions: []
+  validation: []
+states:
+- state_id: DEFAULT
+  required: true
+  description: 默认状态
+  artifact_suffix: DEFAULT
+- state_id: LOADING
+  required: 按业务判断
+  description: 加载状态
+  artifact_suffix: LOADING
+- state_id: EMPTY
+  required: 按业务判断
+  description: 空状态
+  artifact_suffix: EMPTY
+- state_id: ERROR
+  required: 按业务判断
+  description: 错误状态
+  artifact_suffix: ERROR
+- state_id: SUCCESS
+  required: 按业务判断
+  description: 成功状态
+  artifact_suffix: SUCCESS
+- state_id: DISABLED
+  required: 按业务判断
+  description: 禁用状态
+  artifact_suffix: DISABLED
+bindings:
+  apis: []
+  database_tables: []
+  admin_configs: []
+  audit_logs: []
+  analytics_events: []
+artifacts:
+  png_pattern: effects/<PageID>__<StateID>.png
+  html_pattern: effects/<PageID>__<StateID>.html
+  svg: []
+  icon_registry_file: ICON_REGISTRY.yaml
+  index_entry: true
+testing:
+  functional_steps: []
+  state_restore_steps: []
+  visual_points: []
+  icon_points: []
+  accessibility_points: []

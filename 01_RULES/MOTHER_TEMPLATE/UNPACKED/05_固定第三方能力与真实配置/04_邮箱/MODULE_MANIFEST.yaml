@@ -1,0 +1,18 @@
+template_version: 1.4.0
+module_id: email
+display_name: SMTP企业邮箱
+scope: conditional_fixed_module
+default_enabled: false
+ruleset: M-EMAIL-001~M-EMAIL-006
+provider: smtp_enterprise_email
+credentials_source: ../PRIVATE_INTEGRATIONS.yaml#email
+outputs_when_enabled:
+- email_service
+- verification_code_flow
+- admin_pages
+- configs
+- logs_metrics
+- tests
+- private_runtime_config
+outputs_when_disabled: []
+

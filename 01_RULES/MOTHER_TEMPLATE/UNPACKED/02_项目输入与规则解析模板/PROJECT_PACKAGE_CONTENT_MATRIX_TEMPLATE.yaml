@@ -1,0 +1,47 @@
+template_version: 1.4.2
+global_content_always_required:
+  complete_project_requirements: true
+  global_rules_G_001_to_G_047: true
+  lightweight_platform_baseline: true
+  project_specific_rules: true
+  android_app_specification: true
+  backend_api_database_specification: true
+  enterprise_admin_specification: true
+  all_page_ids_and_page_specs: true
+  all_effect_png_and_html_sources_after_requirements_confirmed: true
+  domain_server_deployment: true
+  codex_execution_and_versioning: true
+  real_device_testing_and_delivery: true
+  self_hosted_captcha_for_admin_login: true
+  navigation_state_contracts_for_all_pages: true
+  icon_registry_and_used_svg_assets: true
+conditional_fixed_external_module_content:
+  identity_verification:
+    include_when: resolved_enabled == true
+    pages_apis_tables_admin_tests_credentials: false
+  payment:
+    include_when: resolved_enabled == true
+    pages_apis_tables_admin_tests_credentials: false
+    xapay_manual_qr_order_filter_and_settlement_contracts: false
+  storage:
+    include_when: resolved_enabled == true
+    pages_apis_tables_admin_tests_credentials: false
+  email:
+    include_when: resolved_enabled == true
+    pages_apis_tables_admin_tests_credentials: false
+  withdrawal:
+    include_when: resolved_enabled == true
+    pages_apis_tables_admin_tests_credentials_certificates: false
+    certificate_private_key_public_delivery_forbidden: true
+conditional_platform_module_content:
+  account:
+    include_when: resolved_enabled == true
+    registration_login_recovery_sessions_admin_tests: false
+validation:
+  disabled_module_artifacts_found: []
+  missing_global_artifacts: []
+  missing_baseline_artifacts: []
+  missing_enabled_module_artifacts: []
+  unexpected_heavy_platform_artifacts: []
+  missing_page_state_contracts: []
+  missing_or_invalid_icon_assets: []

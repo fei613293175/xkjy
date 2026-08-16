@@ -1,0 +1,8 @@
+version: 1.3.0
+assets:
+  logo: logo_wordmark_v130.png
+  app_icon: app_icon_1024_v130.png
+  adaptive_foreground: app_icon_foreground_1024_v130.png
+  splash: android_splash_1080x2400_v130.png
+  brand_banner: brand_banner_1600x900_v130.png
+  invite_poster: invite_poster_1080x1920_v130.png

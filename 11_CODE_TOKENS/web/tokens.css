@@ -1,0 +1,26 @@
+:root {
+  --xkjy-space-950: #07111F;
+  --xkjy-space-900: #0B1830;
+  --xkjy-space-800: #102A4C;
+  --xkjy-space-700: #173B66;
+  --xkjy-primary-600: #F0642F;
+  --xkjy-primary-500: #FF7A3D;
+  --xkjy-primary-400: #FF965F;
+  --xkjy-gold-500: #FFC84A;
+  --xkjy-gold-300: #FFE29A;
+  --xkjy-energy-500: #27D5C4;
+  --xkjy-energy-300: #8AF0E5;
+  --xkjy-blue-500: #3A8CFF;
+  --xkjy-violet-500: #8B5CFF;
+  --xkjy-magenta-500: #ED5CBE;
+  --xkjy-surface: #FFF9F1;
+  --xkjy-surface-2: #FFFFFF;
+  --xkjy-surface-dark: #11243D;
+  --xkjy-text-primary: #172034;
+  --xkjy-text-secondary: #68728A;
+  --xkjy-border: #E8DFD3;
+  --xkjy-success: #24B878;
+  --xkjy-warning: #F4A62A;
+  --xkjy-error: #E55454;
+  --xkjy-info: #3A8CFF;
+}

@@ -1,0 +1,24 @@
+master_domain: "orbexa.cc"
+cloudflare_proxy_default: true
+project_code: "待填写"
+collision_check_required: true
+subdomains:
+  api:
+    host: "<project_code>-api.orbexa.cc"
+    required: true
+  admin:
+    host: "<project_code>-admin.orbexa.cc"
+    required: true
+  h5:
+    host: "<project_code>-h5.orbexa.cc"
+    required: false
+  invite:
+    host: "<project_code>-yq.orbexa.cc"
+    required: false
+  download:
+    host: "<project_code>-download.orbexa.cc"
+    required: false
+  other: []
+owner_actions:
+  - "开发前由项目所有者在 Cloudflare 解析已确认子域名"
+  - "默认开启 Cloudflare 代理，项目特殊需求另行注明"

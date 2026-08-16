@@ -1,0 +1,42 @@
+project: 星矿纪元
+package_version: 1.3.0-predev.1
+package_ready: true
+status: READY_FOR_P00_SERVER_PREFLIGHT
+generated_at: '2026-08-17T01:30:17+08:00'
+development_status: NOT_STARTED
+current_development_release: P00
+next_development_release: P01
+visual_status:
+  android_v130: COMPLETE_AND_VALIDATED
+  android_v120: REJECTED_EXCLUDED_FROM_REPOSITORY
+  admin: INHERITED_NOT_REBUILT_IN_V130
+  h5: INHERITED_NOT_REBUILT_IN_V130
+artifacts:
+  app_effect_png: {status: COMPLETE, count: 132, size_px: 1080x2280}
+  app_html_sources: {status: COMPLETE, count: 132, renderer: Chromium_Playwright}
+  admin_effect_png: {status: INHERITED, count: 107}
+  h5_effect_png: {status: INHERITED, count: 5}
+  miners_v130: {status: COMPLETE, levels: 36, svg: 36, png: 36}
+  brand_v130: {status: COMPLETE, app_icon: true, splash: true, logo: true, banner: true, invite_poster: true}
+  game_assets_v130: {status: COMPLETE, backgrounds: 12, svg_icons: 35}
+  visual_contract_v130: {status: COMPLETE, tokens: true, no_stretch_rules: true, compose_reference: true, baseline_hashes: true}
+  audio: {status: INHERITED, bgm: 5, sfx: 17}
+  mother_template: {status: RULES_RETAINED_SECRETS_EXCLUDED, original_zip: false, unpacked_copy: sanitized}
+validation:
+  status: PASS
+  errors: 0
+  warnings: 0
+  app_pages_checked: 132
+  checks:
+    - png_dimensions
+    - image_loading
+    - horizontal_overflow
+    - button_height_and_clipping
+    - elements_outside_viewport
+    - modal_safe_viewport
+    - root_tab_back_button
+    - duplicate_required_state_image
+notes:
+  - 本状态表示净化后的功能文档、Android视觉基线和素材已进入专属仓库，不表示P00-P11真实业务代码已经开发。
+  - Codex必须先在已连接服务器完成P00预检，再从P00开始完成真实代码、数据库迁移、真机测试和正式签名APK。
+  - V1.2.0视觉资料、真实私有配置和证书均不在仓库中，禁止重新导入或作为开发事实源。

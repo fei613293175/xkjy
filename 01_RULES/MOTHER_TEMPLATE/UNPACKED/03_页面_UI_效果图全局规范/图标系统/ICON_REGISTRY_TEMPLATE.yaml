@@ -1,0 +1,32 @@
+project: 待填写
+profile: LB-ICON
+default_functional_library: remix_icon_svg
+icons:
+- icon_id: ICON-NAV-HOME
+  semantic_name_cn: 首页
+  role: functional|brand|project_specific|decorative
+  source_type: remix_icon_svg|official_brand_asset|custom_svg
+  source_name: ri-home-5-line
+  source_or_brand_reference: 待填写
+  license_or_usage_record: 待填写
+  source_svg_file: assets/icons/source/ICON-NAV-HOME.svg
+  android_resource: app/src/main/res/drawable/ic_nav_home.xml
+  web_resource: admin/src/assets/icons/ICON-NAV-HOME.svg
+  style: line|fill|brand
+  default_size_dp: 24
+  touch_target_dp: 48
+  color_token: icon.primary
+  selected_icon_id: ICON-NAV-HOME-FILL
+  dark_mode_behavior: token|brand_fixed
+  accessibility:
+    decorative: false
+    label_cn: 首页
+  usages:
+  - page_id: APP-HOME-001
+    component_id: BOTTOM-NAV-HOME
+validation:
+  text_as_icon_found: []
+  icon_font_found: []
+  missing_source_files: []
+  mixed_unapproved_families: []
+  missing_accessibility_labels: []

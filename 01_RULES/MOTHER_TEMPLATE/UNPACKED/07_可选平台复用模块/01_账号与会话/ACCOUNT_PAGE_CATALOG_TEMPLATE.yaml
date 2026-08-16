@@ -1,0 +1,53 @@
+pages:
+- page_role: APP_LOGIN
+  suggested_page_id: APP-AUTH-LOGIN-001
+  required_when: account enabled
+- page_role: APP_REGISTER
+  suggested_page_id: APP-AUTH-REGISTER-001
+  required_when: registration enabled
+- page_role: APP_PASSWORD_RECOVERY
+  suggested_page_id: APP-AUTH-RECOVERY-001
+  required_when: password recovery enabled
+- page_role: APP_PASSWORD_RESET
+  suggested_page_id: APP-AUTH-RESET-001
+  required_when: password recovery enabled
+- page_role: APP_SESSION_EXPIRED
+  suggested_page_id: APP-AUTH-SESSION-EXPIRED-001
+  required_when: account enabled
+- page_role: SHARED_CAPTCHA_DIALOG
+  suggested_page_id: APP-SEC-CAPTCHA-DIALOG-001
+  required_when: protected App action exists
+- page_role: APP_ACCOUNT_SECURITY
+  suggested_page_id: APP-ACCOUNT-SECURITY-001
+  required_when: account security entry exists
+- page_role: APP_CHANGE_PASSWORD
+  suggested_page_id: APP-ACCOUNT-PASSWORD-001
+  required_when: password login enabled
+- page_role: APP_DEVICE_SESSIONS
+  suggested_page_id: APP-ACCOUNT-SESSIONS-001
+  required_when: session management enabled
+- page_role: APP_ACCOUNT_DELETION
+  suggested_page_id: APP-ACCOUNT-DELETE-001
+  required_when: account deletion enabled
+- page_role: ADMIN_LOGIN
+  suggested_page_id: ADMIN-AUTH-LOGIN-001
+  required_when: always
+- page_role: ADMIN_USER_LIST
+  suggested_page_id: ADMIN-USER-LIST-001
+  required_when: account enabled
+- page_role: ADMIN_USER_DETAIL
+  suggested_page_id: ADMIN-USER-DETAIL-001
+  required_when: account enabled
+- page_role: ADMIN_USER_SESSION
+  suggested_page_id: ADMIN-USER-SESSION-001
+  required_when: account enabled
+- page_role: ADMIN_LOGIN_LOG
+  suggested_page_id: ADMIN-AUTH-LOG-001
+  required_when: account enabled
+- page_role: ADMIN_CAPTCHA_CONFIG
+  suggested_page_id: ADMIN-SEC-CAPTCHA-CONFIG-001
+  required_when: always
+- page_role: ADMIN_CAPTCHA_METRICS
+  suggested_page_id: ADMIN-SEC-CAPTCHA-METRICS-001
+  required_when: always
+note: 最终 Page ID、状态、UI 与效果图按具体项目品牌和已启用账号能力生成；未启用页面必须裁剪。每个受保护提交均调用共享验证码 Page ID。

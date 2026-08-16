@@ -1,0 +1,70 @@
+provider: self_hosted
+third_party: false
+enabled: true
+mandatory_actions_locked: true
+protected_actions:
+  admin_login: ALWAYS
+  app_password_login: ALWAYS_WHEN_ACCOUNT_MODULE_ENABLED
+  app_code_login: ALWAYS_WHEN_ACCOUNT_MODULE_ENABLED
+  app_register_submit: ALWAYS_WHEN_ACCOUNT_MODULE_ENABLED
+  password_recovery_request: ALWAYS_WHEN_ACCOUNT_MODULE_ENABLED
+  password_reset_submit: ALWAYS_WHEN_ACCOUNT_MODULE_ENABLED
+  send_email_verification_code: ALWAYS_WHEN_PRESENT
+  send_sms_verification_code: ALWAYS_WHEN_PRESENT
+  other_high_risk: PROJECT_CONFIG
+image:
+  format: PNG_BASE64
+  width: 160
+  height: 56
+  length: 5
+  charset: 23456789ABCDEFGHJKMNPQRSTUVWXYZ
+  case_sensitive: false
+  noise_lines: 4
+  noise_dots: 60
+  max_rotation_degrees: 20
+  stored_in_object_storage: false
+  response_cache_control: no-store, no-cache, must-revalidate
+challenge:
+  id_entropy_bits_min: 128
+  random_source: cryptographically_secure_random
+  ttl_seconds: 120
+  max_attempts: 3
+  refresh_min_interval_seconds: 2
+  refresh_invalidates_old: true
+  answer_verifier: HMAC-SHA256(server_secret, challenge_nonce + normalized_answer)
+  constant_time_compare: true
+  raw_answer_persisted: false
+anonymous_session:
+  server_issued: true
+  opaque_or_signed: true
+  client_supplied_arbitrary_id_not_trusted: true
+ticket:
+  ttl_seconds: 180
+  one_time: true
+  new_ticket_for_each_protected_action: true
+  cross_action_reuse_forbidden: true
+  bind_to:
+  - purpose
+  - server_issued_anonymous_session
+  - target_fingerprint_when_present
+  strict_ip_binding: false
+  ip_used_as_risk_signal: true
+  consume_atomically: true
+storage:
+  prefer_existing_shared_cache: true
+  database_fallback_allowed: true
+  database_fallback_requires_atomic_update: true
+  introduce_redis_only_for_captcha: false
+  expired_cleanup_required: true
+ui:
+  show_after_primary_submit: true
+  preserve_form: true
+  auto_continue_after_success: true
+  technical_terms_hidden: true
+  each_protected_submit_shows_captcha: true
+internal_secrets:
+  CAPTCHA_HMAC_SECRET:
+    source: generated once per project on server
+    min_bytes: 32
+    user_input_required: false
+    stable_across_releases: true

@@ -1,0 +1,12 @@
+server:
+  ssh_alias: "obx-test"
+  os: "CentOS 8"
+  purpose: "统一线上开发、构建、非设备测试和部署服务器"
+  available:
+    docker: true
+    android_apk_build: true
+  rules:
+    repeat_full_environment_install: false
+    local_project_build_environment: false
+    local_emulator_or_virtual_device: false
+    server_is_primary_workspace: true

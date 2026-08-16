@@ -1,0 +1,40 @@
+你现在开始开发《星矿纪元》。本仓库已封板为 `V1.3.0-PREDEV-HARDENED`，以仓库根目录而非原始压缩包为唯一事实源，不依赖长对话记忆。
+
+先读取：
+1. README.md
+2. 00_README/PREDEV_HARDENING.md
+3. 03_SPECS/PREDEV_BASELINE.yaml
+4. 03_SPECS/SECURITY_BOUNDARY.yaml
+5. 03_SPECS/CURRENT_RELEASE.yaml
+6. 03_SPECS/RESOLVED_RULESET.yaml
+7. 02_DOCS/星矿纪元_前后端与视觉资源完整开发文档_V1.1.0.md
+8. 02_DOCS/星矿纪元_V1.3.0_游戏视觉重建与像素级开发规范.md
+9. 03_SPECS/GAME_UI_ARCHITECTURE_V130.yaml
+10. 03_SPECS/DESIGN_TOKENS_GAME_V130.json
+11. 03_SPECS/NINE_SLICE_AND_STRETCH_RULES_V130.yaml
+12. 03_SPECS/RELEASE_PLAN.yaml
+
+只允许在用户已连接的服务器执行项目构建、非设备测试和部署；不得在本机建立或运行项目开发环境。
+
+立即执行 P00，不跳版：
+- 在服务器完成仓库、Docker、PostgreSQL、Redis、Android 签名和工具链预检；秘密只验证存在性与权限，禁止把值写入仓库、客户端或日志。
+- 建立 Docker、PostgreSQL、Redis、Go 后端壳、Vue 后台壳和 Kotlin/Compose Android 壳。
+- 注册 V1.3.0 颜色、尺寸、图标、矿机和品牌资源。
+- 建立 Compose 真机截图与 V1.3.0 PNG 的视觉差异门禁。
+- 生成数据库迁移、OpenAPI、健康检查、日志和配置中心基线。
+- 完成后停止扩展并交付 P00 规定产物。
+
+强制规则：
+- V1.3.0 是唯一有效 Android 视觉基线；V1.2.0 Android 视觉已从仓库剔除，不得重新导入或使用。
+- 功能、API、数据库、支付、实名、Cloudflare R2、邮箱和提现继承私有母版规则及 V1.1.0。
+- 不得擅自删改 36 级矿机、双积分、积分集市、会员、二级提成、红包卡、账户余额提现和项目推广模式。
+- 首页使用 Kotlin + Jetpack Compose 原生游戏场景，不使用 WebView，不使用整页截图伪装。
+- Android 使用真实系统状态栏；不要实现效果图中的假状态栏。
+- 一级 Tab 根页不显示返回按钮。
+- 主按钮固定 42dp、紧凑按钮 34dp、输入框 46dp；禁止位图按钮拉伸和文字换行撑高。
+- 矿机使用 ContentScale.Fit，禁止 FillBounds、裁切和非等比缩放。
+- 页面有底部导航时，滚动内容必须预留至少 76dp。
+- 图标只使用 07_GAME_ASSETS/v130/icons，禁止文字图标、Emoji 和 Icon Font。
+- 只允许 Chromium/Playwright 生成 HTML 截图，禁止 WeasyPrint、PDF 转图和旧渲染脚本。
+- 支付、实名、R2、邮箱和提现按私有母版规则集成。真实账号、密钥、AppCode、证书或密码只允许存在于服务器秘密存储；出现鉴权失败时记录脱敏证据并阻断相应能力。
+- 每个真实版本必须更新 CURRENT_RELEASE.yaml、DELIVERY_STATUS.yaml、RELEASE_MANIFEST.yaml，并交付签名 APK、真机截图、功能清单、测试清单和视觉差异报告。

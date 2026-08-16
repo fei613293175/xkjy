@@ -1,0 +1,113 @@
+contract_version: 1.4.2
+authentication:
+  user_api: bearer_session
+  admin_view: payments.view
+  admin_manage: payments.manage
+  provider_callback: provider_signature
+common_rules:
+  amount: server_calculated_decimal_two_places
+  request_id: required
+  idempotency: order_and_settlement_unique_keys
+  client_never_receives_merchant_secret: true
+user_api:
+  prepare_order:
+    method: POST
+    path: /api/v1/payments/prepare
+    request: [businessType, businessId, quantity, context]
+    response: [outTradeNo, title, amount, status, expiresAt, methods]
+  get_order:
+    method: GET
+    path: /api/v1/payments/orders/:outTradeNo
+    response: [outTradeNo, orderKind, amount, status, expiresAt, selectedMethod, methods]
+  start_payment:
+    method: POST
+    path: /api/v1/payments/orders/:outTradeNo/pay
+    request: [method]
+    response_variants:
+      online: [launchType, paymentUrl, outTradeNo]
+      manual_qr: [launchType, outTradeNo, amount, paymentMethod, qrCodes, instruction]
+    server_rechecks: [ownership, order_status, expiry, amount, method_enabled, allowed_business_type, hidden_order_kinds, provider_ready]
+  query_online_payment:
+    method: POST
+    path: /api/v1/payments/orders/:outTradeNo/query
+    response: payment_order
+  screenshot_upload_ticket:
+    method: POST
+    path: /api/v1/payments/orders/:outTradeNo/screenshot-upload-ticket
+    request: [filename, mimeType, sizeBytes, sha256]
+    response: [fileId, uploadUrl, uploadHeaders, expiresAt]
+  submit_manual_payment:
+    method: POST
+    path: /api/v1/payments/orders/:outTradeNo/manual-submission
+    request: [method, qrCodeId, screenshotFileId]
+    response: [id, status, version, submittedAt]
+  get_manual_submission:
+    method: GET
+    path: /api/v1/payments/orders/:outTradeNo/manual-submission
+    response: [submission]
+provider_callbacks:
+  fuylink:
+    method: GET
+    path: /api/v1/payments/callback/fuylink
+    success_body: success
+  xapay:
+    method: GET
+    path: /api/v1/payments/callback/xapay
+    success_body: success
+admin_api:
+  get_config:
+    method: GET
+    path: /admin-api/v1/payments/config
+  update_config:
+    method: PUT
+    path: /admin-api/v1/payments/config
+    request: [config, methods]
+    method_fields: [code, displayName, description, enabled, sortOrder, allowedBusinessTypes, hiddenOrderKinds, version]
+  create_qr_upload_ticket:
+    method: POST
+    path: /admin-api/v1/payments/qr-files/upload-ticket
+  complete_qr_upload:
+    method: POST
+    path: /admin-api/v1/payments/qr-files/:fileId/complete
+  list_qr_codes:
+    method: GET
+    path: /admin-api/v1/payments/qr-codes
+  create_qr_code:
+    method: POST
+    path: /admin-api/v1/payments/qr-codes
+    request: [methodCode, fileId, label, active, sortOrder]
+  update_qr_code:
+    method: PUT
+    path: /admin-api/v1/payments/qr-codes/:id
+  disable_qr_code:
+    method: DELETE
+    path: /admin-api/v1/payments/qr-codes/:id
+  list_manual_submissions:
+    method: GET
+    path: /admin-api/v1/payments/manual-submissions
+    query: [page, pageSize, status]
+  view_manual_screenshot:
+    method: GET
+    path: /admin-api/v1/payments/manual-submissions/:id/screenshot
+  approve_manual_submission:
+    method: POST
+    path: /admin-api/v1/payments/manual-submissions/:id/approve
+    request: [version]
+  reject_manual_submission:
+    method: POST
+    path: /admin-api/v1/payments/manual-submissions/:id/reject
+    request: [version, reason]
+error_codes:
+  - PAYMENT_ORDER_NOT_FOUND
+  - PAYMENT_ORDER_EXPIRED
+  - PAYMENT_METHOD_DISABLED
+  - PAYMENT_PROVIDER_FAILED
+  - PAYMENT_PROVIDER_INVALID_RESPONSE
+  - PAYMENT_QR_UNAVAILABLE
+  - PAYMENT_QR_INVALID
+  - PAYMENT_SCREENSHOT_INVALID
+  - MANUAL_PAYMENT_INVALID
+  - MANUAL_PAYMENT_UNSUPPORTED
+  - MANUAL_PAYMENT_ALREADY_REVIEWED
+  - VERSION_REQUIRED
+  - VERSION_CONFLICT

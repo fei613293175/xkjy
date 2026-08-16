@@ -1,0 +1,21 @@
+version: 1.3.0
+viewport_baseline_dp: 360x760
+baseline_png_px: 1080x2280
+thresholds:
+  core_page_full_image_diff_percent_max: 3.0
+  component_bounds_dp_max: 2
+  text_baseline_dp_max: 1
+  button_height_dp_max: 0
+  icon_size_dp_max: 1
+hard_fail:
+  horizontal_overflow: true
+  clipped_text: true
+  stretched_bitmap_button: true
+  non_uniform_miner_scale: true
+  bottom_navigation_overlap: true
+  root_tab_back_button: true
+  modal_outside_safe_viewport: true
+  duplicate_required_state_image: true
+rendering:
+  allowed: [Chromium, Playwright]
+  prohibited: [WeasyPrint, wkhtmltopdf, PDF_to_PNG]

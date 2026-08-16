@@ -1,0 +1,926 @@
+[
+  {
+    "platform": "APP",
+    "page_id": "APP-SYS-001",
+    "name": "启动页",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-SYS-001__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-SYS-002",
+    "name": "系统维护页",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-SYS-002__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-SYS-003",
+    "name": "App更新页",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-SYS-003__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-SYS-004",
+    "name": "APK下载与安装引导",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-SYS-004__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-AUTH-001",
+    "name": "登录页",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-AUTH-001__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-AUTH-001",
+    "name": "登录页",
+    "state": "ERROR",
+    "html": "10_HTML/APP/APP-AUTH-001__ERROR.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-AUTH-001",
+    "name": "登录页",
+    "state": "SUBMITTING",
+    "html": "10_HTML/APP/APP-AUTH-001__SUBMITTING.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-AUTH-002",
+    "name": "注册页",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-AUTH-002__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-AUTH-002",
+    "name": "注册页",
+    "state": "ERROR",
+    "html": "10_HTML/APP/APP-AUTH-002__ERROR.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-AUTH-002",
+    "name": "注册页",
+    "state": "SUBMITTING",
+    "html": "10_HTML/APP/APP-AUTH-002__SUBMITTING.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-AUTH-003",
+    "name": "找回密码页",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-AUTH-003__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-AUTH-004",
+    "name": "重置密码页",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-AUTH-004__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-AUTH-005",
+    "name": "协议查看页",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-AUTH-005__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-SEC-001",
+    "name": "图形安全验证码弹窗",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-SEC-001__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-SEC-002",
+    "name": "邮箱安全验证弹窗",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-SEC-002__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-SEC-003",
+    "name": "赠送密码输入弹窗",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-SEC-003__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-GAME-001",
+    "name": "新手引导层",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-GAME-001__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-GAME-002",
+    "name": "矿场首页",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-GAME-002__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-GAME-002",
+    "name": "矿场首页",
+    "state": "NEW_USER",
+    "html": "10_HTML/APP/APP-GAME-002__NEW_USER.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-GAME-002",
+    "name": "矿场首页",
+    "state": "CLAIMABLE",
+    "html": "10_HTML/APP/APP-GAME-002__CLAIMABLE.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-GAME-002",
+    "name": "矿场首页",
+    "state": "BOARD_FULL",
+    "html": "10_HTML/APP/APP-GAME-002__BOARD_FULL.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-GAME-002",
+    "name": "矿场首页",
+    "state": "OFFLINE",
+    "html": "10_HTML/APP/APP-GAME-002__OFFLINE.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-GAME-003",
+    "name": "矿机商店",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-GAME-003__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-GAME-004",
+    "name": "矿机仓库",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-GAME-004__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-GAME-005",
+    "name": "矿机图鉴",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-GAME-005__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-GAME-006",
+    "name": "矿机详情",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-GAME-006__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-GAME-007",
+    "name": "离线收益弹窗",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-GAME-007__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-GAME-008",
+    "name": "新矿机解锁弹窗",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-GAME-008__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-GAME-009",
+    "name": "任务中心",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-GAME-009__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-GAME-010",
+    "name": "七日签到",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-GAME-010__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-GAME-011",
+    "name": "补给箱开启页",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-GAME-011__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-GAME-012",
+    "name": "排行榜",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-GAME-012__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-GAME-013",
+    "name": "产出明细",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-GAME-013__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-GAME-014",
+    "name": "矿机回收确认",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-GAME-014__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-GAME-015",
+    "name": "棋盘格解锁弹窗",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-GAME-015__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-GAME-016",
+    "name": "仓库扩容确认",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-GAME-016__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PROJ-001",
+    "name": "项目首页",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-PROJ-001__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PROJ-001",
+    "name": "项目首页",
+    "state": "LOADING",
+    "html": "10_HTML/APP/APP-PROJ-001__LOADING.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PROJ-001",
+    "name": "项目首页",
+    "state": "EMPTY",
+    "html": "10_HTML/APP/APP-PROJ-001__EMPTY.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PROJ-001",
+    "name": "项目首页",
+    "state": "ERROR",
+    "html": "10_HTML/APP/APP-PROJ-001__ERROR.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PROJ-002",
+    "name": "项目搜索",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-PROJ-002__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PROJ-003",
+    "name": "发布或编辑项目",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-PROJ-003__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PROJ-004",
+    "name": "项目图片管理",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-PROJ-004__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PROJ-005",
+    "name": "发布结果",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-PROJ-005__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PROJ-006",
+    "name": "统一项目详情",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-PROJ-006__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PROJ-006",
+    "name": "统一项目详情",
+    "state": "TASK_RUNNING",
+    "html": "10_HTML/APP/APP-PROJ-006__TASK_RUNNING.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PROJ-006",
+    "name": "统一项目详情",
+    "state": "TASK_SUCCESS",
+    "html": "10_HTML/APP/APP-PROJ-006__TASK_SUCCESS.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PROJ-006",
+    "name": "统一项目详情",
+    "state": "OFFLINE_BY_ADMIN",
+    "html": "10_HTML/APP/APP-PROJ-006__OFFLINE_BY_ADMIN.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PROJ-007",
+    "name": "联系方式与链接面板",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-PROJ-007__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PROJ-008",
+    "name": "项目举报",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-PROJ-008__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PROJ-009",
+    "name": "我的项目",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-PROJ-009__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PROJ-010",
+    "name": "项目管理详情",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-PROJ-010__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PROJ-011",
+    "name": "使用推广卡",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-PROJ-011__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PROJ-012",
+    "name": "推广服务记录",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-PROJ-012__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PROJ-013",
+    "name": "我的收藏",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-PROJ-013__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PROJ-014",
+    "name": "项目图片画廊",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-PROJ-014__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PROJ-015",
+    "name": "项目分类选择器",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-PROJ-015__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PROJ-016",
+    "name": "浏览任务创建与预算确认",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-PROJ-016__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-MALL-001",
+    "name": "商城首页",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-MALL-001__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-MALL-002",
+    "name": "商品详情",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-MALL-002__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-MALL-003",
+    "name": "订单确认",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-MALL-003__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-MALL-004",
+    "name": "虚拟背包",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-MALL-004__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PAY-001",
+    "name": "原生收银台",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-PAY-001__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PAY-001",
+    "name": "原生收银台",
+    "state": "PROCESSING",
+    "html": "10_HTML/APP/APP-PAY-001__PROCESSING.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PAY-001",
+    "name": "原生收银台",
+    "state": "SUCCESS",
+    "html": "10_HTML/APP/APP-PAY-001__SUCCESS.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PAY-001",
+    "name": "原生收银台",
+    "state": "FAILURE",
+    "html": "10_HTML/APP/APP-PAY-001__FAILURE.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PAY-001",
+    "name": "原生收银台",
+    "state": "EXPIRED",
+    "html": "10_HTML/APP/APP-PAY-001__EXPIRED.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PAY-002",
+    "name": "人工扫码支付",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-PAY-002__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PAY-002",
+    "name": "人工扫码支付",
+    "state": "UPLOADING",
+    "html": "10_HTML/APP/APP-PAY-002__UPLOADING.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PAY-002",
+    "name": "人工扫码支付",
+    "state": "REVIEW_PENDING",
+    "html": "10_HTML/APP/APP-PAY-002__REVIEW_PENDING.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PAY-002",
+    "name": "人工扫码支付",
+    "state": "REJECTED",
+    "html": "10_HTML/APP/APP-PAY-002__REJECTED.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-PAY-003",
+    "name": "支付结果和查单",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-PAY-003__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-ORDER-001",
+    "name": "订单列表",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-ORDER-001__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-ORDER-002",
+    "name": "订单详情",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-ORDER-002__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-MEMBER-001",
+    "name": "会员中心",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-MEMBER-001__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-DISC-001",
+    "name": "发现Tab容器",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-DISC-001__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-MARKET-001",
+    "name": "积分集市",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-MARKET-001__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-MARKET-002",
+    "name": "发布或编辑求购单",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-MARKET-002__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-MARKET-003",
+    "name": "求购单详情",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-MARKET-003__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-MARKET-004",
+    "name": "我的求购单",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-MARKET-004__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-DISC-002",
+    "name": "后续游戏入口页",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-DISC-002__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-WALLET-001",
+    "name": "资产总览",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-WALLET-001__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-WALLET-002",
+    "name": "星矿值流水",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-WALLET-002__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-WALLET-003",
+    "name": "能源芯片流水",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-WALLET-003__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-WALLET-004",
+    "name": "账户余额流水",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-WALLET-004__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-WALLET-005",
+    "name": "赠送星矿值",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-WALLET-005__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-WALLET-006",
+    "name": "收款人确认",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-WALLET-006__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-WALLET-007",
+    "name": "赠送结果",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-WALLET-007__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-WALLET-008",
+    "name": "设置赠送密码",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-WALLET-008__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-WALLET-009",
+    "name": "修改或重置赠送密码",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-WALLET-009__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-WALLET-010",
+    "name": "兑换能源芯片",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-WALLET-010__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-INVITE-001",
+    "name": "邀请总览",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-INVITE-001__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-INVITE-002",
+    "name": "邀请海报",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-INVITE-002__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-INVITE-003",
+    "name": "一级好友",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-INVITE-003__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-INVITE-004",
+    "name": "二级好友",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-INVITE-004__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-INVITE-005",
+    "name": "我的上级",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-INVITE-005__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-COMM-001",
+    "name": "积分提成明细",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-COMM-001__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-COMM-002",
+    "name": "消费佣金明细",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-COMM-002__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-ID-001",
+    "name": "实名入口与状态",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-ID-001__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-ID-002",
+    "name": "姓名身份证填写",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-ID-002__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-ID-003",
+    "name": "摄像头权限说明",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-ID-003__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-ID-004",
+    "name": "动作采集",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-ID-004__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-ID-004",
+    "name": "动作采集",
+    "state": "PERMISSION_DENIED",
+    "html": "10_HTML/APP/APP-ID-004__PERMISSION_DENIED.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-ID-005",
+    "name": "身份核验中",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-ID-005__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-ID-005",
+    "name": "身份核验中",
+    "state": "VERIFYING",
+    "html": "10_HTML/APP/APP-ID-005__VERIFYING.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-ID-006",
+    "name": "实名结果",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-ID-006__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-ID-006",
+    "name": "实名结果",
+    "state": "SUCCESS",
+    "html": "10_HTML/APP/APP-ID-006__SUCCESS.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-ID-006",
+    "name": "实名结果",
+    "state": "RECAPTURE",
+    "html": "10_HTML/APP/APP-ID-006__RECAPTURE.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-ID-006",
+    "name": "实名结果",
+    "state": "FAILURE",
+    "html": "10_HTML/APP/APP-ID-006__FAILURE.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-WD-001",
+    "name": "提现首页",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-WD-001__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-WD-001",
+    "name": "提现首页",
+    "state": "DISABLED",
+    "html": "10_HTML/APP/APP-WD-001__DISABLED.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-WD-002",
+    "name": "绑定支付宝",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-WD-002__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-WD-003",
+    "name": "提现确认",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-WD-003__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-WD-004",
+    "name": "提现结果",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-WD-004__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-WD-004",
+    "name": "提现结果",
+    "state": "PROCESSING",
+    "html": "10_HTML/APP/APP-WD-004__PROCESSING.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-WD-004",
+    "name": "提现结果",
+    "state": "SUCCESS",
+    "html": "10_HTML/APP/APP-WD-004__SUCCESS.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-WD-004",
+    "name": "提现结果",
+    "state": "FAILURE",
+    "html": "10_HTML/APP/APP-WD-004__FAILURE.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-WD-005",
+    "name": "提现记录",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-WD-005__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-WD-006",
+    "name": "提现详情",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-WD-006__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-ME-001",
+    "name": "我的",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-ME-001__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-ME-002",
+    "name": "编辑资料",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-ME-002__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-MSG-001",
+    "name": "消息中心",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-MSG-001__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-MSG-002",
+    "name": "消息详情",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-MSG-002__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-SET-001",
+    "name": "设置",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-SET-001__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-SET-002",
+    "name": "账号与安全",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-SET-002__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-SET-003",
+    "name": "登录设备",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-SET-003__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-SET-004",
+    "name": "声音、震动和通知",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-SET-004__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-SET-005",
+    "name": "关于和版本更新",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-SET-005__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-SET-006",
+    "name": "帮助中心",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-SET-006__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-SET-007",
+    "name": "协议与隐私",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-SET-007__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-SET-008",
+    "name": "注销账号",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-SET-008__DEFAULT.html"
+  },
+  {
+    "platform": "APP",
+    "page_id": "APP-SUPPORT-001",
+    "name": "意见反馈",
+    "state": "DEFAULT",
+    "html": "10_HTML/APP/APP-SUPPORT-001__DEFAULT.html"
+  }
+]

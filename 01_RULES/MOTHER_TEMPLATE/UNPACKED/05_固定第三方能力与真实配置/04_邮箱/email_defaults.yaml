@@ -1,0 +1,28 @@
+module_semantics:
+  module_id: email
+  activation_controlled_by: "RESOLVED_RULESET.yaml"
+  apply_defaults_when_module_enabled: true
+
+email:
+  smtp:
+    port: 465
+    encryption: "SSL/TLS"
+    connect_timeout_seconds: 10
+    send_timeout_seconds: 20
+  verification_code:
+    digits: 6
+    valid_minutes: 5
+    resend_seconds: 60
+    max_wrong_attempts: 5
+  limits:
+    per_email_per_hour: 5
+    per_email_per_day: 10
+    per_ip_per_hour: 20
+    system_per_hour: 100
+    system_per_day: 500
+  retries:
+    max_attempts: 3
+    backoff: "progressive"
+  logs:
+    retention_days: 30
+    hide_full_code: true

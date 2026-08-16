@@ -1,0 +1,28 @@
+repository_policy:
+  private_integrations: server_only
+  payment_credentials: server_only
+  identity_credentials: server_only
+  storage_credentials: server_only
+  smtp_credentials: server_only
+  withdrawal_private_key_and_certificates: server_only
+prohibited_paths:
+  - '**/.env'
+  - '**/.env.*'
+  - '**/*.pem'
+  - '**/*.key'
+  - '**/*.p12'
+  - '**/*.pfx'
+  - 'secrets/**'
+  - 'private/**'
+prohibited_content_markers:
+  - 'BEGIN PRIVATE KEY'
+  - 'BEGIN RSA PRIVATE KEY'
+  - 'PRIVATE_INTEGRATIONS'
+legacy_policy:
+  rejected_android_visual_baseline: V1.2.0
+  allowed_in_repository: false
+  allowed_as_development_or_visual_gate: false
+evidence_policy:
+  runtime_logs: redact_sensitive_values
+  device_screenshots: no_real_identity_or_payment_data
+  release_evidence_location: server_delivery_directory

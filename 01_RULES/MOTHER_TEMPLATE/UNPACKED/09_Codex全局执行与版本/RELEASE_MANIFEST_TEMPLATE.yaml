@@ -1,0 +1,32 @@
+release:
+  id: R01
+  version_name: V1.0.0
+  status: PLANNED
+  goal: 待填写
+  git_commit: 待填写
+  rules:
+    global: G-001~G-047
+    modules: []
+  lightweight_baseline_profile: LIGHTWEIGHT_COMPLETE
+  features: []
+  pages: []
+  apis: []
+  tables: []
+  migrations: []
+  integrations: []
+  build:
+    apk: ''
+    apk_sha256: ''
+    signed: false
+    certificate_sha256: ''
+  tests:
+    automated: false
+    integration: false
+    changed_and_affected_pages: false
+    real_device: false
+    visual: false
+    stage_or_final_full_regression: N/A
+    page_state_restoration: false
+    icon_system: false
+  delivery_files: []
+  evidence: []

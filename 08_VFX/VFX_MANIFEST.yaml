@@ -1,0 +1,132 @@
+project: 星矿纪元
+version: 1.1.0
+sprite_layout: horizontal
+items:
+- effect_id: VFX_MERGE_COMMON
+  path: 08_VFX/effects/VFX_MERGE_COMMON.png
+  frames: 8
+  frame_size:
+  - 256
+  - 256
+  fps: 12
+  loop: false
+- effect_id: VFX_MERGE_ADVANCED
+  path: 08_VFX/effects/VFX_MERGE_ADVANCED.png
+  frames: 8
+  frame_size:
+  - 256
+  - 256
+  fps: 12
+  loop: false
+- effect_id: VFX_MERGE_EPIC
+  path: 08_VFX/effects/VFX_MERGE_EPIC.png
+  frames: 8
+  frame_size:
+  - 256
+  - 256
+  fps: 12
+  loop: false
+- effect_id: VFX_POINT_BUBBLE
+  path: 08_VFX/effects/VFX_POINT_BUBBLE.png
+  frames: 8
+  frame_size:
+  - 256
+  - 256
+  fps: 12
+  loop: true
+- effect_id: VFX_POINT_CLAIM
+  path: 08_VFX/effects/VFX_POINT_CLAIM.png
+  frames: 8
+  frame_size:
+  - 256
+  - 256
+  fps: 12
+  loop: false
+- effect_id: VFX_BOX_OPEN
+  path: 08_VFX/effects/VFX_BOX_OPEN.png
+  frames: 8
+  frame_size:
+  - 256
+  - 256
+  fps: 12
+  loop: false
+- effect_id: VFX_TASK_COMPLETE
+  path: 08_VFX/effects/VFX_TASK_COMPLETE.png
+  frames: 8
+  frame_size:
+  - 256
+  - 256
+  fps: 12
+  loop: false
+- effect_id: VFX_SLOT_UNLOCK
+  path: 08_VFX/effects/VFX_SLOT_UNLOCK.png
+  frames: 8
+  frame_size:
+  - 256
+  - 256
+  fps: 12
+  loop: false
+- effect_id: VFX_LEVEL_UNLOCK
+  path: 08_VFX/effects/VFX_LEVEL_UNLOCK.png
+  frames: 8
+  frame_size:
+  - 256
+  - 256
+  fps: 12
+  loop: false
+- effect_id: VFX_MEMBER_BADGE
+  path: 08_VFX/effects/VFX_MEMBER_BADGE.png
+  frames: 8
+  frame_size:
+  - 256
+  - 256
+  fps: 12
+  loop: true
+- effect_id: VFX_PROMOTION_HEADLINE
+  path: 08_VFX/effects/VFX_PROMOTION_HEADLINE.png
+  frames: 8
+  frame_size:
+  - 256
+  - 256
+  fps: 12
+  loop: true
+- effect_id: VFX_PROMOTION_PIN
+  path: 08_VFX/effects/VFX_PROMOTION_PIN.png
+  frames: 8
+  frame_size:
+  - 256
+  - 256
+  fps: 12
+  loop: true
+- effect_id: VFX_PROMOTION_REFRESH
+  path: 08_VFX/effects/VFX_PROMOTION_REFRESH.png
+  frames: 8
+  frame_size:
+  - 256
+  - 256
+  fps: 12
+  loop: true
+- effect_id: VFX_ORDER_SUCCESS
+  path: 08_VFX/effects/VFX_ORDER_SUCCESS.png
+  frames: 8
+  frame_size:
+  - 256
+  - 256
+  fps: 12
+  loop: false
+- effect_id: VFX_ORDER_FAILED
+  path: 08_VFX/effects/VFX_ORDER_FAILED.png
+  frames: 8
+  frame_size:
+  - 256
+  - 256
+  fps: 12
+  loop: false
+- effect_id: VFX_IDENTITY_SUCCESS
+  path: 08_VFX/effects/VFX_IDENTITY_SUCCESS.png
+  frames: 8
+  frame_size:
+  - 256
+  - 256
+  fps: 12
+  loop: false

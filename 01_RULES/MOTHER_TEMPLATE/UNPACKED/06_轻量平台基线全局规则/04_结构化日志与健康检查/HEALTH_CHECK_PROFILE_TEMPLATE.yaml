@@ -1,0 +1,20 @@
+checks:
+- id: service
+  required: true
+- id: database
+  required: true
+- id: cache
+  required_when: used
+- id: queue
+  required_when: used
+- id: third_party_integrations
+  required_when: module enabled
+- id: scheduled_jobs
+  required_when: used
+admin_summary:
+  current_status: true
+  last_success: true
+  last_failure: true
+  latency: true
+  error_count: true
+full_observability_platform: false

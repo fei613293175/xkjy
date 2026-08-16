@@ -1,0 +1,14 @@
+release_id: 待填写
+version_code: 1
+version_name: 1.0.0
+git_commit: 待填写
+apk_file: 待填写
+apk_size_bytes: 0
+apk_sha256: 待填写
+signed: false
+certificate_sha256: 待填写
+update_type: OPTIONAL|FORCED
+minimum_supported_version_code: 1
+release_notes: []
+published_at: 待填写
+status: DRAFT

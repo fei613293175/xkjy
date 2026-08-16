@@ -1,0 +1,22 @@
+configs:
+- key: system.maintenance.enabled
+  type: boolean
+  default: false
+  current: false
+  scope: global
+  description: 全站维护模式
+  high_risk: true
+  requires_reason: true
+- key: security.captcha.enabled.admin_login
+  type: boolean
+  default: true
+  current: true
+  scope: global
+  description: 管理后台登录图形验证码
+  high_risk: true
+  requires_reason: true
+forbidden_over_configuration:
+- page font sizes
+- page corner radius
+- all static copy
+- internal database tuning parameters

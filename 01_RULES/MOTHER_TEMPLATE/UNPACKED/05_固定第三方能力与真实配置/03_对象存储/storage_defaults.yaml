@@ -1,0 +1,30 @@
+module_semantics:
+  module_id: storage
+  activation_controlled_by: "RESOLVED_RULESET.yaml"
+  apply_defaults_when_module_enabled: true
+
+storage:
+  provider: "cloudflare_r2"
+  project_prefix: "<project_code>/prod"
+  filename_strategy: "uuid"
+  preserve_original_filename_in_database: true
+  allowed_images: ["image/jpeg", "image/png", "image/webp"]
+  allowed_videos: ["video/mp4"]
+  limits:
+    general_image_mb: 10
+    identity_photo_mb: 5
+    identity_video_mb: 50
+  image_processing:
+    compress: true
+    thumbnail: true
+  logging:
+    upload_log: true
+    delete_log: true
+  orphan_cleanup:
+    enabled: true
+    grace_hours: 24
+  identity:
+    local_persistent_file_forbidden: true
+    silent_upload: true
+    retain_photo_default: true
+    retain_video_default: true

@@ -1,0 +1,20 @@
+profile: RAPID_DELIVERY
+description: 完整覆盖必要质量基线，禁止未触发的重型平台能力拖慢核心业务
+limits:
+  planned_versions_max: 15
+  max_new_platform_modules_per_release: 1
+  untriggered_modules_forbidden: true
+  core_business_first: true
+  changed_pages_full_test_only_per_minor_release: true
+  stage_and_final_full_regression: true
+advanced_defaults:
+  full_analytics_platform: false
+  full_incident_center: false
+  distributed_tracing_platform: false
+  advanced_feature_flags: false
+  gray_release: false
+  complete_offline_first: false
+  complex_workflow_engine: false
+  multi_channel_notification_platform: false
+  advanced_risk_scoring: false
+  custom_bi_platform: false

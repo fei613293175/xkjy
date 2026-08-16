@@ -1,0 +1,110 @@
+version: 1.4.0
+base_response: standard_project_api_response
+money_format: decimal_string_2
+endpoints:
+  - id: withdrawal_config
+    method: GET
+    path: /api/v1/withdrawal/config
+    auth: user
+    response:
+      fields: [enabled, tiers, dailyMaxCount, dailyUsedCount, dailyRemainingCount, minimumRemainingBalance, rule, binding, payoutModeHint]
+  - id: withdrawal_binding_profile
+    method: GET
+    path: /api/v1/withdrawal/method/alipay/profile
+    auth: user
+    requires_verified_identity: true
+    response:
+      fields: [verifiedName, accountMasked, updatedAt]
+  - id: withdrawal_bind_alipay
+    method: PUT
+    path: /api/v1/withdrawal/method/alipay
+    auth: user
+    idempotency: required
+    security_ticket: withdrawal-bind
+    request:
+      allowed_fields: [account, idempotencyKey, securityTicket]
+      forbidden_or_ignored_fields: [realName, name]
+  - id: withdrawal_submit
+    method: POST
+    path: /api/v1/withdrawals
+    auth: user
+    idempotency: required_per_user
+    security_ticket: withdrawal-submit
+    request:
+      fields: [tierId, idempotencyKey, securityTicket]
+    response:
+      fields: [id, requestNo, amount, fee, netAmount, status, statusLabel, accountMasked, createdAt, paidAt, replay]
+  - id: withdrawal_list
+    method: GET
+    path: /api/v1/withdrawals
+    auth: user
+    pagination: cursor_or_page
+  - id: withdrawal_detail
+    method: GET
+    path: /api/v1/withdrawals/{id}
+    auth: owner
+  - id: admin_withdrawal_config_get
+    method: GET
+    path: /admin-api/v1/withdrawal/config
+    permission: withdrawals.config
+    response_includes_private_key: false
+  - id: admin_withdrawal_config_put
+    method: PUT
+    path: /admin-api/v1/withdrawal/config
+    permission: withdrawals.config
+    optimistic_version: required
+  - id: admin_withdrawal_list
+    method: GET
+    path: /admin-api/v1/withdrawals
+    permission: withdrawals.view
+    filters: [status, uid, requestNo, from, to, payoutMode, reconciliationStatus]
+  - id: admin_withdrawal_detail
+    method: GET
+    path: /admin-api/v1/withdrawals/{id}
+    permission: withdrawals.view
+  - id: admin_payment_details
+    method: GET
+    path: /admin-api/v1/withdrawals/{id}/payment-details
+    permission: withdrawals.payout
+    audit_required: true
+  - id: admin_approve
+    method: POST
+    path: /admin-api/v1/withdrawals/{id}/approve
+    permission: withdrawals.review
+    optimistic_version: required
+  - id: admin_reject
+    method: POST
+    path: /admin-api/v1/withdrawals/{id}/reject
+    permission: withdrawals.review
+    request_fields: [version, reason]
+  - id: admin_payout
+    method: POST
+    path: /admin-api/v1/withdrawals/{id}/payout
+    permission: withdrawals.payout
+    optimistic_version: required
+    calls_provider_from_backend: true
+  - id: admin_reconcile
+    method: POST
+    path: /admin-api/v1/withdrawals/{id}/reconcile
+    permission: withdrawals.payout
+    optimistic_version: required
+  - id: admin_return
+    method: POST
+    path: /admin-api/v1/withdrawals/{id}/return
+    permission: withdrawals.payout
+    requires_terminal_reconciliation: true
+    request_fields: [version, reason]
+error_codes:
+  - IDENTITY_VERIFICATION_REQUIRED
+  - WITHDRAWAL_METHOD_REQUIRED
+  - WITHDRAWAL_TIER_INVALID
+  - WITHDRAWAL_DAILY_LIMIT
+  - WITHDRAWAL_TOTAL_LIMIT
+  - WALLET_BALANCE_NOT_ENOUGH
+  - WITHDRAWAL_STATUS_INVALID
+  - VERSION_CONFLICT
+  - ALIPAY_PAYOUT_NOT_READY
+  - ALIPAY_PAYOUT_UNCONFIRMED
+  - ALIPAY_PAYOUT_RECONCILE_REQUIRED
+  - ALIPAY_PAYOUT_SIGNATURE_INVALID
+  - PAYOUT_CREDENTIAL_INVALID

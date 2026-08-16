@@ -1,0 +1,30 @@
+note: 推荐默认值，后台可调整；应结合共享网络和真实业务量观察后优化
+captcha_challenge:
+  per_ip_per_10_minutes: 30
+  per_device_per_10_minutes: 20
+  per_session_per_minute: 5
+captcha_verify:
+  max_attempts_per_challenge: 3
+  per_ip_per_10_minutes: 60
+login:
+  per_account_per_10_minutes: 10
+  per_ip_per_10_minutes: 30
+  per_device_per_10_minutes: 15
+  progressive_delay_after_failures:
+  - 5
+  - 10
+register:
+  per_device_per_hour: 5
+  per_ip_per_hour: 20
+password_recovery:
+  per_target_per_hour: 5
+  per_ip_per_hour: 20
+verification_code:
+  minimum_interval_seconds_per_target: 60
+  per_target_per_hour: 5
+  per_target_per_day: 10
+  per_ip_per_hour: 20
+response:
+  generic_account_existence_message: true
+  http_code: 429 when limited
+  retry_after_header: true

@@ -1,0 +1,40 @@
+version: 1.4.0
+states:
+  - NOT_STARTED
+  - PAYMENT_REQUIRED
+  - PAYMENT_PENDING
+  - ELIGIBILITY_ACTIVE
+  - INFO_SUBMITTED
+  - CAMERA_PERMISSION_REQUIRED
+  - COUNTDOWN
+  - CAPTURING
+  - VERIFYING
+  - VERIFIED
+  - RECAPTURE_REQUIRED
+  - MANUAL_REVIEW
+  - PROVIDER_ERROR
+  - FAILED
+  - EXPIRED
+
+transitions:
+  - { from: NOT_STARTED, to: ELIGIBILITY_ACTIVE, when: 免费且后端签发资格 }
+  - { from: NOT_STARTED, to: PAYMENT_REQUIRED, when: 收费 }
+  - { from: PAYMENT_REQUIRED, to: PAYMENT_PENDING, when: 创建支付订单 }
+  - { from: PAYMENT_PENDING, to: ELIGIBILITY_ACTIVE, when: 后端确认支付成功 }
+  - { from: ELIGIBILITY_ACTIVE, to: INFO_SUBMITTED, when: 姓名和身份证格式校验通过 }
+  - { from: INFO_SUBMITTED, to: CAMERA_PERMISSION_REQUIRED, when: 摄像头尚未授权 }
+  - { from: INFO_SUBMITTED, to: COUNTDOWN, when: 摄像头授权可用且页面处于前台 }
+  - { from: COUNTDOWN, to: CAPTURING, when: 倒计时结束后自动开始 }
+  - { from: CAPTURING, to: VERIFYING, when: 采集合格且媒体静默上传完成 }
+  - { from: VERIFYING, to: VERIFIED, when: resultCode=1001 }
+  - { from: VERIFYING, to: RECAPTURE_REQUIRED, when: resultCode=1002且策略为重采 }
+  - { from: VERIFYING, to: MANUAL_REVIEW, when: resultCode=1002且策略为人工复核 }
+  - { from: VERIFYING, to: FAILED, when: resultCode=1003或1004 }
+  - { from: VERIFYING, to: PROVIDER_ERROR, when: 网络、鉴权、额度、HTTP或响应契约异常 }
+  - { from: PROVIDER_ERROR, to: VERIFYING, when: 用户主动重试且资格与次数仍有效 }
+
+invariants:
+  verified_requires_provider_result_1001_or_authorized_manual_approval: true
+  camera_active_only_in_countdown_or_capturing: true
+  live_preview_stops_when_capture_finishes: true
+  verified_entry_returns_verified_state: true

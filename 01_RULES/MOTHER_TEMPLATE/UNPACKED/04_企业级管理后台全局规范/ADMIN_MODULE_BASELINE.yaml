@@ -1,0 +1,82 @@
+admin_baseline:
+  scope: GLOBAL_PROJECT_RULE
+  quality_not_unlimited_scope: true
+  always_required:
+  - 符合项目业务的信息架构与总览
+  - 管理员、角色、权限和数据范围
+  - 统一最小配置中心
+  - 操作审计和变更历史
+  - 系统健康、任务和适用第三方服务状态
+  - 错误、失败任务和有限重试管理
+  - 项目所有核心业务模块的运营管理入口
+  - 管理后台登录自研图形验证码
+  - 列表、详情、配置和浏览器返回时保留筛选、分页、滚动与草稿状态
+  - 专业 SVG 图标体系，禁止文字、Emoji 和 Icon Font 代图标
+  lightweight_platform_pages:
+  - 运行配置与紧急开关
+  - 服务健康与最近错误
+  - App版本发布（Android项目）
+  - 验证码设置与统计
+  conditional_fixed_external_modules:
+    identity_verification:
+      include_only_when: identity_verification.resolved_enabled == true
+      pages:
+      - 实名认证设置
+      - 实名认证记录
+      - 认证详情
+      - 认证支付订单
+      - 接口调用日志
+      - 人工处理记录
+    payment:
+      include_only_when: payment.resolved_enabled == true
+      pages:
+      - 支付设置
+      - 支付方式
+      - 原生收银台配置
+      - 支付订单
+      - 异常订单
+      - 回调与补单
+      - 退款记录
+    storage:
+      include_only_when: storage.resolved_enabled == true
+      pages:
+      - 对象存储设置
+      - 文件管理
+      - 上传与删除日志
+      - 孤立文件清理
+    email:
+      include_only_when: email.resolved_enabled == true
+      pages:
+      - SMTP设置
+      - 验证码规则
+      - 邮件模板
+      - 测试发送
+      - 发送记录
+      - 每日统计
+  conditional_platform_modules:
+    account:
+      include_only_when: account.resolved_enabled == true
+      pages:
+      - 用户列表
+      - 用户详情
+      - 设备会话
+      - 登录日志
+      - 账号状态与注销处理
+  project_specific_business_modules:
+    rule: 每个核心业务模块必须设计可运营、可观测、可控、可审核的后台能力，但没有业务触发的中心和平台不得擅自建设。
+  heavy_defaults_disabled:
+  - 自定义BI平台
+  - 复杂工作流引擎
+  - 灰度发布平台
+  - 完整事故中心
+  - 多租户平台
+security:
+  public_admin_registration: false
+  self_hosted_captcha_every_login_submit: true
+  rate_limit:
+  - account
+  - ip
+  - server_anonymous_session
+  secure_cookie_when_used: true
+  csrf_for_cookie_authenticated_writes: true
+  audit_login_and_session_events: true

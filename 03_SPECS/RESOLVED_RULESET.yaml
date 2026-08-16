@@ -1,0 +1,21 @@
+project: 星矿纪元
+version: 1.1.0
+ruleset: XKJY_RESOLVED_20260816
+global_rules: G-001~G-047全部启用
+lightweight_baseline: LIGHTWEIGHT_COMPLETE
+fixed_integrations:
+- identity
+- payment
+- cloudflare_r2
+- email
+- withdrawal
+hard_rules:
+- 商业模式按用户当前定义实现，不擅自替换
+- 母版私有配置直接复用，不再次索取密钥或账号
+- 首页必须是矿机合成游戏场景
+- 所有资产变化必须经过事务账本
+- 所有关键写操作必须幂等
+- 所有页面返回保持滚动、Tab、筛选、分页、草稿和已加载内容
+- 禁止文字、Emoji和Icon Font代替图标
+- 每个Page ID按独立效果图和页面规格实现
+- 每个Android版本交付签名APK、功能清单和测试清单

@@ -1,0 +1,3100 @@
+project: 星矿纪元
+version: 1.1.0
+effect_render_count: 244
+pages:
+- page_id: APP-SYS-001
+  name_cn: 启动页
+  platform: android
+  module: system
+  release: P11
+  spec_file: 03_SPECS/pages/APP-SYS-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-SYS-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-SYS-001__DEFAULT.png
+    source_file: 10_HTML/APP/APP-SYS-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-SYS-002
+  name_cn: 系统维护页
+  platform: android
+  module: system
+  release: P11
+  spec_file: 03_SPECS/pages/APP-SYS-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-SYS-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-SYS-002__DEFAULT.png
+    source_file: 10_HTML/APP/APP-SYS-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-SYS-003
+  name_cn: App更新页
+  platform: android
+  module: system
+  release: P11
+  spec_file: 03_SPECS/pages/APP-SYS-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-SYS-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-SYS-003__DEFAULT.png
+    source_file: 10_HTML/APP/APP-SYS-003__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-SYS-004
+  name_cn: APK下载与安装引导
+  platform: android
+  module: system
+  release: P11
+  spec_file: 03_SPECS/pages/APP-SYS-004.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-SYS-004.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-SYS-004__DEFAULT.png
+    source_file: 10_HTML/APP/APP-SYS-004__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-AUTH-001
+  name_cn: 登录页
+  platform: android
+  module: account
+  release: P01
+  spec_file: 03_SPECS/pages/APP-AUTH-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-AUTH-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-AUTH-001__DEFAULT.png
+    source_file: 10_HTML/APP/APP-AUTH-001__DEFAULT.html
+    visual_verified: true
+  - state_id: ERROR
+    image_file: 04_UI/APP/APP-AUTH-001__ERROR.png
+    source_file: 10_HTML/APP/APP-AUTH-001__ERROR.html
+    visual_verified: true
+  - state_id: SUBMITTING
+    image_file: 04_UI/APP/APP-AUTH-001__SUBMITTING.png
+    source_file: 10_HTML/APP/APP-AUTH-001__SUBMITTING.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-AUTH-002
+  name_cn: 注册页
+  platform: android
+  module: account
+  release: P01
+  spec_file: 03_SPECS/pages/APP-AUTH-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-AUTH-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-AUTH-002__DEFAULT.png
+    source_file: 10_HTML/APP/APP-AUTH-002__DEFAULT.html
+    visual_verified: true
+  - state_id: ERROR
+    image_file: 04_UI/APP/APP-AUTH-002__ERROR.png
+    source_file: 10_HTML/APP/APP-AUTH-002__ERROR.html
+    visual_verified: true
+  - state_id: SUBMITTING
+    image_file: 04_UI/APP/APP-AUTH-002__SUBMITTING.png
+    source_file: 10_HTML/APP/APP-AUTH-002__SUBMITTING.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-AUTH-003
+  name_cn: 找回密码页
+  platform: android
+  module: account
+  release: P01
+  spec_file: 03_SPECS/pages/APP-AUTH-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-AUTH-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-AUTH-003__DEFAULT.png
+    source_file: 10_HTML/APP/APP-AUTH-003__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-AUTH-004
+  name_cn: 重置密码页
+  platform: android
+  module: account
+  release: P01
+  spec_file: 03_SPECS/pages/APP-AUTH-004.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-AUTH-004.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-AUTH-004__DEFAULT.png
+    source_file: 10_HTML/APP/APP-AUTH-004__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-AUTH-005
+  name_cn: 协议查看页
+  platform: android
+  module: account
+  release: P01
+  spec_file: 03_SPECS/pages/APP-AUTH-005.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-AUTH-005.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-AUTH-005__DEFAULT.png
+    source_file: 10_HTML/APP/APP-AUTH-005__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-SEC-001
+  name_cn: 图形安全验证码弹窗
+  platform: android
+  module: security
+  release: P01
+  spec_file: 03_SPECS/pages/APP-SEC-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-SEC-001.yaml
+  preserve_on_return: false
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-SEC-001__DEFAULT.png
+    source_file: 10_HTML/APP/APP-SEC-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-SEC-002
+  name_cn: 邮箱安全验证弹窗
+  platform: android
+  module: security
+  release: P01
+  spec_file: 03_SPECS/pages/APP-SEC-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-SEC-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-SEC-002__DEFAULT.png
+    source_file: 10_HTML/APP/APP-SEC-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-SEC-003
+  name_cn: 赠送密码输入弹窗
+  platform: android
+  module: security
+  release: P01
+  spec_file: 03_SPECS/pages/APP-SEC-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-SEC-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-SEC-003__DEFAULT.png
+    source_file: 10_HTML/APP/APP-SEC-003__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-GAME-001
+  name_cn: 新手引导层
+  platform: android
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/APP-GAME-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-GAME-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-GAME-001__DEFAULT.png
+    source_file: 10_HTML/APP/APP-GAME-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-GAME-002
+  name_cn: 矿场首页
+  platform: android
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/APP-GAME-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-GAME-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-GAME-002__DEFAULT.png
+    source_file: 10_HTML/APP/APP-GAME-002__DEFAULT.html
+    visual_verified: true
+  - state_id: NEW_USER
+    image_file: 04_UI/APP/APP-GAME-002__NEW_USER.png
+    source_file: 10_HTML/APP/APP-GAME-002__NEW_USER.html
+    visual_verified: true
+  - state_id: CLAIMABLE
+    image_file: 04_UI/APP/APP-GAME-002__CLAIMABLE.png
+    source_file: 10_HTML/APP/APP-GAME-002__CLAIMABLE.html
+    visual_verified: true
+  - state_id: BOARD_FULL
+    image_file: 04_UI/APP/APP-GAME-002__BOARD_FULL.png
+    source_file: 10_HTML/APP/APP-GAME-002__BOARD_FULL.html
+    visual_verified: true
+  - state_id: OFFLINE
+    image_file: 04_UI/APP/APP-GAME-002__OFFLINE.png
+    source_file: 10_HTML/APP/APP-GAME-002__OFFLINE.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-GAME-003
+  name_cn: 矿机商店
+  platform: android
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/APP-GAME-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-GAME-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-GAME-003__DEFAULT.png
+    source_file: 10_HTML/APP/APP-GAME-003__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-GAME-004
+  name_cn: 矿机仓库
+  platform: android
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/APP-GAME-004.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-GAME-004.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-GAME-004__DEFAULT.png
+    source_file: 10_HTML/APP/APP-GAME-004__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-GAME-005
+  name_cn: 矿机图鉴
+  platform: android
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/APP-GAME-005.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-GAME-005.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-GAME-005__DEFAULT.png
+    source_file: 10_HTML/APP/APP-GAME-005__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-GAME-006
+  name_cn: 矿机详情
+  platform: android
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/APP-GAME-006.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-GAME-006.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-GAME-006__DEFAULT.png
+    source_file: 10_HTML/APP/APP-GAME-006__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-GAME-007
+  name_cn: 离线收益弹窗
+  platform: android
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/APP-GAME-007.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-GAME-007.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-GAME-007__DEFAULT.png
+    source_file: 10_HTML/APP/APP-GAME-007__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-GAME-008
+  name_cn: 新矿机解锁弹窗
+  platform: android
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/APP-GAME-008.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-GAME-008.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-GAME-008__DEFAULT.png
+    source_file: 10_HTML/APP/APP-GAME-008__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-GAME-009
+  name_cn: 任务中心
+  platform: android
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/APP-GAME-009.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-GAME-009.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-GAME-009__DEFAULT.png
+    source_file: 10_HTML/APP/APP-GAME-009__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-GAME-010
+  name_cn: 七日签到
+  platform: android
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/APP-GAME-010.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-GAME-010.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-GAME-010__DEFAULT.png
+    source_file: 10_HTML/APP/APP-GAME-010__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-GAME-011
+  name_cn: 补给箱开启页
+  platform: android
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/APP-GAME-011.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-GAME-011.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-GAME-011__DEFAULT.png
+    source_file: 10_HTML/APP/APP-GAME-011__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-GAME-012
+  name_cn: 排行榜
+  platform: android
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/APP-GAME-012.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-GAME-012.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-GAME-012__DEFAULT.png
+    source_file: 10_HTML/APP/APP-GAME-012__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-GAME-013
+  name_cn: 产出明细
+  platform: android
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/APP-GAME-013.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-GAME-013.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-GAME-013__DEFAULT.png
+    source_file: 10_HTML/APP/APP-GAME-013__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-GAME-014
+  name_cn: 矿机回收确认
+  platform: android
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/APP-GAME-014.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-GAME-014.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-GAME-014__DEFAULT.png
+    source_file: 10_HTML/APP/APP-GAME-014__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-GAME-015
+  name_cn: 棋盘格解锁弹窗
+  platform: android
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/APP-GAME-015.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-GAME-015.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-GAME-015__DEFAULT.png
+    source_file: 10_HTML/APP/APP-GAME-015__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-GAME-016
+  name_cn: 仓库扩容确认
+  platform: android
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/APP-GAME-016.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-GAME-016.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-GAME-016__DEFAULT.png
+    source_file: 10_HTML/APP/APP-GAME-016__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-PROJ-001
+  name_cn: 项目首页
+  platform: android
+  module: project
+  release: P04
+  spec_file: 03_SPECS/pages/APP-PROJ-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-PROJ-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-PROJ-001__DEFAULT.png
+    source_file: 10_HTML/APP/APP-PROJ-001__DEFAULT.html
+    visual_verified: true
+  - state_id: LOADING
+    image_file: 04_UI/APP/APP-PROJ-001__LOADING.png
+    source_file: 10_HTML/APP/APP-PROJ-001__LOADING.html
+    visual_verified: true
+  - state_id: EMPTY
+    image_file: 04_UI/APP/APP-PROJ-001__EMPTY.png
+    source_file: 10_HTML/APP/APP-PROJ-001__EMPTY.html
+    visual_verified: true
+  - state_id: ERROR
+    image_file: 04_UI/APP/APP-PROJ-001__ERROR.png
+    source_file: 10_HTML/APP/APP-PROJ-001__ERROR.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-PROJ-002
+  name_cn: 项目搜索
+  platform: android
+  module: project
+  release: P04
+  spec_file: 03_SPECS/pages/APP-PROJ-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-PROJ-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-PROJ-002__DEFAULT.png
+    source_file: 10_HTML/APP/APP-PROJ-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-PROJ-003
+  name_cn: 发布或编辑项目
+  platform: android
+  module: project
+  release: P04
+  spec_file: 03_SPECS/pages/APP-PROJ-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-PROJ-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-PROJ-003__DEFAULT.png
+    source_file: 10_HTML/APP/APP-PROJ-003__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-PROJ-004
+  name_cn: 项目图片管理
+  platform: android
+  module: project
+  release: P04
+  spec_file: 03_SPECS/pages/APP-PROJ-004.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-PROJ-004.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-PROJ-004__DEFAULT.png
+    source_file: 10_HTML/APP/APP-PROJ-004__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-PROJ-005
+  name_cn: 发布结果
+  platform: android
+  module: project
+  release: P04
+  spec_file: 03_SPECS/pages/APP-PROJ-005.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-PROJ-005.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-PROJ-005__DEFAULT.png
+    source_file: 10_HTML/APP/APP-PROJ-005__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-PROJ-006
+  name_cn: 统一项目详情
+  platform: android
+  module: project
+  release: P04
+  spec_file: 03_SPECS/pages/APP-PROJ-006.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-PROJ-006.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-PROJ-006__DEFAULT.png
+    source_file: 10_HTML/APP/APP-PROJ-006__DEFAULT.html
+    visual_verified: true
+  - state_id: TASK_RUNNING
+    image_file: 04_UI/APP/APP-PROJ-006__TASK_RUNNING.png
+    source_file: 10_HTML/APP/APP-PROJ-006__TASK_RUNNING.html
+    visual_verified: true
+  - state_id: TASK_SUCCESS
+    image_file: 04_UI/APP/APP-PROJ-006__TASK_SUCCESS.png
+    source_file: 10_HTML/APP/APP-PROJ-006__TASK_SUCCESS.html
+    visual_verified: true
+  - state_id: OFFLINE_BY_ADMIN
+    image_file: 04_UI/APP/APP-PROJ-006__OFFLINE_BY_ADMIN.png
+    source_file: 10_HTML/APP/APP-PROJ-006__OFFLINE_BY_ADMIN.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-PROJ-007
+  name_cn: 联系方式与链接面板
+  platform: android
+  module: project
+  release: P04
+  spec_file: 03_SPECS/pages/APP-PROJ-007.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-PROJ-007.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-PROJ-007__DEFAULT.png
+    source_file: 10_HTML/APP/APP-PROJ-007__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-PROJ-008
+  name_cn: 项目举报
+  platform: android
+  module: project
+  release: P04
+  spec_file: 03_SPECS/pages/APP-PROJ-008.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-PROJ-008.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-PROJ-008__DEFAULT.png
+    source_file: 10_HTML/APP/APP-PROJ-008__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-PROJ-009
+  name_cn: 我的项目
+  platform: android
+  module: project
+  release: P04
+  spec_file: 03_SPECS/pages/APP-PROJ-009.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-PROJ-009.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-PROJ-009__DEFAULT.png
+    source_file: 10_HTML/APP/APP-PROJ-009__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-PROJ-010
+  name_cn: 项目管理详情
+  platform: android
+  module: project
+  release: P04
+  spec_file: 03_SPECS/pages/APP-PROJ-010.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-PROJ-010.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-PROJ-010__DEFAULT.png
+    source_file: 10_HTML/APP/APP-PROJ-010__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-PROJ-011
+  name_cn: 使用推广卡
+  platform: android
+  module: project
+  release: P04
+  spec_file: 03_SPECS/pages/APP-PROJ-011.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-PROJ-011.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-PROJ-011__DEFAULT.png
+    source_file: 10_HTML/APP/APP-PROJ-011__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-PROJ-012
+  name_cn: 推广服务记录
+  platform: android
+  module: project
+  release: P04
+  spec_file: 03_SPECS/pages/APP-PROJ-012.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-PROJ-012.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-PROJ-012__DEFAULT.png
+    source_file: 10_HTML/APP/APP-PROJ-012__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-PROJ-013
+  name_cn: 我的收藏
+  platform: android
+  module: project
+  release: P04
+  spec_file: 03_SPECS/pages/APP-PROJ-013.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-PROJ-013.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-PROJ-013__DEFAULT.png
+    source_file: 10_HTML/APP/APP-PROJ-013__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-PROJ-014
+  name_cn: 项目图片画廊
+  platform: android
+  module: project
+  release: P04
+  spec_file: 03_SPECS/pages/APP-PROJ-014.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-PROJ-014.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-PROJ-014__DEFAULT.png
+    source_file: 10_HTML/APP/APP-PROJ-014__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-PROJ-015
+  name_cn: 项目分类选择器
+  platform: android
+  module: project
+  release: P04
+  spec_file: 03_SPECS/pages/APP-PROJ-015.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-PROJ-015.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-PROJ-015__DEFAULT.png
+    source_file: 10_HTML/APP/APP-PROJ-015__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-PROJ-016
+  name_cn: 浏览任务创建与预算确认
+  platform: android
+  module: project
+  release: P04
+  spec_file: 03_SPECS/pages/APP-PROJ-016.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-PROJ-016.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-PROJ-016__DEFAULT.png
+    source_file: 10_HTML/APP/APP-PROJ-016__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-MALL-001
+  name_cn: 商城首页
+  platform: android
+  module: mall
+  release: P06
+  spec_file: 03_SPECS/pages/APP-MALL-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-MALL-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-MALL-001__DEFAULT.png
+    source_file: 10_HTML/APP/APP-MALL-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-MALL-002
+  name_cn: 商品详情
+  platform: android
+  module: mall
+  release: P06
+  spec_file: 03_SPECS/pages/APP-MALL-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-MALL-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-MALL-002__DEFAULT.png
+    source_file: 10_HTML/APP/APP-MALL-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-MALL-003
+  name_cn: 订单确认
+  platform: android
+  module: mall
+  release: P06
+  spec_file: 03_SPECS/pages/APP-MALL-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-MALL-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-MALL-003__DEFAULT.png
+    source_file: 10_HTML/APP/APP-MALL-003__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-MALL-004
+  name_cn: 虚拟背包
+  platform: android
+  module: mall
+  release: P06
+  spec_file: 03_SPECS/pages/APP-MALL-004.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-MALL-004.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-MALL-004__DEFAULT.png
+    source_file: 10_HTML/APP/APP-MALL-004__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-PAY-001
+  name_cn: 原生收银台
+  platform: android
+  module: payment
+  release: P07
+  spec_file: 03_SPECS/pages/APP-PAY-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-PAY-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-PAY-001__DEFAULT.png
+    source_file: 10_HTML/APP/APP-PAY-001__DEFAULT.html
+    visual_verified: true
+  - state_id: PROCESSING
+    image_file: 04_UI/APP/APP-PAY-001__PROCESSING.png
+    source_file: 10_HTML/APP/APP-PAY-001__PROCESSING.html
+    visual_verified: true
+  - state_id: SUCCESS
+    image_file: 04_UI/APP/APP-PAY-001__SUCCESS.png
+    source_file: 10_HTML/APP/APP-PAY-001__SUCCESS.html
+    visual_verified: true
+  - state_id: FAILURE
+    image_file: 04_UI/APP/APP-PAY-001__FAILURE.png
+    source_file: 10_HTML/APP/APP-PAY-001__FAILURE.html
+    visual_verified: true
+  - state_id: EXPIRED
+    image_file: 04_UI/APP/APP-PAY-001__EXPIRED.png
+    source_file: 10_HTML/APP/APP-PAY-001__EXPIRED.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-PAY-002
+  name_cn: 人工扫码支付
+  platform: android
+  module: payment
+  release: P07
+  spec_file: 03_SPECS/pages/APP-PAY-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-PAY-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-PAY-002__DEFAULT.png
+    source_file: 10_HTML/APP/APP-PAY-002__DEFAULT.html
+    visual_verified: true
+  - state_id: UPLOADING
+    image_file: 04_UI/APP/APP-PAY-002__UPLOADING.png
+    source_file: 10_HTML/APP/APP-PAY-002__UPLOADING.html
+    visual_verified: true
+  - state_id: REVIEW_PENDING
+    image_file: 04_UI/APP/APP-PAY-002__REVIEW_PENDING.png
+    source_file: 10_HTML/APP/APP-PAY-002__REVIEW_PENDING.html
+    visual_verified: true
+  - state_id: REJECTED
+    image_file: 04_UI/APP/APP-PAY-002__REJECTED.png
+    source_file: 10_HTML/APP/APP-PAY-002__REJECTED.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-PAY-003
+  name_cn: 支付结果和查单
+  platform: android
+  module: payment
+  release: P07
+  spec_file: 03_SPECS/pages/APP-PAY-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-PAY-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-PAY-003__DEFAULT.png
+    source_file: 10_HTML/APP/APP-PAY-003__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-ORDER-001
+  name_cn: 订单列表
+  platform: android
+  module: order
+  release: P06
+  spec_file: 03_SPECS/pages/APP-ORDER-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-ORDER-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-ORDER-001__DEFAULT.png
+    source_file: 10_HTML/APP/APP-ORDER-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-ORDER-002
+  name_cn: 订单详情
+  platform: android
+  module: order
+  release: P06
+  spec_file: 03_SPECS/pages/APP-ORDER-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-ORDER-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-ORDER-002__DEFAULT.png
+    source_file: 10_HTML/APP/APP-ORDER-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-MEMBER-001
+  name_cn: 会员中心
+  platform: android
+  module: membership
+  release: P06
+  spec_file: 03_SPECS/pages/APP-MEMBER-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-MEMBER-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-MEMBER-001__DEFAULT.png
+    source_file: 10_HTML/APP/APP-MEMBER-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-DISC-001
+  name_cn: 发现Tab容器
+  platform: android
+  module: discover
+  release: P08
+  spec_file: 03_SPECS/pages/APP-DISC-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-DISC-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-DISC-001__DEFAULT.png
+    source_file: 10_HTML/APP/APP-DISC-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-MARKET-001
+  name_cn: 积分集市
+  platform: android
+  module: market
+  release: P08
+  spec_file: 03_SPECS/pages/APP-MARKET-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-MARKET-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-MARKET-001__DEFAULT.png
+    source_file: 10_HTML/APP/APP-MARKET-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-MARKET-002
+  name_cn: 发布或编辑求购单
+  platform: android
+  module: market
+  release: P08
+  spec_file: 03_SPECS/pages/APP-MARKET-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-MARKET-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-MARKET-002__DEFAULT.png
+    source_file: 10_HTML/APP/APP-MARKET-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-MARKET-003
+  name_cn: 求购单详情
+  platform: android
+  module: market
+  release: P08
+  spec_file: 03_SPECS/pages/APP-MARKET-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-MARKET-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-MARKET-003__DEFAULT.png
+    source_file: 10_HTML/APP/APP-MARKET-003__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-MARKET-004
+  name_cn: 我的求购单
+  platform: android
+  module: market
+  release: P08
+  spec_file: 03_SPECS/pages/APP-MARKET-004.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-MARKET-004.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-MARKET-004__DEFAULT.png
+    source_file: 10_HTML/APP/APP-MARKET-004__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-DISC-002
+  name_cn: 后续游戏入口页
+  platform: android
+  module: discover
+  release: P08
+  spec_file: 03_SPECS/pages/APP-DISC-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-DISC-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-DISC-002__DEFAULT.png
+    source_file: 10_HTML/APP/APP-DISC-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-WALLET-001
+  name_cn: 资产总览
+  platform: android
+  module: wallet
+  release: P08
+  spec_file: 03_SPECS/pages/APP-WALLET-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-WALLET-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-WALLET-001__DEFAULT.png
+    source_file: 10_HTML/APP/APP-WALLET-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-WALLET-002
+  name_cn: 星矿值流水
+  platform: android
+  module: wallet
+  release: P08
+  spec_file: 03_SPECS/pages/APP-WALLET-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-WALLET-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-WALLET-002__DEFAULT.png
+    source_file: 10_HTML/APP/APP-WALLET-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-WALLET-003
+  name_cn: 能源芯片流水
+  platform: android
+  module: wallet
+  release: P08
+  spec_file: 03_SPECS/pages/APP-WALLET-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-WALLET-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-WALLET-003__DEFAULT.png
+    source_file: 10_HTML/APP/APP-WALLET-003__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-WALLET-004
+  name_cn: 账户余额流水
+  platform: android
+  module: wallet
+  release: P08
+  spec_file: 03_SPECS/pages/APP-WALLET-004.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-WALLET-004.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-WALLET-004__DEFAULT.png
+    source_file: 10_HTML/APP/APP-WALLET-004__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-WALLET-005
+  name_cn: 赠送星矿值
+  platform: android
+  module: wallet
+  release: P08
+  spec_file: 03_SPECS/pages/APP-WALLET-005.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-WALLET-005.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-WALLET-005__DEFAULT.png
+    source_file: 10_HTML/APP/APP-WALLET-005__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-WALLET-006
+  name_cn: 收款人确认
+  platform: android
+  module: wallet
+  release: P08
+  spec_file: 03_SPECS/pages/APP-WALLET-006.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-WALLET-006.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-WALLET-006__DEFAULT.png
+    source_file: 10_HTML/APP/APP-WALLET-006__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-WALLET-007
+  name_cn: 赠送结果
+  platform: android
+  module: wallet
+  release: P08
+  spec_file: 03_SPECS/pages/APP-WALLET-007.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-WALLET-007.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-WALLET-007__DEFAULT.png
+    source_file: 10_HTML/APP/APP-WALLET-007__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-WALLET-008
+  name_cn: 设置赠送密码
+  platform: android
+  module: wallet
+  release: P08
+  spec_file: 03_SPECS/pages/APP-WALLET-008.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-WALLET-008.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-WALLET-008__DEFAULT.png
+    source_file: 10_HTML/APP/APP-WALLET-008__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-WALLET-009
+  name_cn: 修改或重置赠送密码
+  platform: android
+  module: wallet
+  release: P08
+  spec_file: 03_SPECS/pages/APP-WALLET-009.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-WALLET-009.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-WALLET-009__DEFAULT.png
+    source_file: 10_HTML/APP/APP-WALLET-009__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-WALLET-010
+  name_cn: 兑换能源芯片
+  platform: android
+  module: wallet
+  release: P08
+  spec_file: 03_SPECS/pages/APP-WALLET-010.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-WALLET-010.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-WALLET-010__DEFAULT.png
+    source_file: 10_HTML/APP/APP-WALLET-010__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-INVITE-001
+  name_cn: 邀请总览
+  platform: android
+  module: referral
+  release: P09
+  spec_file: 03_SPECS/pages/APP-INVITE-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-INVITE-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-INVITE-001__DEFAULT.png
+    source_file: 10_HTML/APP/APP-INVITE-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-INVITE-002
+  name_cn: 邀请海报
+  platform: android
+  module: referral
+  release: P09
+  spec_file: 03_SPECS/pages/APP-INVITE-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-INVITE-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-INVITE-002__DEFAULT.png
+    source_file: 10_HTML/APP/APP-INVITE-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-INVITE-003
+  name_cn: 一级好友
+  platform: android
+  module: referral
+  release: P09
+  spec_file: 03_SPECS/pages/APP-INVITE-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-INVITE-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-INVITE-003__DEFAULT.png
+    source_file: 10_HTML/APP/APP-INVITE-003__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-INVITE-004
+  name_cn: 二级好友
+  platform: android
+  module: referral
+  release: P09
+  spec_file: 03_SPECS/pages/APP-INVITE-004.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-INVITE-004.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-INVITE-004__DEFAULT.png
+    source_file: 10_HTML/APP/APP-INVITE-004__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-INVITE-005
+  name_cn: 我的上级
+  platform: android
+  module: referral
+  release: P09
+  spec_file: 03_SPECS/pages/APP-INVITE-005.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-INVITE-005.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-INVITE-005__DEFAULT.png
+    source_file: 10_HTML/APP/APP-INVITE-005__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-COMM-001
+  name_cn: 积分提成明细
+  platform: android
+  module: commission
+  release: P09
+  spec_file: 03_SPECS/pages/APP-COMM-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-COMM-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-COMM-001__DEFAULT.png
+    source_file: 10_HTML/APP/APP-COMM-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-COMM-002
+  name_cn: 消费佣金明细
+  platform: android
+  module: commission
+  release: P09
+  spec_file: 03_SPECS/pages/APP-COMM-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-COMM-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-COMM-002__DEFAULT.png
+    source_file: 10_HTML/APP/APP-COMM-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-ID-001
+  name_cn: 实名入口与状态
+  platform: android
+  module: identity
+  release: P10
+  spec_file: 03_SPECS/pages/APP-ID-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-ID-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-ID-001__DEFAULT.png
+    source_file: 10_HTML/APP/APP-ID-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-ID-002
+  name_cn: 姓名身份证填写
+  platform: android
+  module: identity
+  release: P10
+  spec_file: 03_SPECS/pages/APP-ID-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-ID-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-ID-002__DEFAULT.png
+    source_file: 10_HTML/APP/APP-ID-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-ID-003
+  name_cn: 摄像头权限说明
+  platform: android
+  module: identity
+  release: P10
+  spec_file: 03_SPECS/pages/APP-ID-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-ID-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-ID-003__DEFAULT.png
+    source_file: 10_HTML/APP/APP-ID-003__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-ID-004
+  name_cn: 动作采集
+  platform: android
+  module: identity
+  release: P10
+  spec_file: 03_SPECS/pages/APP-ID-004.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-ID-004.yaml
+  preserve_on_return: false
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-ID-004__DEFAULT.png
+    source_file: 10_HTML/APP/APP-ID-004__DEFAULT.html
+    visual_verified: true
+  - state_id: PERMISSION_DENIED
+    image_file: 04_UI/APP/APP-ID-004__PERMISSION_DENIED.png
+    source_file: 10_HTML/APP/APP-ID-004__PERMISSION_DENIED.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-ID-005
+  name_cn: 身份核验中
+  platform: android
+  module: identity
+  release: P10
+  spec_file: 03_SPECS/pages/APP-ID-005.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-ID-005.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-ID-005__DEFAULT.png
+    source_file: 10_HTML/APP/APP-ID-005__DEFAULT.html
+    visual_verified: true
+  - state_id: VERIFYING
+    image_file: 04_UI/APP/APP-ID-005__VERIFYING.png
+    source_file: 10_HTML/APP/APP-ID-005__VERIFYING.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-ID-006
+  name_cn: 实名结果
+  platform: android
+  module: identity
+  release: P10
+  spec_file: 03_SPECS/pages/APP-ID-006.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-ID-006.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-ID-006__DEFAULT.png
+    source_file: 10_HTML/APP/APP-ID-006__DEFAULT.html
+    visual_verified: true
+  - state_id: SUCCESS
+    image_file: 04_UI/APP/APP-ID-006__SUCCESS.png
+    source_file: 10_HTML/APP/APP-ID-006__SUCCESS.html
+    visual_verified: true
+  - state_id: RECAPTURE
+    image_file: 04_UI/APP/APP-ID-006__RECAPTURE.png
+    source_file: 10_HTML/APP/APP-ID-006__RECAPTURE.html
+    visual_verified: true
+  - state_id: FAILURE
+    image_file: 04_UI/APP/APP-ID-006__FAILURE.png
+    source_file: 10_HTML/APP/APP-ID-006__FAILURE.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-WD-001
+  name_cn: 提现首页
+  platform: android
+  module: withdrawal
+  release: P10
+  spec_file: 03_SPECS/pages/APP-WD-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-WD-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-WD-001__DEFAULT.png
+    source_file: 10_HTML/APP/APP-WD-001__DEFAULT.html
+    visual_verified: true
+  - state_id: DISABLED
+    image_file: 04_UI/APP/APP-WD-001__DISABLED.png
+    source_file: 10_HTML/APP/APP-WD-001__DISABLED.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-WD-002
+  name_cn: 绑定支付宝
+  platform: android
+  module: withdrawal
+  release: P10
+  spec_file: 03_SPECS/pages/APP-WD-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-WD-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-WD-002__DEFAULT.png
+    source_file: 10_HTML/APP/APP-WD-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-WD-003
+  name_cn: 提现确认
+  platform: android
+  module: withdrawal
+  release: P10
+  spec_file: 03_SPECS/pages/APP-WD-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-WD-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-WD-003__DEFAULT.png
+    source_file: 10_HTML/APP/APP-WD-003__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-WD-004
+  name_cn: 提现结果
+  platform: android
+  module: withdrawal
+  release: P10
+  spec_file: 03_SPECS/pages/APP-WD-004.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-WD-004.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-WD-004__DEFAULT.png
+    source_file: 10_HTML/APP/APP-WD-004__DEFAULT.html
+    visual_verified: true
+  - state_id: PROCESSING
+    image_file: 04_UI/APP/APP-WD-004__PROCESSING.png
+    source_file: 10_HTML/APP/APP-WD-004__PROCESSING.html
+    visual_verified: true
+  - state_id: SUCCESS
+    image_file: 04_UI/APP/APP-WD-004__SUCCESS.png
+    source_file: 10_HTML/APP/APP-WD-004__SUCCESS.html
+    visual_verified: true
+  - state_id: FAILURE
+    image_file: 04_UI/APP/APP-WD-004__FAILURE.png
+    source_file: 10_HTML/APP/APP-WD-004__FAILURE.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-WD-005
+  name_cn: 提现记录
+  platform: android
+  module: withdrawal
+  release: P10
+  spec_file: 03_SPECS/pages/APP-WD-005.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-WD-005.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-WD-005__DEFAULT.png
+    source_file: 10_HTML/APP/APP-WD-005__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-WD-006
+  name_cn: 提现详情
+  platform: android
+  module: withdrawal
+  release: P10
+  spec_file: 03_SPECS/pages/APP-WD-006.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-WD-006.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-WD-006__DEFAULT.png
+    source_file: 10_HTML/APP/APP-WD-006__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-ME-001
+  name_cn: 我的
+  platform: android
+  module: me
+  release: P11
+  spec_file: 03_SPECS/pages/APP-ME-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-ME-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-ME-001__DEFAULT.png
+    source_file: 10_HTML/APP/APP-ME-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-ME-002
+  name_cn: 编辑资料
+  platform: android
+  module: me
+  release: P11
+  spec_file: 03_SPECS/pages/APP-ME-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-ME-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-ME-002__DEFAULT.png
+    source_file: 10_HTML/APP/APP-ME-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-MSG-001
+  name_cn: 消息中心
+  platform: android
+  module: message
+  release: P11
+  spec_file: 03_SPECS/pages/APP-MSG-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-MSG-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-MSG-001__DEFAULT.png
+    source_file: 10_HTML/APP/APP-MSG-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-MSG-002
+  name_cn: 消息详情
+  platform: android
+  module: message
+  release: P11
+  spec_file: 03_SPECS/pages/APP-MSG-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-MSG-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-MSG-002__DEFAULT.png
+    source_file: 10_HTML/APP/APP-MSG-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-SET-001
+  name_cn: 设置
+  platform: android
+  module: settings
+  release: P11
+  spec_file: 03_SPECS/pages/APP-SET-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-SET-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-SET-001__DEFAULT.png
+    source_file: 10_HTML/APP/APP-SET-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-SET-002
+  name_cn: 账号与安全
+  platform: android
+  module: settings
+  release: P11
+  spec_file: 03_SPECS/pages/APP-SET-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-SET-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-SET-002__DEFAULT.png
+    source_file: 10_HTML/APP/APP-SET-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-SET-003
+  name_cn: 登录设备
+  platform: android
+  module: settings
+  release: P11
+  spec_file: 03_SPECS/pages/APP-SET-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-SET-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-SET-003__DEFAULT.png
+    source_file: 10_HTML/APP/APP-SET-003__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-SET-004
+  name_cn: 声音、震动和通知
+  platform: android
+  module: settings
+  release: P11
+  spec_file: 03_SPECS/pages/APP-SET-004.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-SET-004.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-SET-004__DEFAULT.png
+    source_file: 10_HTML/APP/APP-SET-004__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-SET-005
+  name_cn: 关于和版本更新
+  platform: android
+  module: settings
+  release: P11
+  spec_file: 03_SPECS/pages/APP-SET-005.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-SET-005.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-SET-005__DEFAULT.png
+    source_file: 10_HTML/APP/APP-SET-005__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-SET-006
+  name_cn: 帮助中心
+  platform: android
+  module: settings
+  release: P11
+  spec_file: 03_SPECS/pages/APP-SET-006.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-SET-006.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-SET-006__DEFAULT.png
+    source_file: 10_HTML/APP/APP-SET-006__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-SET-007
+  name_cn: 协议与隐私
+  platform: android
+  module: settings
+  release: P11
+  spec_file: 03_SPECS/pages/APP-SET-007.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-SET-007.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-SET-007__DEFAULT.png
+    source_file: 10_HTML/APP/APP-SET-007__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-SET-008
+  name_cn: 注销账号
+  platform: android
+  module: settings
+  release: P11
+  spec_file: 03_SPECS/pages/APP-SET-008.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-SET-008.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-SET-008__DEFAULT.png
+    source_file: 10_HTML/APP/APP-SET-008__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: APP-SUPPORT-001
+  name_cn: 意见反馈
+  platform: android
+  module: support
+  release: P11
+  spec_file: 03_SPECS/pages/APP-SUPPORT-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/APP-SUPPORT-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/APP/APP-SUPPORT-001__DEFAULT.png
+    source_file: 10_HTML/APP/APP-SUPPORT-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: H5-INVITE-001
+  name_cn: 邀请落地与邮箱注册
+  platform: h5
+  module: h5
+  release: P11
+  spec_file: 03_SPECS/pages/H5-INVITE-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/H5-INVITE-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/H5/H5-INVITE-001__DEFAULT.png
+    source_file: 10_HTML/H5/H5-INVITE-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: H5-PAY-001
+  name_cn: 支付返回页
+  platform: h5
+  module: h5
+  release: P11
+  spec_file: 03_SPECS/pages/H5-PAY-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/H5-PAY-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/H5/H5-PAY-001__DEFAULT.png
+    source_file: 10_HTML/H5/H5-PAY-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: H5-DOWNLOAD-001
+  name_cn: Android下载页
+  platform: h5
+  module: h5
+  release: P11
+  spec_file: 03_SPECS/pages/H5-DOWNLOAD-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/H5-DOWNLOAD-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/H5/H5-DOWNLOAD-001__DEFAULT.png
+    source_file: 10_HTML/H5/H5-DOWNLOAD-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: H5-LEGAL-001
+  name_cn: 用户协议和隐私政策
+  platform: h5
+  module: h5
+  release: P11
+  spec_file: 03_SPECS/pages/H5-LEGAL-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/H5-LEGAL-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/H5/H5-LEGAL-001__DEFAULT.png
+    source_file: 10_HTML/H5/H5-LEGAL-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: H5-PROJECT-001
+  name_cn: 项目外部分享预览页
+  platform: h5
+  module: h5
+  release: P11
+  spec_file: 03_SPECS/pages/H5-PROJECT-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/H5-PROJECT-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/H5/H5-PROJECT-001__DEFAULT.png
+    source_file: 10_HTML/H5/H5-PROJECT-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-AUTH-001
+  name_cn: 后台登录
+  platform: admin
+  module: admin_auth
+  release: P00
+  spec_file: 03_SPECS/pages/ADMIN-AUTH-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-AUTH-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-AUTH-001__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-AUTH-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-AUTH-002
+  name_cn: 后台安全验证码
+  platform: admin
+  module: admin_auth
+  release: P00
+  spec_file: 03_SPECS/pages/ADMIN-AUTH-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-AUTH-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-AUTH-002__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-AUTH-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-AUTH-003
+  name_cn: 修改后台密码
+  platform: admin
+  module: admin_auth
+  release: P00
+  spec_file: 03_SPECS/pages/ADMIN-AUTH-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-AUTH-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-AUTH-003__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-AUTH-003__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-DASH-001
+  name_cn: 运营总览
+  platform: admin
+  module: dashboard
+  release: P00
+  spec_file: 03_SPECS/pages/ADMIN-DASH-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-DASH-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-DASH-001__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-DASH-001__DEFAULT.html
+    visual_verified: true
+  - state_id: ERROR
+    image_file: 04_UI/ADMIN/ADMIN-DASH-001__ERROR.png
+    source_file: 10_HTML/ADMIN/ADMIN-DASH-001__ERROR.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-USER-001
+  name_cn: 用户列表
+  platform: admin
+  module: user
+  release: P01
+  spec_file: 03_SPECS/pages/ADMIN-USER-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-USER-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-USER-001__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-USER-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-USER-002
+  name_cn: 用户详情
+  platform: admin
+  module: user
+  release: P01
+  spec_file: 03_SPECS/pages/ADMIN-USER-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-USER-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-USER-002__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-USER-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-USER-003
+  name_cn: 用户状态与限制记录
+  platform: admin
+  module: user
+  release: P01
+  spec_file: 03_SPECS/pages/ADMIN-USER-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-USER-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-USER-003__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-USER-003__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-USER-004
+  name_cn: 用户设备和会话
+  platform: admin
+  module: user
+  release: P01
+  spec_file: 03_SPECS/pages/ADMIN-USER-004.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-USER-004.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-USER-004__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-USER-004__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-USER-005
+  name_cn: 用户关联业务时间线
+  platform: admin
+  module: user
+  release: P01
+  spec_file: 03_SPECS/pages/ADMIN-USER-005.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-USER-005.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-USER-005__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-USER-005__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-GAME-001
+  name_cn: 游戏总配置
+  platform: admin
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/ADMIN-GAME-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-GAME-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-GAME-001__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-GAME-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-GAME-002
+  name_cn: 36级矿机列表
+  platform: admin
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/ADMIN-GAME-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-GAME-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-GAME-002__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-GAME-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-GAME-003
+  name_cn: 矿机等级编辑
+  platform: admin
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/ADMIN-GAME-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-GAME-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-GAME-003__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-GAME-003__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-GAME-004
+  name_cn: 用户棋盘与仓库
+  platform: admin
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/ADMIN-GAME-004.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-GAME-004.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-GAME-004__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-GAME-004__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-GAME-005
+  name_cn: 合成和移动事件
+  platform: admin
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/ADMIN-GAME-005.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-GAME-005.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-GAME-005__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-GAME-005__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-GAME-006
+  name_cn: 矿机购买记录
+  platform: admin
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/ADMIN-GAME-006.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-GAME-006.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-GAME-006__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-GAME-006__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-GAME-007
+  name_cn: 产出规则和领取记录
+  platform: admin
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/ADMIN-GAME-007.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-GAME-007.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-GAME-007__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-GAME-007__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-GAME-008
+  name_cn: 商店价格配置
+  platform: admin
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/ADMIN-GAME-008.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-GAME-008.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-GAME-008__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-GAME-008__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-GAME-009
+  name_cn: 任务模板
+  platform: admin
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/ADMIN-GAME-009.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-GAME-009.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-GAME-009__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-GAME-009__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-GAME-010
+  name_cn: 用户任务进度
+  platform: admin
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/ADMIN-GAME-010.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-GAME-010.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-GAME-010__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-GAME-010__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-GAME-011
+  name_cn: 签到配置和记录
+  platform: admin
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/ADMIN-GAME-011.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-GAME-011.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-GAME-011__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-GAME-011__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-GAME-012
+  name_cn: 补给箱和掉落表
+  platform: admin
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/ADMIN-GAME-012.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-GAME-012.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-GAME-012__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-GAME-012__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-GAME-013
+  name_cn: 图鉴解锁记录
+  platform: admin
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/ADMIN-GAME-013.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-GAME-013.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-GAME-013__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-GAME-013__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-GAME-014
+  name_cn: 排行榜配置和快照
+  platform: admin
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/ADMIN-GAME-014.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-GAME-014.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-GAME-014__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-GAME-014__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-GAME-015
+  name_cn: 游戏资源版本
+  platform: admin
+  module: game
+  release: P02
+  spec_file: 03_SPECS/pages/ADMIN-GAME-015.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-GAME-015.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-GAME-015__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-GAME-015__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-ASSET-001
+  name_cn: 资产总览
+  platform: admin
+  module: asset
+  release: P08
+  spec_file: 03_SPECS/pages/ADMIN-ASSET-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-ASSET-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-ASSET-001__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-ASSET-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-ASSET-002
+  name_cn: 用户钱包账户
+  platform: admin
+  module: asset
+  release: P08
+  spec_file: 03_SPECS/pages/ADMIN-ASSET-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-ASSET-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-ASSET-002__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-ASSET-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-ASSET-003
+  name_cn: 钱包交易
+  platform: admin
+  module: asset
+  release: P08
+  spec_file: 03_SPECS/pages/ADMIN-ASSET-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-ASSET-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-ASSET-003__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-ASSET-003__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-ASSET-004
+  name_cn: 账本分录
+  platform: admin
+  module: asset
+  release: P08
+  spec_file: 03_SPECS/pages/ADMIN-ASSET-004.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-ASSET-004.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-ASSET-004__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-ASSET-004__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-ASSET-005
+  name_cn: 人工资产调整
+  platform: admin
+  module: asset
+  release: P08
+  spec_file: 03_SPECS/pages/ADMIN-ASSET-005.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-ASSET-005.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-ASSET-005__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-ASSET-005__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-ASSET-006
+  name_cn: 主副积分兑换记录
+  platform: admin
+  module: asset
+  release: P08
+  spec_file: 03_SPECS/pages/ADMIN-ASSET-006.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-ASSET-006.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-ASSET-006__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-ASSET-006__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-ASSET-007
+  name_cn: 积分赠送记录
+  platform: admin
+  module: asset
+  release: P08
+  spec_file: 03_SPECS/pages/ADMIN-ASSET-007.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-ASSET-007.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-ASSET-007__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-ASSET-007__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-ASSET-008
+  name_cn: 积分参考价格
+  platform: admin
+  module: asset
+  release: P08
+  spec_file: 03_SPECS/pages/ADMIN-ASSET-008.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-ASSET-008.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-ASSET-008__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-ASSET-008__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-MARKET-001
+  name_cn: 求购订单列表
+  platform: admin
+  module: market
+  release: P08
+  spec_file: 03_SPECS/pages/ADMIN-MARKET-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-MARKET-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-MARKET-001__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-MARKET-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-MARKET-002
+  name_cn: 求购订单详情与审核
+  platform: admin
+  module: market
+  release: P08
+  spec_file: 03_SPECS/pages/ADMIN-MARKET-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-MARKET-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-MARKET-002__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-MARKET-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-MARKET-003
+  name_cn: 集市配置
+  platform: admin
+  module: market
+  release: P08
+  spec_file: 03_SPECS/pages/ADMIN-MARKET-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-MARKET-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-MARKET-003__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-MARKET-003__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-PROJ-001
+  name_cn: 项目分类
+  platform: admin
+  module: project
+  release: P04
+  spec_file: 03_SPECS/pages/ADMIN-PROJ-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-PROJ-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-PROJ-001__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-PROJ-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-PROJ-002
+  name_cn: 项目列表
+  platform: admin
+  module: project
+  release: P04
+  spec_file: 03_SPECS/pages/ADMIN-PROJ-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-PROJ-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-PROJ-002__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-PROJ-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-PROJ-003
+  name_cn: 项目审核队列
+  platform: admin
+  module: project
+  release: P04
+  spec_file: 03_SPECS/pages/ADMIN-PROJ-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-PROJ-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-PROJ-003__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-PROJ-003__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-PROJ-004
+  name_cn: 项目详情
+  platform: admin
+  module: project
+  release: P04
+  spec_file: 03_SPECS/pages/ADMIN-PROJ-004.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-PROJ-004.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-PROJ-004__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-PROJ-004__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-PROJ-005
+  name_cn: 项目举报
+  platform: admin
+  module: project
+  release: P04
+  spec_file: 03_SPECS/pages/ADMIN-PROJ-005.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-PROJ-005.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-PROJ-005__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-PROJ-005__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-PROJ-006
+  name_cn: 推广服务配置
+  platform: admin
+  module: project
+  release: P04
+  spec_file: 03_SPECS/pages/ADMIN-PROJ-006.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-PROJ-006.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-PROJ-006__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-PROJ-006__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-PROJ-007
+  name_cn: 推广服务使用记录
+  platform: admin
+  module: project
+  release: P04
+  spec_file: 03_SPECS/pages/ADMIN-PROJ-007.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-PROJ-007.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-PROJ-007__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-PROJ-007__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-PROJ-008
+  name_cn: 浏览任务活动
+  platform: admin
+  module: project
+  release: P04
+  spec_file: 03_SPECS/pages/ADMIN-PROJ-008.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-PROJ-008.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-PROJ-008__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-PROJ-008__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-PROJ-009
+  name_cn: 浏览任务会话和奖励
+  platform: admin
+  module: project
+  release: P04
+  spec_file: 03_SPECS/pages/ADMIN-PROJ-009.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-PROJ-009.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-PROJ-009__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-PROJ-009__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-PROJ-010
+  name_cn: 项目运营统计
+  platform: admin
+  module: project
+  release: P04
+  spec_file: 03_SPECS/pages/ADMIN-PROJ-010.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-PROJ-010.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-PROJ-010__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-PROJ-010__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-MALL-001
+  name_cn: 商品列表
+  platform: admin
+  module: mall
+  release: P06
+  spec_file: 03_SPECS/pages/ADMIN-MALL-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-MALL-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-MALL-001__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-MALL-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-MALL-002
+  name_cn: 商品编辑
+  platform: admin
+  module: mall
+  release: P06
+  spec_file: 03_SPECS/pages/ADMIN-MALL-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-MALL-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-MALL-002__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-MALL-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-MALL-003
+  name_cn: 虚拟商品订单
+  platform: admin
+  module: mall
+  release: P06
+  spec_file: 03_SPECS/pages/ADMIN-MALL-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-MALL-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-MALL-003__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-MALL-003__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-MALL-004
+  name_cn: 订单详情
+  platform: admin
+  module: mall
+  release: P06
+  spec_file: 03_SPECS/pages/ADMIN-MALL-004.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-MALL-004.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-MALL-004__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-MALL-004__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-MALL-005
+  name_cn: 用户虚拟权益
+  platform: admin
+  module: mall
+  release: P06
+  spec_file: 03_SPECS/pages/ADMIN-MALL-005.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-MALL-005.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-MALL-005__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-MALL-005__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-MALL-006
+  name_cn: 虚拟卡库存流水
+  platform: admin
+  module: mall
+  release: P06
+  spec_file: 03_SPECS/pages/ADMIN-MALL-006.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-MALL-006.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-MALL-006__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-MALL-006__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-MEMBER-001
+  name_cn: 会员套餐
+  platform: admin
+  module: membership
+  release: P06
+  spec_file: 03_SPECS/pages/ADMIN-MEMBER-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-MEMBER-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-MEMBER-001__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-MEMBER-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-MEMBER-002
+  name_cn: 用户会员记录
+  platform: admin
+  module: membership
+  release: P06
+  spec_file: 03_SPECS/pages/ADMIN-MEMBER-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-MEMBER-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-MEMBER-002__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-MEMBER-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-MEMBER-003
+  name_cn: 会员权益配置
+  platform: admin
+  module: membership
+  release: P06
+  spec_file: 03_SPECS/pages/ADMIN-MEMBER-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-MEMBER-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-MEMBER-003__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-MEMBER-003__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-REF-001
+  name_cn: 邀请关系列表
+  platform: admin
+  module: referral
+  release: P09
+  spec_file: 03_SPECS/pages/ADMIN-REF-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-REF-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-REF-001__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-REF-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-REF-002
+  name_cn: 邀请关系详情
+  platform: admin
+  module: referral
+  release: P09
+  spec_file: 03_SPECS/pages/ADMIN-REF-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-REF-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-REF-002__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-REF-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-REF-003
+  name_cn: 异常邀请关系
+  platform: admin
+  module: referral
+  release: P09
+  spec_file: 03_SPECS/pages/ADMIN-REF-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-REF-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-REF-003__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-REF-003__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-COMM-001
+  name_cn: 积分提成规则
+  platform: admin
+  module: commission
+  release: P09
+  spec_file: 03_SPECS/pages/ADMIN-COMM-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-COMM-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-COMM-001__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-COMM-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-COMM-002
+  name_cn: 积分提成记录
+  platform: admin
+  module: commission
+  release: P09
+  spec_file: 03_SPECS/pages/ADMIN-COMM-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-COMM-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-COMM-002__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-COMM-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-COMM-003
+  name_cn: 消费佣金规则
+  platform: admin
+  module: commission
+  release: P09
+  spec_file: 03_SPECS/pages/ADMIN-COMM-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-COMM-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-COMM-003__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-COMM-003__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-COMM-004
+  name_cn: 消费佣金记录
+  platform: admin
+  module: commission
+  release: P09
+  spec_file: 03_SPECS/pages/ADMIN-COMM-004.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-COMM-004.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-COMM-004__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-COMM-004__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-COMM-005
+  name_cn: 佣金冲正和冻结
+  platform: admin
+  module: commission
+  release: P09
+  spec_file: 03_SPECS/pages/ADMIN-COMM-005.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-COMM-005.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-COMM-005__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-COMM-005__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-PAY-001
+  name_cn: 支付总览
+  platform: admin
+  module: payment
+  release: P07
+  spec_file: 03_SPECS/pages/ADMIN-PAY-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-PAY-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-PAY-001__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-PAY-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-PAY-002
+  name_cn: 支付方式配置
+  platform: admin
+  module: payment
+  release: P07
+  spec_file: 03_SPECS/pages/ADMIN-PAY-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-PAY-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-PAY-002__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-PAY-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-PAY-003
+  name_cn: XApay配置和健康检查
+  platform: admin
+  module: payment
+  release: P07
+  spec_file: 03_SPECS/pages/ADMIN-PAY-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-PAY-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-PAY-003__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-PAY-003__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-PAY-004
+  name_cn: 人工扫码收款码池
+  platform: admin
+  module: payment
+  release: P07
+  spec_file: 03_SPECS/pages/ADMIN-PAY-004.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-PAY-004.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-PAY-004__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-PAY-004__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-PAY-005
+  name_cn: 支付订单
+  platform: admin
+  module: payment
+  release: P07
+  spec_file: 03_SPECS/pages/ADMIN-PAY-005.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-PAY-005.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-PAY-005__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-PAY-005__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-PAY-006
+  name_cn: 支付订单详情
+  platform: admin
+  module: payment
+  release: P07
+  spec_file: 03_SPECS/pages/ADMIN-PAY-006.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-PAY-006.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-PAY-006__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-PAY-006__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-PAY-007
+  name_cn: 人工扫码审核
+  platform: admin
+  module: payment
+  release: P07
+  spec_file: 03_SPECS/pages/ADMIN-PAY-007.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-PAY-007.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-PAY-007__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-PAY-007__DEFAULT.html
+    visual_verified: true
+  - state_id: EMPTY
+    image_file: 04_UI/ADMIN/ADMIN-PAY-007__EMPTY.png
+    source_file: 10_HTML/ADMIN/ADMIN-PAY-007__EMPTY.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-PAY-008
+  name_cn: 支付回调和事件
+  platform: admin
+  module: payment
+  release: P07
+  spec_file: 03_SPECS/pages/ADMIN-PAY-008.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-PAY-008.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-PAY-008__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-PAY-008__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-PAY-009
+  name_cn: 支付查单与对账
+  platform: admin
+  module: payment
+  release: P07
+  spec_file: 03_SPECS/pages/ADMIN-PAY-009.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-PAY-009.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-PAY-009__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-PAY-009__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-ID-001
+  name_cn: 实名配置
+  platform: admin
+  module: identity
+  release: P10
+  spec_file: 03_SPECS/pages/ADMIN-ID-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-ID-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-ID-001__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-ID-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-ID-002
+  name_cn: 实名记录
+  platform: admin
+  module: identity
+  release: P10
+  spec_file: 03_SPECS/pages/ADMIN-ID-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-ID-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-ID-002__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-ID-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-ID-003
+  name_cn: 实名详情
+  platform: admin
+  module: identity
+  release: P10
+  spec_file: 03_SPECS/pages/ADMIN-ID-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-ID-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-ID-003__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-ID-003__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-ID-004
+  name_cn: 第三方请求日志
+  platform: admin
+  module: identity
+  release: P10
+  spec_file: 03_SPECS/pages/ADMIN-ID-004.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-ID-004.yaml
+  preserve_on_return: false
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-ID-004__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-ID-004__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-ID-005
+  name_cn: 人工复核
+  platform: admin
+  module: identity
+  release: P10
+  spec_file: 03_SPECS/pages/ADMIN-ID-005.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-ID-005.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-ID-005__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-ID-005__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-WD-001
+  name_cn: 提现配置和档位
+  platform: admin
+  module: withdrawal
+  release: P10
+  spec_file: 03_SPECS/pages/ADMIN-WD-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-WD-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-WD-001__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-WD-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-WD-002
+  name_cn: 提现订单
+  platform: admin
+  module: withdrawal
+  release: P10
+  spec_file: 03_SPECS/pages/ADMIN-WD-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-WD-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-WD-002__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-WD-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-WD-003
+  name_cn: 提现详情和审核
+  platform: admin
+  module: withdrawal
+  release: P10
+  spec_file: 03_SPECS/pages/ADMIN-WD-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-WD-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-WD-003__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-WD-003__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-WD-004
+  name_cn: 支付宝出款通道
+  platform: admin
+  module: withdrawal
+  release: P10
+  spec_file: 03_SPECS/pages/ADMIN-WD-004.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-WD-004.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-WD-004__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-WD-004__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-WD-005
+  name_cn: 提现查单和对账
+  platform: admin
+  module: withdrawal
+  release: P10
+  spec_file: 03_SPECS/pages/ADMIN-WD-005.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-WD-005.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-WD-005__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-WD-005__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-STORAGE-001
+  name_cn: R2配置和健康检查
+  platform: admin
+  module: storage
+  release: P00
+  spec_file: 03_SPECS/pages/ADMIN-STORAGE-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-STORAGE-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-STORAGE-001__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-STORAGE-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-STORAGE-002
+  name_cn: 文件对象列表
+  platform: admin
+  module: storage
+  release: P00
+  spec_file: 03_SPECS/pages/ADMIN-STORAGE-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-STORAGE-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-STORAGE-002__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-STORAGE-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-STORAGE-003
+  name_cn: 文件详情
+  platform: admin
+  module: storage
+  release: P00
+  spec_file: 03_SPECS/pages/ADMIN-STORAGE-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-STORAGE-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-STORAGE-003__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-STORAGE-003__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-STORAGE-004
+  name_cn: 孤立文件清理
+  platform: admin
+  module: storage
+  release: P00
+  spec_file: 03_SPECS/pages/ADMIN-STORAGE-004.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-STORAGE-004.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-STORAGE-004__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-STORAGE-004__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-STORAGE-005
+  name_cn: 文件操作日志
+  platform: admin
+  module: storage
+  release: P00
+  spec_file: 03_SPECS/pages/ADMIN-STORAGE-005.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-STORAGE-005.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-STORAGE-005__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-STORAGE-005__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-EMAIL-001
+  name_cn: 邮件服务配置
+  platform: admin
+  module: email
+  release: P01
+  spec_file: 03_SPECS/pages/ADMIN-EMAIL-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-EMAIL-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-EMAIL-001__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-EMAIL-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-EMAIL-002
+  name_cn: 邮件模板
+  platform: admin
+  module: email
+  release: P01
+  spec_file: 03_SPECS/pages/ADMIN-EMAIL-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-EMAIL-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-EMAIL-002__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-EMAIL-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-EMAIL-003
+  name_cn: 邮件发送记录
+  platform: admin
+  module: email
+  release: P01
+  spec_file: 03_SPECS/pages/ADMIN-EMAIL-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-EMAIL-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-EMAIL-003__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-EMAIL-003__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-EMAIL-004
+  name_cn: 邮件统计和测试
+  platform: admin
+  module: email
+  release: P01
+  spec_file: 03_SPECS/pages/ADMIN-EMAIL-004.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-EMAIL-004.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-EMAIL-004__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-EMAIL-004__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-CAPTCHA-001
+  name_cn: 图形验证码配置
+  platform: admin
+  module: captcha
+  release: P01
+  spec_file: 03_SPECS/pages/ADMIN-CAPTCHA-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-CAPTCHA-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-CAPTCHA-001__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-CAPTCHA-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-CAPTCHA-002
+  name_cn: 验证码统计和风险
+  platform: admin
+  module: captcha
+  release: P01
+  spec_file: 03_SPECS/pages/ADMIN-CAPTCHA-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-CAPTCHA-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-CAPTCHA-002__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-CAPTCHA-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-CONTENT-001
+  name_cn: 平台公告
+  platform: admin
+  module: content
+  release: P11
+  spec_file: 03_SPECS/pages/ADMIN-CONTENT-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-CONTENT-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-CONTENT-001__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-CONTENT-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-CONTENT-002
+  name_cn: 站内消息
+  platform: admin
+  module: content
+  release: P11
+  spec_file: 03_SPECS/pages/ADMIN-CONTENT-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-CONTENT-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-CONTENT-002__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-CONTENT-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-SUPPORT-001
+  name_cn: 用户反馈
+  platform: admin
+  module: support
+  release: P11
+  spec_file: 03_SPECS/pages/ADMIN-SUPPORT-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-SUPPORT-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-SUPPORT-001__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-SUPPORT-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-APP-001
+  name_cn: App版本列表
+  platform: admin
+  module: app_release
+  release: P11
+  spec_file: 03_SPECS/pages/ADMIN-APP-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-APP-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-APP-001__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-APP-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-APP-002
+  name_cn: App版本发布
+  platform: admin
+  module: app_release
+  release: P11
+  spec_file: 03_SPECS/pages/ADMIN-APP-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-APP-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-APP-002__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-APP-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-SYS-001
+  name_cn: 运行配置中心
+  platform: admin
+  module: system
+  release: P11
+  spec_file: 03_SPECS/pages/ADMIN-SYS-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-SYS-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-SYS-001__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-SYS-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-SYS-002
+  name_cn: 服务健康检查
+  platform: admin
+  module: system
+  release: P11
+  spec_file: 03_SPECS/pages/ADMIN-SYS-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-SYS-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-SYS-002__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-SYS-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-SYS-003
+  name_cn: 定时任务和Worker
+  platform: admin
+  module: system
+  release: P11
+  spec_file: 03_SPECS/pages/ADMIN-SYS-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-SYS-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-SYS-003__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-SYS-003__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-SYS-004
+  name_cn: 结构化日志查询
+  platform: admin
+  module: system
+  release: P11
+  spec_file: 03_SPECS/pages/ADMIN-SYS-004.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-SYS-004.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-SYS-004__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-SYS-004__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-SYS-005
+  name_cn: 操作审计
+  platform: admin
+  module: system
+  release: P11
+  spec_file: 03_SPECS/pages/ADMIN-SYS-005.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-SYS-005.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-SYS-005__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-SYS-005__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-RBAC-001
+  name_cn: 后台管理员
+  platform: admin
+  module: rbac
+  release: P00
+  spec_file: 03_SPECS/pages/ADMIN-RBAC-001.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-RBAC-001.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-RBAC-001__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-RBAC-001__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-RBAC-002
+  name_cn: 角色管理
+  platform: admin
+  module: rbac
+  release: P00
+  spec_file: 03_SPECS/pages/ADMIN-RBAC-002.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-RBAC-002.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-RBAC-002__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-RBAC-002__DEFAULT.html
+    visual_verified: true
+  implemented: false
+- page_id: ADMIN-RBAC-003
+  name_cn: 权限管理
+  platform: admin
+  module: rbac
+  release: P00
+  spec_file: 03_SPECS/pages/ADMIN-RBAC-003.yaml
+  navigation_state_contract: 03_SPECS/navigation/ADMIN-RBAC-003.yaml
+  preserve_on_return: true
+  required_states:
+  - state_id: DEFAULT
+    image_file: 04_UI/ADMIN/ADMIN-RBAC-003__DEFAULT.png
+    source_file: 10_HTML/ADMIN/ADMIN-RBAC-003__DEFAULT.html
+    visual_verified: true
+  implemented: false

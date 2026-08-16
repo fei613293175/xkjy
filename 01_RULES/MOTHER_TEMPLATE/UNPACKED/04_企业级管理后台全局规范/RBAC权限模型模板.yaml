@@ -1,0 +1,39 @@
+roles:
+  - role_id: "SUPER_ADMIN"
+    name: "超级管理员"
+    scope: "all"
+  - role_id: "OPERATOR"
+    name: "运营管理员"
+    scope: "business"
+  - role_id: "AUDITOR"
+    name: "审核员"
+    scope: "review"
+  - role_id: "FINANCE"
+    name: "财务管理员"
+    scope: "payment"
+  - role_id: "CUSTOMER_SERVICE"
+    name: "客服"
+    scope: "user_support"
+  - role_id: "TECH_OPERATOR"
+    name: "技术运维"
+    scope: "integrations_and_jobs"
+
+permission_layers:
+  menu: true
+  page: true
+  action: true
+  field: true
+  data_scope: true
+
+sensitive_fields:
+  - field: "identity_number"
+    default_display: "masked"
+  - field: "integration_secret"
+    default_display: "masked"
+  - field: "payment_buyer"
+    default_display: "masked"
+
+high_risk_actions:
+  require_confirmation: true
+  require_reason: true
+  write_audit_log: true

@@ -1,0 +1,55 @@
+anonymous_session:
+  source: server-issued opaque or signed session token
+  creation: created at first security challenge or app bootstrap
+  client_arbitrary_value_trusted: false
+create_challenge:
+  api_id: API-SEC-CAPTCHA-001
+  method: POST
+  path: /api/v1/security/captcha/challenges
+  auth: anonymous_or_authenticated
+  request:
+    purpose: enum
+    anonymous_session_token: server-issued opaque string; optional only when server can issue one in this response
+    target: optional account/email/phone value; server normalizes and converts to keyed fingerprint; never echoed
+  response_headers:
+    Cache-Control: no-store, no-cache, must-revalidate
+    Pragma: no-cache
+  response:
+    anonymous_session_token: server-issued opaque string
+    challenge_id: opaque random string with at least 128 bits entropy
+    image_base64: data:image/png;base64,...
+    expires_in: 120
+    refresh_after: 2
+verify_challenge:
+  api_id: API-SEC-CAPTCHA-002
+  method: POST
+  path: /api/v1/security/captcha/verify
+  request:
+    challenge_id: string
+    answer: string
+    purpose: enum
+    anonymous_session_token: server-issued opaque string
+    target: optional; must match the protected business request after normalization
+  response:
+    captcha_ticket: opaque one-time token
+    expires_in: 180
+protected_business_request:
+  header: X-Captcha-Ticket
+  new_ticket_required_for_each_action: true
+  server_checks:
+  - purpose matches current endpoint/action
+  - server-issued anonymous session matches
+  - target fingerprint matches actual normalized target when used
+  - ticket is not expired
+  - ticket is not consumed or revoked
+  - rate-limit policy allows the action
+  consume: atomically when request enters valid business processing
+  cross_action_reuse: forbidden
+forbidden:
+- return correct answer
+- log answer or image payload
+- store raw answer
+- accept reusable ticket
+- trust client-only captcha state
+- use client-generated session id as the sole binding
+- reuse a send-code ticket for final registration/login/reset submit

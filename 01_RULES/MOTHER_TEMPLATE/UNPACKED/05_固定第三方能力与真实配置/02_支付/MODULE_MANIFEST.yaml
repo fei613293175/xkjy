@@ -1,0 +1,43 @@
+template_version: 1.4.2
+module_id: payment
+display_name: Android原生收银台与第三方支付
+scope: conditional_fixed_module
+default_enabled: false
+ruleset: M-PAY-001~M-PAY-012
+native_android_cashier_included: true
+profiles:
+  fuylink_online:
+    enabled_by_request: true
+    provider: 富运
+    contract: 富运支付离线开发文档.md
+  xapay_online:
+    enabled_by_request: true
+    provider: XApay
+    methods: [ALIPAY_XAPAY, WECHAT_XAPAY]
+    contract: XApay在线支付接入合同.md
+  manual_qr:
+    enabled_by_request: true
+    provider: MANUAL_QR
+    methods: [ALIPAY_QR, WECHAT_QR, QQ_QR]
+    contract: 扫码支付与人工审核结算规范.md
+order_kind_method_filter:
+  enabled: true
+  contract: 按订单类型隐藏支付方式规范.md
+credentials_source: ../PRIVATE_INTEGRATIONS.yaml#payment
+outputs_when_enabled:
+- native_cashier_pages
+- payment_status_pages
+- admin_pages
+- apis
+- database_tables
+- callbacks
+- configs
+- logs_metrics
+- tests
+- private_runtime_config
+- qr_code_management
+- manual_payment_review
+- commission_and_entitlement_settlement
+- order_kind_method_filter
+outputs_when_disabled: []
+

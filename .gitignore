@@ -1,0 +1,31 @@
+# Secrets and local runtime configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+private/
+
+# Build and local tool output
+.gradle/
+**/build/
+**/.idea/
+*.iml
+node_modules/
+dist/
+coverage/
+.cache/
+
+# Device and test evidence is delivered outside source control unless explicitly redacted
+artifacts/
+screenshots/
+test-results/
+
+# Original delivery archives and generated manifests
+*.zip
+14_MANIFEST/FILE_MANIFEST.txt
+14_MANIFEST/SHA256SUMS.txt
+01_RULES/MOTHER_TEMPLATE/UNPACKED/12_原始参考资料/

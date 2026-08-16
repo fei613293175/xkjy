@@ -1,0 +1,46 @@
+template_version: 1.4.0
+module_id: withdrawal
+defaults:
+  enabled: false
+  currency: CNY
+  business_timezone: Asia/Shanghai
+  payout_provider: alipay_certificate_mode
+  require_verified_identity: true
+  bind_name_source: latest_verified_identity
+  client_name_accepted: false
+  amount_api_format: decimal_string_2
+  tiers: []
+  fee:
+    mode: fixed_or_rate_by_project
+    minimum_net_amount_yuan: '0.01'
+  limits:
+    daily_max_count: 3
+    rejected_or_returned_restore_count: true
+    minimum_remaining_balance_yuan: '0.00'
+  auto_payout:
+    enabled: false
+    gross_amount_limit_yuan: '0.00'
+    zero_means_manual_review_only: true
+    reason: 用户提现
+    remark: 请填写项目名称余额提现
+  user_copy:
+    auto_success: 提现已到账
+    pending_review: 提现申请成功，等待平台审核
+    processing: 出款处理中，请勿重复提交
+  security:
+    bind_requires_security_challenge: true
+    submit_requires_security_challenge: true
+    snapshot_encryption: AES-256-GCM
+    encryption_key_generated_per_project: true
+  provider:
+    gateway: https://openapi.alipay.com/gateway.do
+    sign_type: RSA2
+    certificate_mode_required: true
+    request_timeout_seconds: 20
+    payer_alias_requested: true
+    payer_alias_not_guaranteed_by_platform: true
+  reconciliation:
+    enabled: true
+    retry_schedule_seconds: [30, 120, 600, 1800]
+    max_automatic_queries: 8
+    unknown_result_blocks_retry_and_refund: true

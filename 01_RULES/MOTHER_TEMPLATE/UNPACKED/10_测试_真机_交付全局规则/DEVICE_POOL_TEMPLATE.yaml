@@ -1,0 +1,20 @@
+devices:
+  - name: "真机1"
+    serial: "待Codex检测或项目所有者填写"
+    status: "unknown"
+    lock_owner: ""
+  - name: "真机2"
+    serial: "待Codex检测或项目所有者填写"
+    status: "unknown"
+    lock_owner: ""
+  - name: "真机3"
+    serial: "待Codex检测或项目所有者填写"
+    status: "unknown"
+    lock_owner: ""
+
+rules:
+  required_adb_state: "device"
+  emulator_forbidden: true
+  choose_any_idle_device: true
+  release_after_test: true
+  return_to_home_after_test: true

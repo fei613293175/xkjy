@@ -1,0 +1,11 @@
+migration_id: MIG-YYYYMMDD-001
+release_id: R01
+description: 待填写
+up_script: 待填写
+rollback_or_compensation: 待填写
+affected_tables: []
+prechecks: []
+postchecks: []
+backup_required: true
+tested_in_temporary_isolation: false
+status: PLANNED

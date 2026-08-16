@@ -1,0 +1,53 @@
+module_semantics:
+  activation_controlled_by: RESOLVED_RULESET.yaml
+  apply_defaults_when_module_enabled: true
+recommended_default:
+  identifiers:
+  - email
+  login_methods:
+  - password
+  - email_code
+  registration_enabled: true
+  password_recovery_enabled: true
+password:
+  min_length: 8
+  max_length: 32
+  require_letter: true
+  require_number: true
+  hash: Argon2id preferred; bcrypt acceptable when stack requires
+  history_count: 0
+verification_code:
+  length: 6
+  ttl_minutes: 5
+  max_attempts: 5
+  resend_seconds: 60
+sessions:
+  access_token_minutes: 30
+  refresh_token_days: 30
+  rotate_refresh_token: true
+  logout_current_device: true
+  logout_all_devices: true
+  admin_force_logout: true
+captcha:
+  required: true
+  profile: 06_轻量平台基线全局规则/08_自研图形安全验证码与防刷/CAPTCHA_SECURITY_PROFILE.yaml
+  mandatory_each_submit:
+  - password_login
+  - code_login
+  - register_submit
+  - password_recovery_request
+  - password_reset_submit
+  - send_verification_code
+  cross_action_ticket_reuse: false
+enumeration_protection:
+  generic_login_error: true
+  generic_password_recovery_response: true
+registration:
+  mode: OPEN|INVITE_ONLY|CLOSED
+  default: OPEN
+  agreement_required: true
+admin_security:
+  public_registration: false
+  captcha_every_login_submit: true
+  session_idle_minutes: 30
+  session_absolute_hours: 12

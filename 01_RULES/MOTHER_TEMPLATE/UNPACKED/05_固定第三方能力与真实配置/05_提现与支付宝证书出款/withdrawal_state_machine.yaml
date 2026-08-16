@@ -1,0 +1,27 @@
+version: 1.4.0
+states:
+  - PENDING_REVIEW
+  - APPROVED
+  - PAYING
+  - PAID
+  - REJECTED
+  - PAYOUT_FAILED
+  - PAYOUT_FAILED_RETURNED
+reconciliation_states: [NONE, PENDING, TERMINAL, SETTLED]
+transitions:
+  - { from: PENDING_REVIEW, to: PAYING, event: AUTO_PAYOUT_ELIGIBLE }
+  - { from: PENDING_REVIEW, to: APPROVED, event: ADMIN_APPROVE }
+  - { from: PENDING_REVIEW, to: REJECTED, event: ADMIN_REJECT, refund: true }
+  - { from: APPROVED, to: PAYING, event: ADMIN_PAYOUT }
+  - { from: PAYING, to: PAID, event: PROVIDER_SUCCESS_OR_QUERY_SUCCESS, settle_frozen: true }
+  - { from: PAYING, to: PAYOUT_FAILED, event: PROVIDER_TERMINAL_FAILURE_OR_UNCONFIRMED }
+  - { from: PAYOUT_FAILED, to: PAID, event: RECONCILIATION_CONFIRMS_SUCCESS, settle_frozen: true }
+  - { from: PAYOUT_FAILED, to: PAYING, event: RETRY_AFTER_TERMINAL_RECONCILIATION }
+  - { from: PAYOUT_FAILED, to: PAYOUT_FAILED_RETURNED, event: RETURN_AFTER_TERMINAL_RECONCILIATION, refund: true }
+invariants:
+  exactly_one_freeze_ledger_entry_per_withdrawal: true
+  exactly_one_paid_or_return_ledger_terminal_entry: true
+  paid_requires_verified_provider_result: true
+  unknown_provider_result_cannot_retry_or_refund: true
+  historical_payment_snapshot_is_immutable: true
+  optimistic_version_required_for_admin_mutations: true

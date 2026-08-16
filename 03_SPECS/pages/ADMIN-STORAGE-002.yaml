@@ -1,0 +1,166 @@
+page:
+  id: ADMIN-STORAGE-002
+  name_cn: 文件对象列表
+  platform: admin
+  source_scope: project_specific
+  feature_id: F-STORAGE
+  module_id: storage
+  applicable_rule_ids:
+  - G-001~G-047
+  - LB-PAGE-STATE
+  - LB-ICON
+  route: /admin/storage/002
+  release: P00
+  default_state_id: DEFAULT
+  state_ids:
+  - DEFAULT
+  shared_components: []
+  security:
+    captcha_gate: false
+    captcha_purpose: null
+access:
+  roles:
+  - admin
+  permissions: []
+  prerequisites: []
+  entry_points: []
+  exit_points: []
+  back_behavior: 返回已有来源页面实例，不新建同路由
+navigation_state:
+  policy_id: LB-PAGE-STATE
+  preserve_on_return: true
+  state_owner: destination_view_model
+  preserve_fields:
+  - scroll_anchor_item_id
+  - scroll_offset
+  - selected_tab
+  - search_query
+  - filters
+  - sort
+  - pagination_or_cursor
+  - expanded_items
+  - selected_items
+  - form_draft
+  - loaded_content
+  refresh_on_back: false
+  refresh_on_resume: false
+  refresh_policy: stale_while_revalidate_keep_content
+  scroll_restore_key: stable_item_id_and_offset
+  mutation_merge_strategy: local_patch
+  process_recreation_restore_safe_state: true
+  allowed_reset_exceptions: []
+business:
+  objective: 完成文件对象列表的可操作业务闭环。
+  rules:
+  - 页面只实现“文件对象列表”对应职责，不混入未触发模块。
+  - 返回来源页面时必须恢复页面上下文，不无条件刷新。
+  - 所有图标必须从ICON_REGISTRY引用SVG。
+  visible_copy:
+  - 文件对象列表
+  forbidden_copy:
+  - 稳赚
+  - 保底现金收益
+  - 未经确认的成功状态
+layout:
+  baseline_viewport_px: 1440x900
+  baseline_dp: null
+  system_bar_mode: light_or_brand
+  component_tree:
+  - status_or_admin_bar
+  - top_navigation
+  - primary_content
+  - context_actions
+  - bottom_navigation_or_footer
+  effect_scale: 1
+resolved_ui_values:
+  page_background: '#FFF9F1'
+  content_padding_horizontal_dp: 16
+  content_padding_vertical_dp: 16
+  top_bar_height_dp: 56
+  title_font_sp: 20
+  title_weight: 700
+  title_line_height_sp: 28
+  body_font_sp: 14
+  body_line_height_sp: 22
+  card_radius_dp: 18
+  card_padding_dp: 16
+  item_gap_dp: 12
+  input_height_dp: 52
+  button_height_dp: 50
+  button_radius_dp: 16
+  icon_size_dp: 24
+  icon_touch_target_dp: 48
+  border_width_dp: 1
+  elevation_dp: 0
+used_design_tokens:
+- colors.space_900
+- colors.primary_500
+- colors.gold_500
+- colors.energy_500
+- radius.lg
+- spacing.lg
+- motion.standard_ms
+icon_usage:
+  policy_id: LB-ICON
+  default_functional_library: project_custom_svg
+  text_as_icon_forbidden: true
+  icon_font_forbidden: true
+  icon_ids:
+  - ICON-ACTION-SETTINGS
+  - ICON-CHART
+  - ICON-IDENTITY
+  - ICON-MINER
+  - ICON-NAV-PROJECT
+  - ICON-PAY-CARD
+  - ICON-SECURITY
+  - ICON-USERS
+  - ICON-WALLET
+  brand_assets: []
+components:
+- component_id: TOP-BAR
+  type: top_bar
+  text: 文件对象列表
+  icon_id: ICON-ACTION-BACK
+  icon_role: functional
+  accessibility_label: 返回
+  values: {}
+  interactions:
+  - 返回
+  validation: []
+states:
+- state_id: DEFAULT
+  required: true
+  description: 默认业务状态
+  artifact_suffix: DEFAULT
+bindings:
+  apis: []
+  database_tables: []
+  admin_configs:
+  - storage.*
+  audit_logs:
+  - storage.operation
+  analytics_events:
+  - admin-storage-002.view
+artifacts:
+  png_pattern: 04_UI/ADMIN/ADMIN-STORAGE-002__<StateID>.png
+  html_pattern: 10_HTML/ADMIN/ADMIN-STORAGE-002__<StateID>.html
+  svg: []
+  icon_registry_file: 03_SPECS/ICON_REGISTRY.yaml
+  index_entry: true
+testing:
+  functional_steps:
+  - 进入页面
+  - 完成主操作
+  - 验证服务端结果
+  - 返回来源页并验证状态保持
+  state_restore_steps:
+  - 深度滚动或填写草稿
+  - 进入子页面
+  - 返回并检查位置、筛选、草稿和已加载内容
+  visual_points:
+  - 结构、字号、间距、圆角、色值、图标与效果图一致
+  icon_points:
+  - 无文字或Emoji代图标
+  accessibility_points:
+  - 触控区域不小于48dp
+  - 关键图标具备语义标签

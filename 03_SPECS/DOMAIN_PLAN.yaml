@@ -1,0 +1,9 @@
+domains:
+  api: xkjy-api.orbexa.cc
+  admin: xkjy-admin.orbexa.cc
+  h5: xkjy-h5.orbexa.cc
+  invite: xkjy-yq.orbexa.cc
+  download: xkjy-download.orbexa.cc
+  assets: oss.orbexa.cc
+ssl_required: true
+dns_pending_is_not_local_dev_blocker: true

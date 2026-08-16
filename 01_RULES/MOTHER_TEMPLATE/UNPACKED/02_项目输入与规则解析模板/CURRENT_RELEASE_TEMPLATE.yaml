@@ -1,0 +1,31 @@
+release_id: R01
+version_name: V1.0.0
+status: PLANNED
+goal:
+  command: /goal
+  title: 待填写：一个可交付业务闭环
+  scope_in: []
+  scope_out: []
+applicable_rules:
+  global: G-001~G-047
+  module_rules: []
+lightweight_baseline_touched_in_this_release: []
+required_pages: []
+required_apis: []
+required_tables: []
+required_admin_functions: []
+required_integrations: []
+acceptance:
+  build: false
+  automated_tests: false
+  integration_tests_for_enabled_modules: false
+  changed_and_affected_page_tests: false
+  real_device_tests: false
+  visual_tests: false
+  owner_guide: false
+  desktop_delivery: false
+  page_state_restoration: false
+  icon_system: false
+completion_evidence: []
+blocking_issues: []
+next_action_after_completion: 关闭 /goal，等待项目所有者安排

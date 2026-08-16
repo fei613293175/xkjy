@@ -1,0 +1,16 @@
+database_backup:
+  enabled: true
+  schedule: daily
+  retention_days: 项目确定
+  pre_release_backup: true
+  encryption: 项目确定
+  last_success: 待填写
+configuration_backup:
+  enabled: true
+release_artifact_backup:
+  current_and_rollback_versions: true
+restore:
+  runbook: 待填写
+  last_drill: 待填写
+  verification_queries: []
+heavy_disaster_recovery_platform: false

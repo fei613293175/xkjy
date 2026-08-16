@@ -1,0 +1,1339 @@
+project: 星矿纪元
+version: 1.1.0
+pages:
+- page_id: APP-SYS-001
+  page_name: 启动页
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-SYS-002
+  page_name: 系统维护页
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-SYS-003
+  page_name: App更新页
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-SYS-004
+  page_name: APK下载与安装引导
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-AUTH-001
+  page_name: 登录页
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+  - state_id: ERROR
+    required: true
+  - state_id: SUBMITTING
+    required: true
+- page_id: APP-AUTH-002
+  page_name: 注册页
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+  - state_id: ERROR
+    required: true
+  - state_id: SUBMITTING
+    required: true
+- page_id: APP-AUTH-003
+  page_name: 找回密码页
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-AUTH-004
+  page_name: 重置密码页
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-AUTH-005
+  page_name: 协议查看页
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-SEC-001
+  page_name: 图形安全验证码弹窗
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-SEC-002
+  page_name: 邮箱安全验证弹窗
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-SEC-003
+  page_name: 赠送密码输入弹窗
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-GAME-001
+  page_name: 新手引导层
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-GAME-002
+  page_name: 矿场首页
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+  - state_id: NEW_USER
+    required: true
+  - state_id: CLAIMABLE
+    required: true
+  - state_id: BOARD_FULL
+    required: true
+  - state_id: OFFLINE
+    required: true
+- page_id: APP-GAME-003
+  page_name: 矿机商店
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-GAME-004
+  page_name: 矿机仓库
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-GAME-005
+  page_name: 矿机图鉴
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-GAME-006
+  page_name: 矿机详情
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-GAME-007
+  page_name: 离线收益弹窗
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-GAME-008
+  page_name: 新矿机解锁弹窗
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-GAME-009
+  page_name: 任务中心
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-GAME-010
+  page_name: 七日签到
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-GAME-011
+  page_name: 补给箱开启页
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-GAME-012
+  page_name: 排行榜
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-GAME-013
+  page_name: 产出明细
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-GAME-014
+  page_name: 矿机回收确认
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-GAME-015
+  page_name: 棋盘格解锁弹窗
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-GAME-016
+  page_name: 仓库扩容确认
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-PROJ-001
+  page_name: 项目首页
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+  - state_id: LOADING
+    required: true
+  - state_id: EMPTY
+    required: true
+  - state_id: ERROR
+    required: true
+- page_id: APP-PROJ-002
+  page_name: 项目搜索
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-PROJ-003
+  page_name: 发布或编辑项目
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-PROJ-004
+  page_name: 项目图片管理
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-PROJ-005
+  page_name: 发布结果
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-PROJ-006
+  page_name: 统一项目详情
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+  - state_id: TASK_RUNNING
+    required: true
+  - state_id: TASK_SUCCESS
+    required: true
+  - state_id: OFFLINE_BY_ADMIN
+    required: true
+- page_id: APP-PROJ-007
+  page_name: 联系方式与链接面板
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-PROJ-008
+  page_name: 项目举报
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-PROJ-009
+  page_name: 我的项目
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-PROJ-010
+  page_name: 项目管理详情
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-PROJ-011
+  page_name: 使用推广卡
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-PROJ-012
+  page_name: 推广服务记录
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-PROJ-013
+  page_name: 我的收藏
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-PROJ-014
+  page_name: 项目图片画廊
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-PROJ-015
+  page_name: 项目分类选择器
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-PROJ-016
+  page_name: 浏览任务创建与预算确认
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-MALL-001
+  page_name: 商城首页
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-MALL-002
+  page_name: 商品详情
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-MALL-003
+  page_name: 订单确认
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-MALL-004
+  page_name: 虚拟背包
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-PAY-001
+  page_name: 原生收银台
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+  - state_id: PROCESSING
+    required: true
+  - state_id: SUCCESS
+    required: true
+  - state_id: FAILURE
+    required: true
+  - state_id: EXPIRED
+    required: true
+- page_id: APP-PAY-002
+  page_name: 人工扫码支付
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+  - state_id: UPLOADING
+    required: true
+  - state_id: REVIEW_PENDING
+    required: true
+  - state_id: REJECTED
+    required: true
+- page_id: APP-PAY-003
+  page_name: 支付结果和查单
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-ORDER-001
+  page_name: 订单列表
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-ORDER-002
+  page_name: 订单详情
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-MEMBER-001
+  page_name: 会员中心
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-DISC-001
+  page_name: 发现Tab容器
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-MARKET-001
+  page_name: 积分集市
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-MARKET-002
+  page_name: 发布或编辑求购单
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-MARKET-003
+  page_name: 求购单详情
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-MARKET-004
+  page_name: 我的求购单
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-DISC-002
+  page_name: 后续游戏入口页
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-WALLET-001
+  page_name: 资产总览
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-WALLET-002
+  page_name: 星矿值流水
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-WALLET-003
+  page_name: 能源芯片流水
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-WALLET-004
+  page_name: 账户余额流水
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-WALLET-005
+  page_name: 赠送星矿值
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-WALLET-006
+  page_name: 收款人确认
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-WALLET-007
+  page_name: 赠送结果
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-WALLET-008
+  page_name: 设置赠送密码
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-WALLET-009
+  page_name: 修改或重置赠送密码
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-WALLET-010
+  page_name: 兑换能源芯片
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-INVITE-001
+  page_name: 邀请总览
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-INVITE-002
+  page_name: 邀请海报
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-INVITE-003
+  page_name: 一级好友
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-INVITE-004
+  page_name: 二级好友
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-INVITE-005
+  page_name: 我的上级
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-COMM-001
+  page_name: 积分提成明细
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-COMM-002
+  page_name: 消费佣金明细
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-ID-001
+  page_name: 实名入口与状态
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-ID-002
+  page_name: 姓名身份证填写
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-ID-003
+  page_name: 摄像头权限说明
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-ID-004
+  page_name: 动作采集
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+  - state_id: PERMISSION_DENIED
+    required: true
+- page_id: APP-ID-005
+  page_name: 身份核验中
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+  - state_id: VERIFYING
+    required: true
+- page_id: APP-ID-006
+  page_name: 实名结果
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+  - state_id: SUCCESS
+    required: true
+  - state_id: RECAPTURE
+    required: true
+  - state_id: FAILURE
+    required: true
+- page_id: APP-WD-001
+  page_name: 提现首页
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+  - state_id: DISABLED
+    required: true
+- page_id: APP-WD-002
+  page_name: 绑定支付宝
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-WD-003
+  page_name: 提现确认
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-WD-004
+  page_name: 提现结果
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+  - state_id: PROCESSING
+    required: true
+  - state_id: SUCCESS
+    required: true
+  - state_id: FAILURE
+    required: true
+- page_id: APP-WD-005
+  page_name: 提现记录
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-WD-006
+  page_name: 提现详情
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-ME-001
+  page_name: 我的
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-ME-002
+  page_name: 编辑资料
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-MSG-001
+  page_name: 消息中心
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-MSG-002
+  page_name: 消息详情
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-SET-001
+  page_name: 设置
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-SET-002
+  page_name: 账号与安全
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-SET-003
+  page_name: 登录设备
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-SET-004
+  page_name: 声音、震动和通知
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-SET-005
+  page_name: 关于和版本更新
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-SET-006
+  page_name: 帮助中心
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-SET-007
+  page_name: 协议与隐私
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-SET-008
+  page_name: 注销账号
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: APP-SUPPORT-001
+  page_name: 意见反馈
+  platform: android
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: H5-INVITE-001
+  page_name: 邀请落地与邮箱注册
+  platform: h5
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: H5-PAY-001
+  page_name: 支付返回页
+  platform: h5
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: H5-DOWNLOAD-001
+  page_name: Android下载页
+  platform: h5
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: H5-LEGAL-001
+  page_name: 用户协议和隐私政策
+  platform: h5
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: H5-PROJECT-001
+  page_name: 项目外部分享预览页
+  platform: h5
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-AUTH-001
+  page_name: 后台登录
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-AUTH-002
+  page_name: 后台安全验证码
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-AUTH-003
+  page_name: 修改后台密码
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-DASH-001
+  page_name: 运营总览
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+  - state_id: ERROR
+    required: true
+- page_id: ADMIN-USER-001
+  page_name: 用户列表
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-USER-002
+  page_name: 用户详情
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-USER-003
+  page_name: 用户状态与限制记录
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-USER-004
+  page_name: 用户设备和会话
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-USER-005
+  page_name: 用户关联业务时间线
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-GAME-001
+  page_name: 游戏总配置
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-GAME-002
+  page_name: 36级矿机列表
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-GAME-003
+  page_name: 矿机等级编辑
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-GAME-004
+  page_name: 用户棋盘与仓库
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-GAME-005
+  page_name: 合成和移动事件
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-GAME-006
+  page_name: 矿机购买记录
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-GAME-007
+  page_name: 产出规则和领取记录
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-GAME-008
+  page_name: 商店价格配置
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-GAME-009
+  page_name: 任务模板
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-GAME-010
+  page_name: 用户任务进度
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-GAME-011
+  page_name: 签到配置和记录
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-GAME-012
+  page_name: 补给箱和掉落表
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-GAME-013
+  page_name: 图鉴解锁记录
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-GAME-014
+  page_name: 排行榜配置和快照
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-GAME-015
+  page_name: 游戏资源版本
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-ASSET-001
+  page_name: 资产总览
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-ASSET-002
+  page_name: 用户钱包账户
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-ASSET-003
+  page_name: 钱包交易
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-ASSET-004
+  page_name: 账本分录
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-ASSET-005
+  page_name: 人工资产调整
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-ASSET-006
+  page_name: 主副积分兑换记录
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-ASSET-007
+  page_name: 积分赠送记录
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-ASSET-008
+  page_name: 积分参考价格
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-MARKET-001
+  page_name: 求购订单列表
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-MARKET-002
+  page_name: 求购订单详情与审核
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-MARKET-003
+  page_name: 集市配置
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-PROJ-001
+  page_name: 项目分类
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-PROJ-002
+  page_name: 项目列表
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-PROJ-003
+  page_name: 项目审核队列
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-PROJ-004
+  page_name: 项目详情
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-PROJ-005
+  page_name: 项目举报
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-PROJ-006
+  page_name: 推广服务配置
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-PROJ-007
+  page_name: 推广服务使用记录
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-PROJ-008
+  page_name: 浏览任务活动
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-PROJ-009
+  page_name: 浏览任务会话和奖励
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-PROJ-010
+  page_name: 项目运营统计
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-MALL-001
+  page_name: 商品列表
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-MALL-002
+  page_name: 商品编辑
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-MALL-003
+  page_name: 虚拟商品订单
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-MALL-004
+  page_name: 订单详情
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-MALL-005
+  page_name: 用户虚拟权益
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-MALL-006
+  page_name: 虚拟卡库存流水
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-MEMBER-001
+  page_name: 会员套餐
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-MEMBER-002
+  page_name: 用户会员记录
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-MEMBER-003
+  page_name: 会员权益配置
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-REF-001
+  page_name: 邀请关系列表
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-REF-002
+  page_name: 邀请关系详情
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-REF-003
+  page_name: 异常邀请关系
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-COMM-001
+  page_name: 积分提成规则
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-COMM-002
+  page_name: 积分提成记录
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-COMM-003
+  page_name: 消费佣金规则
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-COMM-004
+  page_name: 消费佣金记录
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-COMM-005
+  page_name: 佣金冲正和冻结
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-PAY-001
+  page_name: 支付总览
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-PAY-002
+  page_name: 支付方式配置
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-PAY-003
+  page_name: XApay配置和健康检查
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-PAY-004
+  page_name: 人工扫码收款码池
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-PAY-005
+  page_name: 支付订单
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-PAY-006
+  page_name: 支付订单详情
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-PAY-007
+  page_name: 人工扫码审核
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+  - state_id: EMPTY
+    required: true
+- page_id: ADMIN-PAY-008
+  page_name: 支付回调和事件
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-PAY-009
+  page_name: 支付查单与对账
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-ID-001
+  page_name: 实名配置
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-ID-002
+  page_name: 实名记录
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-ID-003
+  page_name: 实名详情
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-ID-004
+  page_name: 第三方请求日志
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-ID-005
+  page_name: 人工复核
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-WD-001
+  page_name: 提现配置和档位
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-WD-002
+  page_name: 提现订单
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-WD-003
+  page_name: 提现详情和审核
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-WD-004
+  page_name: 支付宝出款通道
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-WD-005
+  page_name: 提现查单和对账
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-STORAGE-001
+  page_name: R2配置和健康检查
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-STORAGE-002
+  page_name: 文件对象列表
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-STORAGE-003
+  page_name: 文件详情
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-STORAGE-004
+  page_name: 孤立文件清理
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-STORAGE-005
+  page_name: 文件操作日志
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-EMAIL-001
+  page_name: 邮件服务配置
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-EMAIL-002
+  page_name: 邮件模板
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-EMAIL-003
+  page_name: 邮件发送记录
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-EMAIL-004
+  page_name: 邮件统计和测试
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-CAPTCHA-001
+  page_name: 图形验证码配置
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-CAPTCHA-002
+  page_name: 验证码统计和风险
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-CONTENT-001
+  page_name: 平台公告
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-CONTENT-002
+  page_name: 站内消息
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-SUPPORT-001
+  page_name: 用户反馈
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-APP-001
+  page_name: App版本列表
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-APP-002
+  page_name: App版本发布
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-SYS-001
+  page_name: 运行配置中心
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-SYS-002
+  page_name: 服务健康检查
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-SYS-003
+  page_name: 定时任务和Worker
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-SYS-004
+  page_name: 结构化日志查询
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-SYS-005
+  page_name: 操作审计
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-RBAC-001
+  page_name: 后台管理员
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-RBAC-002
+  page_name: 角色管理
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true
+- page_id: ADMIN-RBAC-003
+  page_name: 权限管理
+  platform: admin
+  states:
+  - state_id: DEFAULT
+    required: true

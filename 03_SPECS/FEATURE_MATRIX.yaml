@@ -1,0 +1,47 @@
+project: 星矿纪元
+version: 1.1.0
+features:
+- feature_id: F-ACCOUNT
+  name: 邮箱账号与会话
+  release: P01
+  enabled: true
+- feature_id: F-GAME-CORE
+  name: 矿机合成核心
+  release: P02
+  enabled: true
+- feature_id: F-GAME-GROWTH
+  name: 36级成长与任务
+  release: P03
+  enabled: true
+- feature_id: F-PROJECT
+  name: 项目发布与信息流
+  release: P04
+  enabled: true
+- feature_id: F-PROJECT-TASK
+  name: 浏览任务与推广服务
+  release: P05
+  enabled: true
+- feature_id: F-MALL
+  name: 商城会员与统一订单
+  release: P06
+  enabled: true
+- feature_id: F-PAYMENT
+  name: XApay与人工扫码
+  release: P07
+  enabled: true
+- feature_id: F-WALLET-MARKET
+  name: 三资产账本、赠送、集市、红包卡
+  release: P08
+  enabled: true
+- feature_id: F-REFERRAL
+  name: 邀请与二级提成
+  release: P09
+  enabled: true
+- feature_id: F-ID-WD
+  name: 实名认证与提现
+  release: P10
+  enabled: true
+- feature_id: F-RELEASE
+  name: 消息、设置、更新与正式发布
+  release: P11
+  enabled: true

@@ -1,0 +1,25 @@
+application_id: 待填写
+signing:
+  keystore_server_path: 待填写
+  alias: 待填写
+  certificate_sha256: 待填写
+  password_storage: server_secret_only
+  backup_verified: false
+version:
+  version_code: 1
+  version_name: 1.0.0
+  increment_rule: every distributed APK increments versionCode
+update:
+  check_on_start: true
+  cache_hours: 6
+  manual_check: true
+  optional_update: true
+  forced_update: true
+  minimum_supported_version: true
+  apk_sha256_verify: true
+  gray_release: false
+  ab_testing: false
+build_binding:
+  git_commit: 待填写
+  build_time: 待填写
+  apk_sha256: 待填写

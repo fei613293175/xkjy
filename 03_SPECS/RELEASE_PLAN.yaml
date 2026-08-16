@@ -1,0 +1,122 @@
+project: 星矿纪元
+releases:
+- release: P00
+  name: 项目基线
+  goal: 仓库、Docker、数据库、Android壳、后台壳、规则解析和健康检查
+  deliverables:
+  - APK（涉及Android时）
+  - 功能完成清单
+  - 测试清单
+  - 已知问题
+  - 数据库迁移
+  - 页面截图
+- release: P01
+  name: 账号安全
+  goal: 邮箱注册、密码/验证码登录、找回、会话、自研图形验证码
+  deliverables:
+  - APK（涉及Android时）
+  - 功能完成清单
+  - 测试清单
+  - 已知问题
+  - 数据库迁移
+  - 页面截图
+- release: P02
+  name: 游戏核心竖切
+  goal: 新手、4×4棋盘、1~6级、购买、拖动、合成、产出、领取、离线收益
+  deliverables:
+  - APK（涉及Android时）
+  - 功能完成清单
+  - 测试清单
+  - 已知问题
+  - 数据库迁移
+  - 页面截图
+- release: P03
+  name: 完整游戏成长
+  goal: 7~36级、仓库、图鉴、任务、签到、补给箱、排行榜
+  deliverables:
+  - APK（涉及Android时）
+  - 功能完成清单
+  - 测试清单
+  - 已知问题
+  - 数据库迁移
+  - 页面截图
+- release: P04
+  name: 项目平台
+  goal: 分类、发布、审核、信息流、详情、收藏、举报
+  deliverables:
+  - APK（涉及Android时）
+  - 功能完成清单
+  - 测试清单
+  - 已知问题
+  - 数据库迁移
+  - 页面截图
+- release: P05
+  name: 项目任务与推广
+  goal: 浏览任务、心跳、自动奖励、头条、置顶、刷新
+  deliverables:
+  - APK（涉及Android时）
+  - 功能完成清单
+  - 测试清单
+  - 已知问题
+  - 数据库迁移
+  - 页面截图
+- release: P06
+  name: 商城会员订单
+  goal: 虚拟商品、会员、背包、统一订单、权益处理器
+  deliverables:
+  - APK（涉及Android时）
+  - 功能完成清单
+  - 测试清单
+  - 已知问题
+  - 数据库迁移
+  - 页面截图
+- release: P07
+  name: 支付
+  goal: 原生收银台、XApay、人工扫码、回调、查单、对账
+  deliverables:
+  - APK（涉及Android时）
+  - 功能完成清单
+  - 测试清单
+  - 已知问题
+  - 数据库迁移
+  - 页面截图
+- release: P08
+  name: 钱包与集市
+  goal: 三资产账本、积分兑换、赠送、价格曲线、求购单、红包卡
+  deliverables:
+  - APK（涉及Android时）
+  - 功能完成清单
+  - 测试清单
+  - 已知问题
+  - 数据库迁移
+  - 页面截图
+- release: P09
+  name: 邀请与佣金
+  goal: 邀请关系、海报、一级二级好友、积分提成、消费佣金
+  deliverables:
+  - APK（涉及Android时）
+  - 功能完成清单
+  - 测试清单
+  - 已知问题
+  - 数据库迁移
+  - 页面截图
+- release: P10
+  name: 实名与提现
+  goal: CameraX采集、人证比对、支付宝绑定、档位提现、证书出款
+  deliverables:
+  - APK（涉及Android时）
+  - 功能完成清单
+  - 测试清单
+  - 已知问题
+  - 数据库迁移
+  - 页面截图
+- release: P11
+  name: 发布候选
+  goal: 消息、设置、更新、全后台、真机回归、正式签名APK
+  deliverables:
+  - APK（涉及Android时）
+  - 功能完成清单
+  - 测试清单
+  - 已知问题
+  - 数据库迁移
+  - 页面截图

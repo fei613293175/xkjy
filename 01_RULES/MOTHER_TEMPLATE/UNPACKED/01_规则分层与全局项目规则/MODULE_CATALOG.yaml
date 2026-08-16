@@ -1,0 +1,107 @@
+catalog_version: 1.4.2
+module_classes:
+  fixed_external: 包含固定接口、测试配置和第三方合同；仅启用时抽取私有配置
+  reusable_platform: 不依赖固定第三方密钥的高频平台能力；仅业务触发时启用
+fixed_external_modules:
+  identity_verification:
+    display_name: 基础实名认证
+    default_enabled: false
+    ruleset: M-ID-001~M-ID-008
+    fixed_information_available: true
+    dependencies:
+      storage:
+        required: true
+        default_resolution: auto_enable
+      payment:
+        required_when: charging_mode == admin_configurable_free_or_paid or paid
+        default_resolution: auto_enable
+    manifest: 05_固定第三方能力与真实配置/01_实名认证/MODULE_MANIFEST.yaml
+  payment:
+    display_name: Android原生收银台与第三方支付
+    default_enabled: false
+    ruleset: M-PAY-001~M-PAY-012
+    fixed_information_available: true
+    native_android_cashier_included: true
+    profiles:
+      fuylink_online: 富运在线支付，保留历史兼容能力
+      xapay_online: XApay支付宝/微信在线支付
+      manual_qr: 支付宝/微信/QQ扫码收款与人工审核
+    order_kind_method_filter: true
+    manifest: 05_固定第三方能力与真实配置/02_支付/MODULE_MANIFEST.yaml
+  storage:
+    display_name: Cloudflare R2对象存储
+    default_enabled: false
+    ruleset: M-STORAGE-001~M-STORAGE-006
+    fixed_information_available: true
+    manifest: 05_固定第三方能力与真实配置/03_对象存储/MODULE_MANIFEST.yaml
+  email:
+    display_name: SMTP企业邮箱
+    default_enabled: false
+    ruleset: M-EMAIL-001~M-EMAIL-006
+    fixed_information_available: true
+    manifest: 05_固定第三方能力与真实配置/04_邮箱/MODULE_MANIFEST.yaml
+  withdrawal:
+    display_name: 提现与支付宝证书出款
+    default_enabled: false
+    ruleset: M-WD-001~M-WD-012
+    fixed_information_available: true
+    financial_sensitive: true
+    real_transfer_requires_explicit_authorization: true
+    dependencies:
+      account:
+        required: true
+        default_resolution: auto_enable
+      identity_verification:
+        required: true
+        default_resolution: auto_enable
+      wallet_ledger:
+        required: true
+        default_resolution: implement_project_wallet_ledger
+    manifest: 05_固定第三方能力与真实配置/05_提现与支付宝证书出款/MODULE_MANIFEST.yaml
+reusable_platform_modules:
+  account:
+    display_name: 账号、注册、登录、找回密码与会话
+    default_enabled: false
+    ruleset: M-ACCOUNT-001~M-ACCOUNT-012
+    fixed_information_available: false
+    activation_when: project requires user accounts, registration, login or password recovery
+    dependencies:
+      self_hosted_image_captcha:
+        required: true
+        source: global_lightweight_baseline
+      email:
+        required_when: login or verification method uses email code
+        default_resolution: auto_enable
+      sms:
+        required_when: login or verification method uses SMS
+        default_resolution: project_must_supply_provider_information
+    manifest: 07_可选平台复用模块/01_账号与会话/MODULE_MANIFEST.yaml
+global_lightweight_baseline_components:
+- standard_api_and_error_codes
+- android_signing_version_minimal_update
+- database_migration_and_basic_backup
+- structured_logs_and_health_check
+- minimal_runtime_config_and_emergency_switches
+- critical_idempotency_and_bounded_retry
+- dependency_lock_and_reproducible_build
+- self_hosted_image_captcha_and_rate_limit
+- complexity_budget_and_incremental_testing
+not_built_without_explicit_trigger:
+- sms_verification
+- full_analytics_platform
+- full_incident_center
+- gray_release
+- workflow_engine
+- full_offline_first
+- multi_channel_notification_platform
+- advanced_risk_scoring
+- custom_bi_platform
+global_baseline_is_not_module:
+- page_ui_effect_rules
+- enterprise_admin
+- domain_server_deployment
+- codex_versioning
+- real_device_testing
+- delivery
+- api_database_logs
+- lightweight_platform_baseline

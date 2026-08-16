@@ -1,0 +1,86 @@
+template_version: 1.4.2
+global_rules:
+  ruleset: G-001~G-047
+  mode: ALWAYS_ACTIVE
+  user_toggle_allowed: false
+lightweight_platform_baseline:
+  profile: LIGHTWEIGHT_COMPLETE
+  always_active: true
+  components:
+  - standard_api_and_error_codes
+  - android_signing_version_minimal_update
+  - database_migration_and_basic_backup
+  - structured_logs_and_health_check
+  - minimal_runtime_config_and_emergency_switches
+  - critical_idempotency_and_bounded_retry
+  - dependency_lock_and_reproducible_build
+  - self_hosted_image_captcha_and_rate_limit
+  - complexity_budget_and_incremental_testing
+fixed_external_modules:
+  identity_verification:
+    requested: false
+    resolved_enabled: false
+    activation_reason: not_requested|explicit_request|dependency
+    charging_mode: admin_configurable_free_or_paid
+    dependencies:
+      storage: required_auto_enable
+      payment: required_auto_enable_unless_owner_explicitly_sets_free_only
+  payment:
+    requested: false
+    resolved_enabled: false
+    activation_reason: not_requested|explicit_request|dependency
+    native_android_cashier_included: true
+    profiles:
+      fuylink_online: true
+      xapay_online: true
+      manual_qr: true
+    xapay_online_methods: [ALIPAY_XAPAY, WECHAT_XAPAY]
+    manual_qr_methods: [ALIPAY_QR, WECHAT_QR, QQ_QR]
+    order_kind_method_filter: true
+  storage:
+    requested: false
+    resolved_enabled: false
+    activation_reason: not_requested|explicit_request|dependency
+    provider: cloudflare_r2
+  email:
+    requested: false
+    resolved_enabled: false
+    activation_reason: not_requested|explicit_request|dependency
+    provider: smtp_enterprise_email
+  withdrawal:
+    requested: false
+    resolved_enabled: false
+    activation_reason: not_requested|explicit_request
+    provider: alipay_certificate_mode
+    dependencies:
+      account: required_auto_enable
+      identity_verification: required_auto_enable
+      wallet_ledger: required_project_capability
+    real_transfer_test_authorized: false
+reusable_platform_modules:
+  account:
+    requested: false
+    resolved_enabled: false
+    activation_reason: not_requested|explicit_request|inferred_from_project_requirements
+    registration_enabled: true
+    password_recovery_enabled: true
+    identifiers:
+    - email
+    login_methods:
+    - password
+    - email_code
+    dependencies:
+      self_hosted_image_captcha: required_global_baseline
+      email: required_auto_enable_when_email_code_or_email_verification
+      sms: project_information_required_when_sms_selected
+project_specific_capabilities:
+  h5_pages: []
+  sms_verification: false
+  custom_features: []
+resolution_rules:
+  copy_only_resolved_enabled_modules: true
+  disabled_modules_create_no_pages_apis_tables_admin_or_tests: true
+  global_rules_are_never_disabled_by_module_selection: true
+  native_cashier_is_not_a_separate_module: true
+  captcha_is_global_security_baseline_not_third_party_module: true
+  account_module_does_not_auto_enable_for_projects_without_user_accounts: true

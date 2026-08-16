@@ -1,0 +1,23 @@
+minor_release:
+  full_test:
+  - new pages
+  - modified pages
+  - affected flows
+  - affected navigation state restoration
+  - affected icon registry and assets
+  smoke_test:
+  - unchanged primary flows
+  full_visual_regression: false
+stage_release:
+  full_page_regression: true
+  full_critical_flow_regression: true
+  full_visual_regression: true
+  full_navigation_state_regression: true
+  full_icon_system_regression: true
+final_release:
+  full_page_regression: true
+  full_critical_flow_regression: true
+  full_visual_regression: true
+  full_navigation_state_regression: true
+  full_icon_system_regression: true
+evidence_required: true

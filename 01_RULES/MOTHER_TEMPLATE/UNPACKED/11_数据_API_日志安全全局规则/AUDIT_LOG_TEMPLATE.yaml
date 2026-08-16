@@ -1,0 +1,22 @@
+audit_log:
+  id: uuid
+  project_code: ''
+  module: ''
+  operator_id: ''
+  operator_name: ''
+  role_ids: []
+  action: ''
+  object_type: ''
+  object_id: ''
+  before_value: {}
+  request_value: {}
+  after_value: {}
+  reason: ''
+  ip: ''
+  user_agent: ''
+  result: SUCCESS|FAILED
+  error_code: ''
+  created_at: ''
+  request_id: ''
+  page_id: ''
+  security_event: NONE|LOGIN|CAPTCHA|RATE_LIMIT|SESSION|CONFIG_CHANGE

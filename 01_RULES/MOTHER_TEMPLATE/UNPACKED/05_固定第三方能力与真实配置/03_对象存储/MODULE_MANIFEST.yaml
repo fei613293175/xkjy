@@ -1,0 +1,18 @@
+template_version: 1.4.0
+module_id: storage
+display_name: Cloudflare R2对象存储
+scope: conditional_fixed_module
+default_enabled: false
+ruleset: M-STORAGE-001~M-STORAGE-006
+provider: cloudflare_r2
+credentials_source: ../PRIVATE_INTEGRATIONS.yaml#storage
+outputs_when_enabled:
+- upload_apis
+- file_table
+- admin_pages
+- configs
+- logs_metrics
+- tests
+- private_runtime_config
+outputs_when_disabled: []
+

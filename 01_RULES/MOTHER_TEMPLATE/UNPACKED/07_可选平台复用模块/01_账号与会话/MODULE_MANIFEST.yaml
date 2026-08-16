@@ -1,0 +1,26 @@
+template_version: 1.4.0
+module_id: account
+display_name: 账号、注册、登录、找回密码与会话
+module_class: reusable_platform
+default_enabled: false
+ruleset: M-ACCOUNT-001~M-ACCOUNT-012
+activation_when:
+- project requires user accounts
+- registration
+- login
+- password recovery
+- user session management
+dependencies:
+  self_hosted_image_captcha: required_global_baseline
+  email: required when email code or email verification is used
+  sms: project must provide provider information when SMS is used
+default_recommendation_when_unspecified:
+  identifiers:
+  - email
+  login_methods:
+  - password
+  - email_code
+  registration: true
+  password_recovery: true
+no_external_secret_inside_module: true
+

@@ -1,0 +1,89 @@
+name: 通用项目开发私有母版
+version: 1.4.2
+date: '2026-08-16'
+edition: 完整基线继承的实名认证、提现与多通道支付通用能力版
+purpose: 五项固定第三方能力信息 + 当前实名认证契约 + 富运/XApay在线支付 + 人工扫码审核支付 + 提现支付宝证书出款 + 全局规则 + 轻量平台基线 + 可选账号会话模块
+private_plaintext_credentials: true
+private_certificate_and_key_material: true
+new_project_effect_images_included: false
+reference_interface_screenshots_included: true
+reference_interface_screenshots_scope: historical_only_not_executable
+scope_model:
+  template_rules: T-001~T-014
+  global_rules: G-001~G-047
+  conditional_module_rules:
+  - M-ID-001~M-ID-008
+  - M-PAY-001~M-PAY-012
+  - M-STORAGE-001~M-STORAGE-006
+  - M-EMAIL-001~M-EMAIL-006
+  - M-WD-001~M-WD-012
+  - M-ACCOUNT-001~M-ACCOUNT-012
+  project_rules: P-* generated per project
+fixed_external_modules:
+- identity_verification
+- payment
+- storage
+- email
+- withdrawal
+reusable_platform_modules:
+- account
+global_lightweight_baseline: LIGHTWEIGHT_COMPLETE
+self_hosted_image_captcha:
+  enabled: true
+  third_party: false
+  mandatory_actions_locked: true
+  new_ticket_for_each_protected_submit: true
+  admin_login_always: true
+  account_actions_when_module_enabled: true
+  captcha_hmac_secret_generated_by_codex: true
+global_rules_always_active: true
+identity_provider:
+  authoritative_host: https://sdfaceid.market.alicloudapi.com
+  authoritative_path: /face_id_card/check
+  deprecated_kzfacev1_forbidden: true
+payment_capabilities:
+  native_android_cashier: true
+  online_profiles: [fuylink_online, xapay_online]
+  xapay_confirmed_methods: [ALIPAY_XAPAY, WECHAT_XAPAY]
+  manual_qr_methods: [ALIPAY_QR, WECHAT_QR, QQ_QR]
+  manual_review_uses_unified_entitlement_and_commission_settlement: true
+  order_kind_method_filter: server_list_and_submit
+withdrawal_payout:
+  mode: ALIPAY_CERTIFICATE
+  private_material_packaged: true
+  requires_module_enable_to_copy: true
+  real_money_test_requires_explicit_per_project_authorization: true
+primary_files:
+- 00_立即阅读/00_母版定位与四层结构.md
+- 00_立即阅读/01_给ChatGPT的整合指令.txt
+- 01_规则分层与全局项目规则/全局强制项目规则_G-001~G-047.md
+- 01_规则分层与全局项目规则/MODULE_CATALOG.yaml
+- 01_规则分层与全局项目规则/V1.4.1完整基线继承修订说明.md
+- 02_项目输入与规则解析模板/RESOLVED_RULESET_TEMPLATE.yaml
+- 05_固定第三方能力与真实配置/PRIVATE_INTEGRATIONS.yaml
+- 05_固定第三方能力与真实配置/01_实名认证/阿里云人证比对接口合同.md
+- 05_固定第三方能力与真实配置/05_提现与支付宝证书出款/MODULE_MANIFEST.yaml
+- 05_固定第三方能力与真实配置/05_提现与支付宝证书出款/提现与自动出款总规范.md
+- 05_固定第三方能力与真实配置/02_支付/XApay在线支付接入合同.md
+- 05_固定第三方能力与真实配置/02_支付/扫码支付与人工审核结算规范.md
+- 05_固定第三方能力与真实配置/02_支付/按订单类型隐藏支付方式规范.md
+- 05_固定第三方能力与真实配置/02_支付/PAYMENT_API_CONTRACTS.yaml
+- 05_固定第三方能力与真实配置/02_支付/PAYMENT_DATABASE_SCHEMA.md
+- 05_固定第三方能力与真实配置/02_支付/PAYMENT_TEST_MATRIX.md
+- 06_轻量平台基线全局规则/LIGHTWEIGHT_PLATFORM_BASELINE.yaml
+- 07_可选平台复用模块/01_账号与会话/MODULE_MANIFEST.yaml
+- 09_Codex全局执行与版本/CODEX_START_HERE.md
+minimum_api_security_boundary: true
+generated_internal_secrets_template: 02_项目输入与规则解析模板/GENERATED_RUNTIME_SECRETS_TEMPLATE.yaml
+page_state_preservation:
+  always_active: true
+  preserve_scroll_filters_tabs_pagination_drafts: true
+  automatic_full_reload_on_back: false
+  blank_page_on_return_forbidden: true
+professional_icon_system:
+  always_active: true
+  default_functional_library: remix_icon_svg
+  official_brand_assets_first: true
+  text_emoji_icon_font_as_icon_forbidden: true
+  icon_registry_required: true
+  used_svg_sources_bundled: true

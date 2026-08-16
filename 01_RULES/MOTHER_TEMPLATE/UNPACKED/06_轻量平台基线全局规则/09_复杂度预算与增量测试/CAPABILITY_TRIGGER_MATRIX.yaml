@@ -1,0 +1,38 @@
+template_version: 1.4.2
+triggers:
+- when: project requires user registration, login, password recovery or sessions
+  enable:
+  - account
+  required_baseline:
+  - self_hosted_image_captcha_and_rate_limit
+- when: account uses email code or email verification
+  enable:
+  - email
+- when: account uses SMS
+  require_owner_input:
+  - sms provider credentials, signature, template codes
+- when: identity verification enabled
+  enable:
+  - storage
+  conditional_enable:
+  - payment when charging is paid or admin-switchable
+- when: payment enabled
+  include:
+  - native Android cashier
+  - callback verification
+  - query and compensation
+  - XApay Alipay/WeChat online profiles
+  - manual Alipay/WeChat/QQ QR review profile
+  - order-kind payment method filtering
+- when: project supports user uploads
+  consider_enable:
+  - storage
+- when: a long form can lose user input
+  add_minimum:
+  - draft recovery
+- when: a high-risk anonymous endpoint exists
+  apply:
+  - captcha ticket
+  - IP/device/account rate limit
+  - generic error response
+

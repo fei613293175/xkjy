@@ -1,0 +1,8 @@
+dependencies:
+- name: 待填写
+  ecosystem: android|backend|frontend
+  version: 待填写
+  purpose: 待填写
+  permissions_or_risks: []
+  upgrade_reason: ''
+  locked: true

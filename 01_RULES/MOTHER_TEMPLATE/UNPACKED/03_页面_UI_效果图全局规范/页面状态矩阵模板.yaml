@@ -1,0 +1,16 @@
+module: 待填写
+page_id: APP-MODULE-001
+page_name: 待填写
+states:
+- state_id: DEFAULT
+  required: true
+- state_id: LOADING
+  required: true
+- state_id: EMPTY
+  required: 按业务判断
+- state_id: ERROR
+  required: true
+- state_id: SUCCESS
+  required: 按业务判断
+- state_id: DISABLED
+  required: 按业务判断

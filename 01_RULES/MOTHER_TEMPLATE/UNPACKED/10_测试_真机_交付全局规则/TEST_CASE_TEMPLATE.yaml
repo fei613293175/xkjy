@@ -1,0 +1,43 @@
+test_case:
+  id: TC-001
+  name: 待填写
+  release: R01
+  priority: P0
+  applicability:
+    scope: global|project_specific|fixed_external_module|platform_module|global_baseline
+    module_id: project|identity_verification|payment|storage|email|account|baseline
+    required_when: always|module_enabled|capability_present
+  applicable_rule_ids: []
+  type: functional|integration|security|visual|real_device|navigation_state
+  page_ids: []
+  state_ids: []
+  preconditions: []
+  test_data: []
+  steps:
+  - action: 待填写
+    expected: 待填写
+  security_checks:
+    captcha_bypass_test: false
+    rate_limit_test: false
+    idempotency_test: false
+  navigation_state_checks:
+    deep_scroll_return_same_anchor: false
+    filters_tabs_pagination_preserved: false
+    form_draft_preserved: false
+    external_activity_return_preserved: false
+    no_blank_full_reload: false
+    duplicate_network_request_absent: false
+  icon_checks:
+    text_as_icon_absent: false
+    icon_font_absent: false
+    icon_registry_matches_assets: false
+    official_or_neutral_brand_icon: false
+    accessibility_label_present: false
+  evidence:
+    screenshots: []
+    screen_recordings: []
+    network_request_counts: []
+    logs: []
+    request_ids: []
+  result: NOT_RUN|PASS|FAIL|NOT_APPLICABLE
+  issue_ids: []

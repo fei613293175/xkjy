@@ -1,0 +1,22 @@
+template_version: "1.3.0"
+overrides: []
+
+required_fields_for_each_override:
+  - override_id
+  - rule_id
+  - owner_exact_instruction
+  - reason
+  - effective_scope
+  - replacement_requirement
+  - approved_at
+  - status
+
+example_structure:
+  override_id: "OVR-001"
+  rule_id: "G-XXX"
+  owner_exact_instruction: "项目所有者原话"
+  reason: "待填写"
+  effective_scope: "整个项目|指定版本|指定页面|指定模块"
+  replacement_requirement: "待填写"
+  approved_at: "YYYY-MM-DDTHH:mm:ss+08:00"
+  status: "ACTIVE|REVOKED"

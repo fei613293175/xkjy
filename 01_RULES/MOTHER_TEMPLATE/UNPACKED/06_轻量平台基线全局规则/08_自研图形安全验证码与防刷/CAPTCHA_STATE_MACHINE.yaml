@@ -1,0 +1,26 @@
+challenge_states:
+- CREATED
+- FAILED_ATTEMPT
+- VERIFIED
+- EXPIRED
+- REFRESHED_INVALID
+- LOCKED
+ticket_states:
+- ISSUED
+- CONSUMED
+- EXPIRED
+- REVOKED
+transitions:
+- CREATED -> VERIFIED on correct answer
+- CREATED -> FAILED_ATTEMPT on incorrect answer
+- FAILED_ATTEMPT -> CREATED when attempts remain
+- FAILED_ATTEMPT -> LOCKED at max attempts
+- CREATED/FAILED_ATTEMPT -> REFRESHED_INVALID when refreshed
+- VERIFIED -> ISSUED ticket for exactly one purpose
+- ISSUED -> CONSUMED atomically by the matching protected action
+- any active challenge/ticket -> EXPIRED at TTL
+invariants:
+- one challenge can issue at most one ticket
+- one ticket can authorize at most one protected business request
+- ticket purpose cannot be changed
+- send-code ticket cannot authorize final register/login/reset

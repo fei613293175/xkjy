@@ -1,0 +1,11 @@
+master_domain: "orbexa.cc"
+entries:
+  - project_code: "示例"
+    project_name: "示例项目"
+    host: "示例-api.orbexa.cc"
+    service: "api"
+    status: "planned|dns_created|active|retired"
+    cloudflare_proxy: true
+    origin: "待填写"
+    created_at: "YYYY-MM-DD"
+    notes: ""

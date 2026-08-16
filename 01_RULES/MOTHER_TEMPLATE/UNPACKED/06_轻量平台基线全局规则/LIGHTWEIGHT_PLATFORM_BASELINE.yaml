@@ -1,0 +1,52 @@
+version: 1.4.0
+profile: LIGHTWEIGHT_COMPLETE
+always_active: true
+components:
+  standard_api_and_error_codes:
+    required: true
+    heavy_platform_required: false
+    minimum_security_boundary: true
+  android_signing_version_minimal_update:
+    required_when: android_app.enabled == true
+    gray_release_default: false
+  database_migration_and_basic_backup:
+    required_when: database exists
+    multi_region_disaster_recovery_default: false
+  structured_logs_and_health_check:
+    required: true
+    distributed_tracing_platform_default: false
+  minimal_runtime_config_and_emergency_switches:
+    required: true
+    over_configuration_forbidden: true
+  critical_idempotency_and_bounded_retry:
+    required_for:
+    - payment
+    - identity
+    - verification_code
+    - upload
+    - order
+    - benefit_or_reward
+    - batch_write
+  dependency_lock_and_reproducible_build:
+    required: true
+  self_hosted_image_captcha_and_rate_limit:
+    required: true
+    third_party: false
+    admin_login_always_protected: true
+    mandatory_actions_locked: true
+    new_ticket_per_protected_submit: true
+  complexity_budget_and_incremental_testing:
+    required: true
+    max_new_platform_modules_per_release: 1
+  page_state_preservation_and_no_unnecessary_reload:
+    required: true
+    preserve_on_back: true
+    automatic_full_reload_on_back: false
+    stale_while_revalidate: true
+  professional_svg_icon_system:
+    required: true
+    default_functional_library: remix_icon_svg
+    text_as_icon_forbidden: true
+    icon_font_forbidden: true
+    used_svg_sources_bundled: true
+

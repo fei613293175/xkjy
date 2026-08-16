@@ -1,0 +1,17 @@
+profile: LIGHTWEIGHT_COMPLETE
+enabled:
+- standard_api
+- captcha
+- release_signing
+- db_migration
+- backup
+- structured_logs
+- health_checks
+- config_center
+- idempotency
+- page_state_retention
+- icon_registry
+excluded_heavy_governance:
+- Governance V5.0
+- multi-stage approval gates
+- unbounded documentation loops

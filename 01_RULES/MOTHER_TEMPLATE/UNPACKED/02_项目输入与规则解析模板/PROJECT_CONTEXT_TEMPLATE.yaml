@@ -1,0 +1,31 @@
+template_version: 1.4.2
+project_name: 待填写
+project_code: 待填写
+status: PLANNING
+last_updated: YYYY-MM-DDTHH:mm:ss+08:00
+source_of_truth:
+  approved_requirements: []
+  approved_change_requests: []
+  template_rules_version: V1.4.2 / T-001~T-014
+  global_rules_version: V1.4.2 / G-001~G-047
+  lightweight_baseline_version: V1.4.2 / LIGHTWEIGHT_COMPLETE
+  resolved_ruleset_file: RESOLVED_RULESET.yaml
+fixed_decisions: []
+project_overrides_file: RULE_OVERRIDE_REGISTER.yaml
+out_of_scope: []
+open_items_requiring_owner: []
+enabled_fixed_external_modules: []
+disabled_fixed_external_modules: []
+financial_external_actions:
+  real_alipay_transfer_test_authorized: false
+  authorized_payee: null
+  authorized_single_amount_limit_yuan: null
+  authorized_total_amount_limit_yuan: null
+enabled_platform_modules: []
+disabled_platform_modules: []
+project_specific_features: []
+current_release_file: CURRENT_RELEASE.yaml
+feature_matrix_file: FEATURE_MATRIX.yaml
+page_index_file: PAGE_INDEX.yaml
+release_manifest_file: RELEASE_MANIFEST.yaml
+package_content_matrix_file: PROJECT_PACKAGE_CONTENT_MATRIX.yaml

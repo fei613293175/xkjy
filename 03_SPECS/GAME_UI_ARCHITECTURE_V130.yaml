@@ -1,0 +1,29 @@
+version: 1.3.0
+visual_direction:
+  name: "深空矿业·稳重游戏化"
+  principles:
+    - 游戏首页优先展示矿场、棋盘、矿机和收益，不使用普通APP仪表盘结构
+    - 深海军蓝为基础，金橙用于收益与主操作，紫色用于能源与稀有权益，青色仅作科技强调
+    - 业务页面保持紧凑、可读、可操作，禁止大面积无意义空白
+    - 组件边框细而克制，不使用整页高亮青色粗描边
+shells:
+  GameSceneShell:
+    pages: [APP-GAME-001, APP-GAME-002, APP-GAME-007, APP-GAME-008, APP-GAME-011]
+    background: bg_mine_scene
+  GameBusinessShell:
+    pages: [APP-PROJ, APP-MALL, APP-MARKET, APP-WALLET, APP-INVITE, APP-ME]
+    background: [bg_business_space, bg_market, bg_profile]
+  SecureFlowShell:
+    pages: [APP-AUTH, APP-SEC, APP-PAY, APP-ID, APP-WD]
+    background: [bg_auth_space, bg_secure]
+root_tabs:
+  - {page_id: APP-GAME-002, nav: home, back_button: false}
+  - {page_id: APP-PROJ-001, nav: project, back_button: false}
+  - {page_id: APP-MALL-001, nav: mall, back_button: false}
+  - {page_id: APP-MARKET-001, nav: discover, back_button: false}
+  - {page_id: APP-ME-001, nav: me, back_button: false}
+rendering:
+  required_engine: Chromium
+  prohibited_engine_for_app_baselines: [WeasyPrint, wkhtmltopdf]
+  base_dp: 360x760
+  baseline_png: 1080x2280

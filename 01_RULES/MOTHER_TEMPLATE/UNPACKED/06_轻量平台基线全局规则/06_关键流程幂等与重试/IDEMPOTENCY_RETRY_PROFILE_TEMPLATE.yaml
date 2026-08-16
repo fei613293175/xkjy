@@ -1,0 +1,10 @@
+critical_flows:
+- flow: 待填写
+  idempotency_key_source: client_or_server
+  unique_constraint: 待填写
+  retryable_errors: []
+  max_attempts: 3
+  backoff: bounded_exponential
+  manual_compensation: true
+infinite_retry_forbidden: true
+ordinary_read_api_complex_idempotency_required: false

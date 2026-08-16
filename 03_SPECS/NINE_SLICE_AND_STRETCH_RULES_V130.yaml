@@ -1,0 +1,33 @@
+version: 1.3.0
+rules:
+  - component: game_panel
+    source: 07_GAME_ASSETS/v130/panels/panel_regular.svg
+    stretch_mode: vector_or_9patch
+    safe_insets_dp: {left: 18, top: 16, right: 18, bottom: 16}
+    minimum_size_dp: {width: 120, height: 72}
+  - component: primary_button
+    source: compose_gradient
+    stretch_mode: native_shape_only
+    height_dp: 42
+    min_width_dp: 84
+    max_width: parent_width
+    text_lines: 1
+  - component: secondary_button
+    source: compose_gradient
+    stretch_mode: native_shape_only
+    height_dp: 42
+    min_width_dp: 72
+    max_width: parent_width
+    text_lines: 1
+  - component: miner_asset
+    source: 06_MINERS/PNG_V130
+    stretch_mode: fit_preserve_ratio
+    prohibited: [fill_bounds, non_uniform_scale, crop]
+  - component: icon
+    source: 07_GAME_ASSETS/v130/icons
+    stretch_mode: fit_preserve_ratio
+    standard_sizes_dp: [18, 22, 26, 35]
+  - component: project_thumbnail
+    source: 07_GAME_ASSETS/v130/project_thumbs
+    stretch_mode: crop_center
+    required_ratio: "16:9"

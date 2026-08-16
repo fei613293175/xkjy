@@ -1,0 +1,18 @@
+project: 星矿纪元
+assets:
+- id: BRAND-ICON
+  file: 05_BRAND/app_icon/app_icon_1024.png
+  usage: Android App图标
+  transparent: false
+- id: BRAND-SPLASH
+  file: 05_BRAND/android_splash_1080x2400.png
+  usage: Android启动图
+  transparent: false
+- id: BRAND-BANNER
+  file: 05_BRAND/brand_banner_1600x900.png
+  usage: 品牌图
+  transparent: false
+- id: BRAND-INVITE
+  file: 05_BRAND/invite_poster_1080x1920.png
+  usage: 邀请海报效果图
+  transparent: false

@@ -1,0 +1,368 @@
+catalog_version: 1.4.0
+scope_types:
+  T: template_integration
+  G: global_project_always_active
+  M: conditional_module
+  P: project_specific_generated
+template_rules:
+- id: T-001
+  title: 私有母版定位
+  applies_when: ChatGPT uses mother template
+- id: T-002
+  title: 四层规则分离
+  applies_when: ChatGPT uses mother template
+- id: T-003
+  title: 完整读取后整合
+  applies_when: ChatGPT uses mother template
+- id: T-004
+  title: 已有信息不得重复索取
+  applies_when: ChatGPT uses mother template
+- id: T-005
+  title: G规则完整继承
+  applies_when: ChatGPT uses mother template
+- id: T-006
+  title: 仅抽取已启用的固定第三方能力
+  applies_when: ChatGPT uses mother template
+- id: T-007
+  title: 仅抽取已启用的平台复用模块
+  applies_when: ChatGPT uses mother template
+- id: T-008
+  title: 解析全部依赖
+  applies_when: ChatGPT uses mother template
+- id: T-009
+  title: 生成已解析规则集
+  applies_when: ChatGPT uses mother template
+- id: T-010
+  title: 当前项目需求精确整合
+  applies_when: ChatGPT uses mother template
+- id: T-011
+  title: 私有配置按需复制
+  applies_when: ChatGPT uses mother template
+- id: T-012
+  title: 项目效果图生成时点
+  applies_when: ChatGPT uses mother template
+- id: T-013
+  title: 轻量平台基线完整但不过度
+  applies_when: ChatGPT uses mother template
+- id: T-014
+  title: 打包前适用性校验
+  applies_when: ChatGPT uses mother template
+global_rules:
+- id: G-001
+  title: 正式商业产品结构
+  applies_when: always
+- id: G-002
+  title: 全项目覆盖边界
+  applies_when: always
+- id: G-003
+  title: 项目事实源
+  applies_when: always
+- id: G-004
+  title: 规则冲突和覆盖
+  applies_when: always
+- id: G-005
+  title: 按需模块化
+  applies_when: always
+- id: G-006
+  title: 服务器统一开发
+  applies_when: always
+- id: G-007
+  title: 禁止本机搭建环境
+  applies_when: always
+- id: G-008
+  title: 复用现有服务器能力
+  applies_when: always
+- id: G-009
+  title: 唯一子域名
+  applies_when: always
+- id: G-010
+  title: 启用模块的真实测试配置直接复用
+  applies_when: always
+- id: G-011
+  title: 密钥只在后端使用
+  applies_when: always
+- id: G-012
+  title: 每个可视化页面必须有 Page ID
+  applies_when: always
+- id: G-013
+  title: 每个页面必须有完整规格
+  applies_when: always
+- id: G-014
+  title: 每个页面必须写实际 UI 数值
+  applies_when: always
+- id: G-015
+  title: 每个页面必须有确定性效果图
+  applies_when: always
+- id: G-016
+  title: 前后端一一绑定
+  applies_when: always
+- id: G-017
+  title: 管理后台企业级标准
+  applies_when: always
+- id: G-018
+  title: 后台统一可操作性
+  applies_when: always
+- id: G-019
+  title: 后台统一可观测性
+  applies_when: always
+- id: G-020
+  title: 后台统一可控性
+  applies_when: always
+- id: G-021
+  title: 后台统一审计性
+  applies_when: always
+- id: G-022
+  title: 防漂移但禁止重治理
+  applies_when: always
+- id: G-023
+  title: 版本数量控制
+  applies_when: always
+- id: G-024
+  title: 单版本单目标
+  applies_when: always
+- id: G-025
+  title: 真机预检和多设备调度
+  applies_when: always
+- id: G-026
+  title: 禁止模拟器替代
+  applies_when: always
+- id: G-027
+  title: 真机业务与视觉验收
+  applies_when: always
+- id: G-028
+  title: 未通过不得交付
+  applies_when: always
+- id: G-029
+  title: 设备释放
+  applies_when: always
+- id: G-030
+  title: 中文桌面交付
+  applies_when: always
+- id: G-031
+  title: 交付内容可核验
+  applies_when: always
+- id: G-032
+  title: 历史构建清理
+  applies_when: always
+- id: G-033
+  title: 异常恢复
+  applies_when: always
+- id: G-034
+  title: 只交付已确认范围
+  applies_when: always
+- id: G-035
+  title: 项目所有者测试说明
+  applies_when: always
+- id: G-036
+  title: 统一 API 协议、错误码与最小安全边界
+  applies_when: always
+- id: G-037
+  title: Android 签名、版本与最小在线升级
+  applies_when: always
+- id: G-038
+  title: 数据库迁移、基础备份与可恢复
+  applies_when: always
+- id: G-039
+  title: 结构化日志与基础健康检查
+  applies_when: always
+- id: G-040
+  title: 最小配置中心与紧急开关
+  applies_when: always
+- id: G-041
+  title: 关键流程幂等、有限重试与补偿
+  applies_when: always
+- id: G-042
+  title: 依赖锁定与可重复构建
+  applies_when: always
+- id: G-043
+  title: 自研图形安全验证码与匿名接口防刷
+  applies_when: always
+- id: G-044
+  title: 复杂度预算与触发式开发
+  applies_when: always
+- id: G-045
+  title: 增量验收与阶段全量回归
+  applies_when: always
+- id: G-046
+  title: 页面返回状态保持与禁止无故重载
+  applies_when: always
+- id: G-047
+  title: 专业 SVG 图标体系与禁止文字代图标
+  applies_when: always
+module_rules:
+  identity_verification:
+  - id: M-ID-001
+    title: 启用边界
+    applies_when: fixed_external_modules.identity_verification.resolved_enabled ==
+      true
+  - id: M-ID-002
+    title: 基础认证定位
+    applies_when: fixed_external_modules.identity_verification.resolved_enabled ==
+      true
+  - id: M-ID-003
+    title: 免费收费与有效期配置
+    applies_when: fixed_external_modules.identity_verification.resolved_enabled ==
+      true
+  - id: M-ID-004
+    title: 本地零留存
+    applies_when: fixed_external_modules.identity_verification.resolved_enabled ==
+      true
+  - id: M-ID-005
+    title: 静默上传
+    applies_when: fixed_external_modules.identity_verification.resolved_enabled ==
+      true
+  - id: M-ID-006
+    title: 真实接口闭环
+    applies_when: fixed_external_modules.identity_verification.resolved_enabled ==
+      true
+  - id: M-ID-007
+    title: 服务端保留和后台管理
+    applies_when: fixed_external_modules.identity_verification.resolved_enabled ==
+      true
+  - id: M-ID-008
+    title: 依赖解析
+    applies_when: fixed_external_modules.identity_verification.resolved_enabled ==
+      true
+  payment:
+  - id: M-PAY-001
+    title: 启用边界
+    applies_when: fixed_external_modules.payment.resolved_enabled == true
+  - id: M-PAY-002
+    title: Android 原生收银台
+    applies_when: fixed_external_modules.payment.resolved_enabled == true
+  - id: M-PAY-003
+    title: 第三方支付页面边界
+    applies_when: fixed_external_modules.payment.resolved_enabled == true
+  - id: M-PAY-004
+    title: 后端创建订单和发起支付
+    applies_when: fixed_external_modules.payment.resolved_enabled == true
+  - id: M-PAY-005
+    title: 回调验签和幂等
+    applies_when: fixed_external_modules.payment.resolved_enabled == true
+  - id: M-PAY-006
+    title: 回前台查询和补单
+    applies_when: fixed_external_modules.payment.resolved_enabled == true
+  - id: M-PAY-007
+    title: 后台配置和可观测
+    applies_when: fixed_external_modules.payment.resolved_enabled == true
+  - id: M-PAY-008
+    title: 真实测试配置
+    applies_when: fixed_external_modules.payment.resolved_enabled == true
+  storage:
+  - id: M-STORAGE-001
+    title: 启用边界
+    applies_when: fixed_external_modules.storage.resolved_enabled == true
+  - id: M-STORAGE-002
+    title: 真实 R2 配置
+    applies_when: fixed_external_modules.storage.resolved_enabled == true
+  - id: M-STORAGE-003
+    title: 项目路径隔离
+    applies_when: fixed_external_modules.storage.resolved_enabled == true
+  - id: M-STORAGE-004
+    title: 后端持有凭据
+    applies_when: fixed_external_modules.storage.resolved_enabled == true
+  - id: M-STORAGE-005
+    title: 文件业务闭环
+    applies_when: fixed_external_modules.storage.resolved_enabled == true
+  - id: M-STORAGE-006
+    title: 后台管理和清理
+    applies_when: fixed_external_modules.storage.resolved_enabled == true
+  email:
+  - id: M-EMAIL-001
+    title: 启用边界
+    applies_when: fixed_external_modules.email.resolved_enabled == true
+  - id: M-EMAIL-002
+    title: 真实 SMTP 服务
+    applies_when: fixed_external_modules.email.resolved_enabled == true
+  - id: M-EMAIL-003
+    title: 验证码规则
+    applies_when: fixed_external_modules.email.resolved_enabled == true
+  - id: M-EMAIL-004
+    title: 安全和用途隔离
+    applies_when: fixed_external_modules.email.resolved_enabled == true
+  - id: M-EMAIL-005
+    title: 队列日志和统计
+    applies_when: fixed_external_modules.email.resolved_enabled == true
+  - id: M-EMAIL-006
+    title: 配置和凭据边界
+    applies_when: fixed_external_modules.email.resolved_enabled == true
+  withdrawal:
+  - id: M-WD-001
+    title: 启用边界
+    applies_when: fixed_external_modules.withdrawal.resolved_enabled == true
+  - id: M-WD-002
+    title: 实名依赖与姓名锁定
+    applies_when: fixed_external_modules.withdrawal.resolved_enabled == true
+  - id: M-WD-003
+    title: 固定档位与金额精度
+    applies_when: fixed_external_modules.withdrawal.resolved_enabled == true
+  - id: M-WD-004
+    title: 余额冻结与不可变快照
+    applies_when: fixed_external_modules.withdrawal.resolved_enabled == true
+  - id: M-WD-005
+    title: 每日最多提现次数
+    applies_when: fixed_external_modules.withdrawal.resolved_enabled == true
+  - id: M-WD-006
+    title: 两种出款模式
+    applies_when: fixed_external_modules.withdrawal.resolved_enabled == true
+  - id: M-WD-007
+    title: 证书模式与后端隔离
+    applies_when: fixed_external_modules.withdrawal.resolved_enabled == true
+  - id: M-WD-008
+    title: 服务端幂等和并发控制
+    applies_when: fixed_external_modules.withdrawal.resolved_enabled == true
+  - id: M-WD-009
+    title: 签名验签和查单对账
+    applies_when: fixed_external_modules.withdrawal.resolved_enabled == true
+  - id: M-WD-010
+    title: 成功结算与失败退回
+    applies_when: fixed_external_modules.withdrawal.resolved_enabled == true
+  - id: M-WD-011
+    title: 后台权限和审计
+    applies_when: fixed_external_modules.withdrawal.resolved_enabled == true
+  - id: M-WD-012
+    title: 真实联调边界
+    applies_when: fixed_external_modules.withdrawal.resolved_enabled == true
+  account:
+  - id: M-ACCOUNT-001
+    title: 启用边界
+    applies_when: reusable_platform_modules.account.resolved_enabled == true
+  - id: M-ACCOUNT-002
+    title: 登录标识与方式选择
+    applies_when: reusable_platform_modules.account.resolved_enabled == true
+  - id: M-ACCOUNT-003
+    title: 注册流程
+    applies_when: reusable_platform_modules.account.resolved_enabled == true
+  - id: M-ACCOUNT-004
+    title: 登录流程
+    applies_when: reusable_platform_modules.account.resolved_enabled == true
+  - id: M-ACCOUNT-005
+    title: 找回与重置密码
+    applies_when: reusable_platform_modules.account.resolved_enabled == true
+  - id: M-ACCOUNT-006
+    title: 自研图形验证码门禁
+    applies_when: reusable_platform_modules.account.resolved_enabled == true
+  - id: M-ACCOUNT-007
+    title: 会话与设备管理
+    applies_when: reusable_platform_modules.account.resolved_enabled == true
+  - id: M-ACCOUNT-008
+    title: 密码安全与防暴力尝试
+    applies_when: reusable_platform_modules.account.resolved_enabled == true
+  - id: M-ACCOUNT-009
+    title: 账号状态与生命周期
+    applies_when: reusable_platform_modules.account.resolved_enabled == true
+  - id: M-ACCOUNT-010
+    title: 企业级账号后台
+    applies_when: reusable_platform_modules.account.resolved_enabled == true
+  - id: M-ACCOUNT-011
+    title: API数据库日志闭环
+    applies_when: reusable_platform_modules.account.resolved_enabled == true
+  - id: M-ACCOUNT-012
+    title: 页面测试与依赖裁剪
+    applies_when: reusable_platform_modules.account.resolved_enabled == true
+project_rule_prefix: P-
+authority:
+  human_readable_global: 01_规则分层与全局项目规则/全局强制项目规则_G-001~G-047.md
+  human_readable_template: 01_规则分层与全局项目规则/母版整合规则_T-001~T-014.md
+  applicability_template: 02_项目输入与规则解析模板/RESOLVED_RULESET_TEMPLATE.yaml
+  lightweight_baseline: 06_轻量平台基线全局规则/LIGHTWEIGHT_PLATFORM_BASELINE.yaml

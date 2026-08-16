@@ -1,0 +1,140 @@
+resolution:
+  template_version: 1.4.2
+  project_name: 待填写
+  generated_at: YYYY-MM-DDTHH:mm:ss+08:00
+  delivery_profile: RAPID_DELIVERY
+global_rules:
+  always_active: true
+  ruleset: G-001~G-047
+  applied_rule_ids:
+  - G-001
+  - G-002
+  - G-003
+  - G-004
+  - G-005
+  - G-006
+  - G-007
+  - G-008
+  - G-009
+  - G-010
+  - G-011
+  - G-012
+  - G-013
+  - G-014
+  - G-015
+  - G-016
+  - G-017
+  - G-018
+  - G-019
+  - G-020
+  - G-021
+  - G-022
+  - G-023
+  - G-024
+  - G-025
+  - G-026
+  - G-027
+  - G-028
+  - G-029
+  - G-030
+  - G-031
+  - G-032
+  - G-033
+  - G-034
+  - G-035
+  - G-036
+  - G-037
+  - G-038
+  - G-039
+  - G-040
+  - G-041
+  - G-042
+  - G-043
+  - G-044
+  - G-045
+  - G-046
+  - G-047
+lightweight_platform_baseline:
+  profile: LIGHTWEIGHT_COMPLETE
+  resolved: false
+  components:
+    standard_api_and_error_codes: false
+    android_signing_version_minimal_update: false
+    database_migration_and_basic_backup: false
+    structured_logs_and_health_check: false
+    minimal_runtime_config_and_emergency_switches: false
+    critical_idempotency_and_bounded_retry: false
+    dependency_lock_and_reproducible_build: false
+    self_hosted_image_captcha_and_rate_limit: false
+    complexity_budget_and_incremental_testing: false
+    page_state_preservation_and_no_unnecessary_reload: false
+    professional_svg_icon_system: false
+  advanced_capabilities_disabled_by_default:
+  - full_analytics_platform
+  - distributed_tracing_platform
+  - gray_release
+  - workflow_engine
+  - full_offline_first
+  - custom_bi_platform
+fixed_external_modules:
+  identity_verification:
+    requested: false
+    resolved_enabled: false
+    activation_reason: not_requested
+    rules: []
+    dependencies_resolved: []
+  payment:
+    requested: false
+    resolved_enabled: false
+    activation_reason: not_requested
+    rules: []
+    native_android_cashier_included: true
+    enabled_profiles: []
+    enabled_methods: []
+    manual_qr_allowed_business_types: []
+    order_kind_method_filter_resolved: false
+  storage:
+    requested: false
+    resolved_enabled: false
+    activation_reason: not_requested
+    rules: []
+  email:
+    requested: false
+    resolved_enabled: false
+    activation_reason: not_requested
+    rules: []
+  withdrawal:
+    requested: false
+    resolved_enabled: false
+    activation_reason: not_requested
+    rules: []
+    provider: alipay_certificate_mode
+    dependencies_resolved: []
+    real_transfer_test_authorized: false
+reusable_platform_modules:
+  account:
+    requested: false
+    resolved_enabled: false
+    activation_reason: not_requested
+    rules: []
+    login_methods: []
+    dependencies_resolved: []
+project_specific_rules: []
+overrides: []
+validation:
+  all_global_rules_present: false
+  lightweight_baseline_resolved: false
+  dependencies_resolved: false
+  disabled_modules_excluded: false
+  enabled_module_rules_included: false
+  enabled_external_module_credentials_included: false
+  payment_profiles_and_server_secrets_resolved: false
+  payment_manual_review_settlement_resolved: false
+  payment_order_kind_method_filter_resolved: false
+  payout_private_credentials_included_only_when_withdrawal_enabled: false
+  payout_certificate_mode_and_preflight_resolved: false
+  account_and_captcha_flow_consistent: false
+  complexity_budget_respected: false
+  package_ready_for_codex: false
+  page_state_contracts_complete: false
+  icon_registry_and_svg_assets_complete: false

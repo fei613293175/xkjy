@@ -1,0 +1,23 @@
+account_states:
+- PENDING_VERIFICATION
+- ACTIVE
+- TEMPORARILY_RESTRICTED
+- FROZEN
+- DELETION_PENDING
+- DELETED
+session_states:
+- ACTIVE
+- REFRESHED
+- REVOKED
+- EXPIRED
+password_recovery_states:
+- REQUESTED
+- CODE_SENT
+- VERIFIED
+- RESET_COMPLETED
+- EXPIRED
+rules:
+  frozen_account_can_login: false
+  deleted_account_can_login: false
+  password_reset_token_one_time: true
+  refresh_token_rotation: true

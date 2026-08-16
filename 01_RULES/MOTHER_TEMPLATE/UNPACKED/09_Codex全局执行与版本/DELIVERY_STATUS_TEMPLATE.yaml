@@ -1,0 +1,19 @@
+release_id: "R01"
+status: "IN_PROGRESS"
+progress:
+  code: 0
+  database: 0
+  api: 0
+  app_ui: 0
+  admin_ui: 0
+  integrations: 0
+  automated_tests: 0
+  real_device_tests: 0
+  visual_acceptance: 0
+  delivery_files: 0
+blocking_issues: []
+last_substantial_work:
+  type: "code|deploy|test|fix"
+  description: ""
+  timestamp: ""
+next_action: ""

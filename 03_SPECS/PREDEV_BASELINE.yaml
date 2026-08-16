@@ -1,0 +1,54 @@
+project: 星矿纪元
+repository: https://github.com/fei613293175/xkjy.git
+baseline_id: XKJY_V130_PREDEV_HARDENED
+baseline_version: 1.3.0-predev.1
+status: READY_FOR_P00_SERVER_PREFLIGHT
+source_package:
+  package_version: 1.3.0
+  business_baseline: V1.1.0
+  android_visual_baseline: V1.3.0
+  private_mother_template: V1.4.2
+  source_archive_policy: external_read_only_audit_source
+implementation_status:
+  android: NOT_STARTED
+  backend: NOT_STARTED
+  admin_web: NOT_STARTED
+  h5: NOT_STARTED
+  deployment: NOT_STARTED
+platform_contracts:
+  android:
+    design_viewport_dp: 360x760
+    visual_baseline_px: 1080x2280
+    effect_state_count: 132
+    visual_fact_source:
+      - 04_UI/APP
+      - 10_HTML/APP
+      - 10_HTML/shared/styles_v130.css
+      - 03_SPECS/DESIGN_TOKENS_GAME_V130.json
+      - 03_SPECS/NINE_SLICE_AND_STRETCH_RULES_V130.yaml
+  h5:
+    visual_baseline_px: 780x1688
+    effect_state_count: 5
+  admin:
+    visual_baseline_px: 1440x900
+    effect_state_count: 107
+  all_platforms:
+    page_id_count: 212
+    effect_state_count: 244
+security_boundary:
+  secrets_in_repository: false
+  server_secret_store_required: true
+  client_secret_delivery: prohibited
+  legacy_v120_content: excluded
+validation:
+  repository_validator: 13_SCRIPTS/validate_hardened_package.py
+  visual_validator: 13_SCRIPTS/validate_visual_v130.py
+  permitted_execution: connected_server_only
+  local_project_build_or_non_device_test: prohibited
+p00_required_server_preflight:
+  - repository_checkout
+  - server_secret_presence
+  - docker_postgresql_redis_availability
+  - android_signing_material_presence
+  - baseline_validation_toolchain
+  - connected_android_device_pool

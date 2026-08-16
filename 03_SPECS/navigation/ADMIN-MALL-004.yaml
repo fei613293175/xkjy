@@ -1,0 +1,43 @@
+page_id: ADMIN-MALL-004
+policy_id: LB-PAGE-STATE
+preserve_on_return: true
+state_owner: destination_view_model
+preserve_fields:
+- scroll_anchor_item_id
+- scroll_offset
+- selected_tab
+- search_query
+- filters
+- sort
+- pagination_or_cursor
+- expanded_items
+- selected_items
+- form_draft
+- loaded_content
+scroll_restoration:
+  container: lazy_list
+  stable_item_key: business_id
+  anchor_and_offset_required: true
+refresh_policy:
+  on_first_entry_without_cache: true
+  on_back: false
+  on_resume: false
+  user_initiated: true
+  stale_while_revalidate: true
+  keep_existing_content: true
+mutation_merge:
+  strategy: local_patch
+  deleted_item_fallback: keep_nearest_visible_position
+process_recreation:
+  restore_safe_state: true
+  sensitive_fields_excluded:
+  - password
+  - verification_code
+  - identity_media
+allowed_reset_exceptions: []
+test_cases:
+- deep_scroll_open_child_and_back
+- filters_tabs_pagination_preserved
+- background_foreground_preserved
+- external_activity_return_preserved
+- no_blank_or_duplicate_reload

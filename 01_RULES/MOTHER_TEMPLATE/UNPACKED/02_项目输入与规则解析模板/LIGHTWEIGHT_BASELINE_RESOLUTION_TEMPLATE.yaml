@@ -1,0 +1,47 @@
+template_version: 1.4.0
+profile: LIGHTWEIGHT_COMPLETE
+status: UNRESOLVED
+required_components:
+- id: LB-API
+  name: 统一API与错误码
+  resolved: false
+- id: LB-APP-RELEASE
+  name: Android签名版本与最小更新
+  resolved: false
+  applies_when: android_app.enabled == true
+- id: LB-DB
+  name: 数据库迁移与基础备份
+  resolved: false
+  applies_when: database exists
+- id: LB-OBS
+  name: 结构化日志与健康检查
+  resolved: false
+- id: LB-CONFIG
+  name: 最小配置中心与紧急开关
+  resolved: false
+- id: LB-IDEMPOTENCY
+  name: 关键流程幂等和有限重试
+  resolved: false
+- id: LB-BUILD
+  name: 依赖锁定与可重复构建
+  resolved: false
+- id: LB-CAPTCHA
+  name: 自研图形安全验证码与防刷
+  resolved: false
+- id: LB-COMPLEXITY
+  name: 复杂度预算与增量测试
+  resolved: false
+- id: LB-PAGE-STATE
+  name: 页面状态保持与禁止无故重载
+  resolved: false
+- id: LB-ICON
+  name: 专业 SVG 图标体系与禁止文字代图标
+  resolved: false
+advanced_capabilities:
+  full_bi: false
+  distributed_tracing_platform: false
+  gray_release_platform: false
+  workflow_engine: false
+  full_offline_first: false
+  advanced_risk_scoring: false
+

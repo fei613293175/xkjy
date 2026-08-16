@@ -1,0 +1,18 @@
+project: 待填写
+version: 待填写
+pages:
+- page_id: APP-MODULE-001
+  name_cn: 待填写
+  platform: android
+  module: 待填写
+  release: R01
+  spec_file: pages/APP-MODULE-001.yaml
+  navigation_state_contract: navigation/APP-MODULE-001.yaml
+  preserve_on_return: true
+  icon_registry_ids: []
+  required_states:
+  - state_id: DEFAULT
+    image_file: effects/APP-MODULE-001__DEFAULT.png
+    source_file: effects/APP-MODULE-001__DEFAULT.html
+    visual_verified: false
+  implemented: false

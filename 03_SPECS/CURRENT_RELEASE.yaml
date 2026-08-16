@@ -1,0 +1,23 @@
+project: 星矿纪元
+repository_baseline: V1.3.0-PREDEV-HARDENED
+source_package_version: 1.3.0
+development_release: P00
+status: READY_FOR_P00_SERVER_PREFLIGHT
+next_release: P01
+business_baseline: V1.1.0
+android_visual_baseline: V1.3.0
+admin_visual_baseline: inherited
+h5_visual_baseline: inherited
+private_mother_template_baseline: V1.4.2
+rejected_visual_baseline: V1.2.0
+implementation_status: NOT_STARTED
+visual_fact_source:
+  - 04_UI/APP
+  - 10_HTML/APP
+  - 10_HTML/shared/styles_v130.css
+  - 03_SPECS/DESIGN_TOKENS_GAME_V130.json
+  - 03_SPECS/NINE_SLICE_AND_STRETCH_RULES_V130.yaml
+required_preflight:
+  - 03_SPECS/PREDEV_BASELINE.yaml
+  - 03_SPECS/SECURITY_BOUNDARY.yaml
+  - connected_server_only

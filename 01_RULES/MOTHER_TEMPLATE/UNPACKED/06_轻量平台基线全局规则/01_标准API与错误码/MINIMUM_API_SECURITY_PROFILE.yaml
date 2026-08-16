@@ -1,0 +1,36 @@
+profile: MINIMUM_SECURE_BOUNDARY
+transport:
+  https_required: true
+  plaintext_http_for_business_api: false
+  cors: explicit allowlist; no wildcard with credentials
+authorization:
+  server_side_for_every_protected_api: true
+  object_level_check_required: true
+  field_level_check_when_sensitive: true
+  client_hidden_button_not_authorization: true
+admin_web:
+  public_registration: false
+  separate_admin_identity_realm_recommended: true
+  captcha_every_login_submit: true
+  cookie_when_used:
+  - Secure
+  - HttpOnly
+  - SameSite=Lax or Strict
+  csrf_protection_for_cookie_authenticated_writes: true
+  idle_timeout_minutes_default: 30
+  absolute_session_hours_default: 12
+input_and_output:
+  server_validation: true
+  body_size_limits: true
+  file_type_and_size_limits: true
+  raw_exception_to_client: false
+  sensitive_values_in_logs: false
+rate_limit:
+  anonymous_sensitive_endpoints: true
+  authenticated_high_risk_endpoints: true
+  retry_after_header: true
+not_required_by_default:
+- web_application_firewall platform
+- advanced device fingerprint vendor
+- risk scoring engine
+- multi-factor authentication platform
