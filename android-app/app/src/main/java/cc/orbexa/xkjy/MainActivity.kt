@@ -17,7 +17,6 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.weight
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -101,8 +100,11 @@ private fun AssetRow(asset: AssetRegistry.Asset) {
     val shape = RoundedCornerShape(StarMineDimensV130.CardRadius)
     Row(modifier = Modifier.fillMaxWidth().clip(shape).background(StarMineColorsV130.Panel).border(BorderStroke(1.dp, StarMineColorsV130.Border), shape).padding(horizontal = 14.dp, vertical = 12.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
         AssetIcon("game/icons/icon_check.png", null, Modifier.size(18.dp))
-        Column(modifier = Modifier.weight(1f)) { Text(asset.id, color = StarMineColorsV130.TextPrimary, fontSize = StarMineTypeV130.Body, fontWeight = FontWeight.Bold); Text(asset.relativePath, color = StarMineColorsV130.TextSecondary, fontSize = StarMineTypeV130.Caption, maxLines = 1, overflow = TextOverflow.Ellipsis) }
-        Text(asset.kind, color = StarMineColorsV130.Cyan, fontSize = StarMineTypeV130.Caption)
+        Column {
+            Text(asset.id, color = StarMineColorsV130.TextPrimary, fontSize = StarMineTypeV130.Body, fontWeight = FontWeight.Bold)
+            Text(asset.relativePath, color = StarMineColorsV130.TextSecondary, fontSize = StarMineTypeV130.Caption, maxLines = 1, overflow = TextOverflow.Ellipsis)
+            Text(asset.kind, color = StarMineColorsV130.Cyan, fontSize = StarMineTypeV130.Caption)
+        }
     }
 }
 
