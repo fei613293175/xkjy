@@ -15,4 +15,4 @@ docker run --rm \
   --workdir /src/android-app \
   --env-file "$secret_dir/android-signing.env" \
   hhy2-android-builder:latest \
-  gradle --no-daemon :app:testDebugUnitTest :app:assembleRelease
+  --no-daemon :app:testDebugUnitTest :app:assembleRelease
