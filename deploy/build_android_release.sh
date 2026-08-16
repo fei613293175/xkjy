@@ -9,6 +9,7 @@ test -f "$secret_dir/android-signing.env"
 test -f "$secret_dir/xkjy-p00-release.jks"
 
 docker run --rm \
+  --entrypoint gradle \
   --volume "$repository_dir:/src" \
   --volume "$secret_dir:/secrets:ro" \
   --workdir /src/android-app \
