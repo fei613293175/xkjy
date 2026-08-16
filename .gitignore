@@ -14,6 +14,7 @@ private/
 **/build/
 **/.idea/
 *.iml
+*.tsbuildinfo
 node_modules/
 dist/
 coverage/

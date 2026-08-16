@@ -1,6 +1,6 @@
 FROM golang:1.24 AS build
 WORKDIR /src
-COPY backend/go.mod ./
+COPY backend/go.mod backend/go.sum ./
 RUN go mod download
 COPY backend/ ./
 RUN go test ./... && \
