@@ -41,7 +41,7 @@ domains:
   h5: xkjy-h5.orbexa.cc
   invite: xkjy-yq.orbexa.cc
   download: xkjy-download.orbexa.cc
-  assets: oss.orbexa.cc
+  assets: xkjy-assets.orbexa.cc
 timezone: Asia/Shanghai
 uid:
   type: numeric
